@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
+import { alexandruLapusneanulExercises } from "@/content/romana/exercitii/alexandru-lapusneanul";
 import { ionExercises } from "@/content/romana/exercitii/ion";
 import { moaraCuNorocExercises } from "@/content/romana/exercitii/moara-cu-noroc";
 import { povesteaLuiHarapAlbExercises } from "@/content/romana/exercitii/povestea-lui-harap-alb";
@@ -33,6 +34,11 @@ const REGISTRY: Record<string, RegistryEntry> = {
     set: povesteaLuiHarapAlbExercises,
     lessonFile: "romana/opere/povestea-lui-harap-alb.mdx",
     lessonHref: "/romana/opere/povestea-lui-harap-alb",
+  },
+  [alexandruLapusneanulExercises.key]: {
+    set: alexandruLapusneanulExercises,
+    lessonFile: "romana/opere/alexandru-lapusneanul.mdx",
+    lessonHref: "/romana/opere/alexandru-lapusneanul",
   },
 };
 

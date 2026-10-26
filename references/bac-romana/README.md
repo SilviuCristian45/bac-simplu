@@ -1,8 +1,8 @@
 # Surse pentru Limba și literatura română – catalog
 
-Acest fișier descrie sursele din `references/bac-romana/` și sursele folosite pentru lecțiile deja redactate („Ion”, „Moara cu noroc”, „Povestea lui Harap-Alb”).
+Acest fișier descrie sursele din `references/bac-romana/` și sursele folosite pentru lecțiile deja redactate („Ion”, „Moara cu noroc”, „Povestea lui Harap-Alb”, „Alexandru Lăpușneanul”).
 
-- **Redactat:** 26 octombrie 2026, de Claude (asistent AI), pe baza fișierelor din proiect și a rapoartelor din `docs/rapoarte/`.
+- **Redactat:** 26 octombrie 2026, de Claude (asistent AI), pe baza fișierelor din proiect și a rapoartelor din `docs/rapoarte/`. Completat în aceeași zi cu sursele pentru „Alexandru Lăpușneanul” (secțiunile 2.1, 4, 5, 6.4, 7 și 9.3).
 - **Nu este o validare făcută de un profesor sau de un jurist.** Recomandările despre redistribuire (secțiunea 9) nu sunt opinii juridice.
 
 **Legendă pentru coloana „Stare”:**
@@ -67,6 +67,8 @@ Concluzia vine din `docs/rapoarte/audit-ion-2026-10-25-runda2.md`, §1. Ordinele
 | Ordinul nr. 6.059/29.08.2025 privind organizarea și desfășurarea examenului național de bacalaureat – 2026 (MO nr. 821 din 5.09.2025) | Ministerul Educației și Cercetării | Copie: <https://eminescuoradea.ro/wp-content/uploads/2026/04/Ordin-6059_29.08.2025.pdf>; a doua copie: <https://colegiulcarmensylvatimisoara.ro/wp-content/uploads/2026/01/ORDIN-nr.-6059_organizarea-si-desfasurarea-examenului-de-bac.pdf> | consultat (raport); ambele copii online 26.10.2026 (PDF) |
 | Ordinul nr. 5.211/27.08.2026 privind organizarea și desfășurarea examenului național de bacalaureat – 2027 (MO nr. 758 din 7.09.2026) | Ministerul Educației și Cercetării | Facsimil MO, copie edupedu.ro: <https://cdn.edupedu.ro/wp-content/uploads/2026/09/ORDIN-Nr.-5.211-2025-Calendar-Bacalaureat-2027-organizarea-si-sefasurarea-examnului-de-bacalaureat-2027-Monitorul-Oficial-Partea-I-nr.-758.pdf> | consultat (raport); **online 26.10.2026: HTTP 403** |
 | Proiectul ordinului pentru BAC 2027 | Ministerul Educației și Cercetării (edu.ro) | <https://edu.ro/sites/default/files/2026-08/PO_organizare_bacalaureat_calendar_2027.pdf> | consultat (raport); online 26.10.2026 (PDF) |
+
+**Copie locală (din 26.10.2026):** ambele variante ale programei 2014 au fost descărcate din copiile de mai sus și salvate în `references/bac-romana/local/` sub numele originale (`Programa_Bac_2014_Lb_si_literatura_romana_profil_real.pdf`, SHA-256 `e65f4ab2e85cd23ee609f539a0744bce0c03f9f64e9b577ee2a0775a3b136367`; `Programa_Bac_2014_Lb_si_literatura_romana_profil_uman.pdf`, SHA-256 `03487a380d9c862f479b07cb3f2d35c2622b271150a50d5cb9bbf025af19e553`). La descărcarea cu un antet de browser, edupedu.ro a răspuns cu 200. Lista autorilor canonici (p. 6) a fost recitită: 17 autori, fără Costache Negruzzi (vezi `docs/rapoarte/audit-alexandru-lapusneanul-2026-10-26.md`, §0).
 
 **Limitări** (din raportul citat):
 
@@ -134,12 +136,15 @@ Structura probei diferă: eseu de minimum 300 de cuvinte, 22 + 8 puncte (vezi `d
 | Ioan Slavici, „Moara cu noroc” | **B.** *Moara cu noroc*, „Biblioteca pentru toți”, nr. 31, Editura pentru Literatură, București, 1965, ed. a II-a revăzută, prefață de Pompiliu Marcea; textul reproduce *Novele din popor*, București, 1881 | Internet Archive, `0031-ion-slavici-moara-cu-noroc-1965` (scanare + OCR) | <https://archive.org/details/0031-ion-slavici-moara-cu-noroc-1965> | consultat (raport), prin OCR; online 26.10.2026. Metadatele Archive: creator „Ion Slavici”, an 1965 |
 | Ion Creangă, „Povestea lui Harap-Alb” | **A.** Transcriere Wikisource, „calitate 100%”, ortografie actuală; **nu indică ediția-sursă** | rev. 152404 | <https://ro.wikisource.org/wiki/Povestea_lui_Harap-Alb> | consultat (raport); online 26.10.2026; revizia există, datată 24.09.2026 (API) |
 | Ion Creangă, „Povestea lui Harap-Alb” | **B.** *Povești, amintiri, povestiri*, „Biblioteca pentru toți”, Editura pentru Literatură, ed. a II-a, 1967, prefață de Al. Piru; texte reproduse după *Opere* (ed. Iorgu Iordan și Elisabeta Brîncuș) | Internet Archive, `6-ion-creanga-povesti-amintiri-povestiri-1967` (scanare + OCR) | <https://archive.org/details/6-ion-creanga-povesti-amintiri-povestiri-1967> | consultat (raport), prin OCR; online 26.10.2026. Metadatele Archive: creator „Ion Creangă”, an 1967 |
+| Costache Negruzzi, „Alexandru Lăpușneanul” | **A.** Transcriere Wikisource, ortografie cu „î” și „sînt”; nota paginii indică prima apariție (*Dacia literară*, 1840) și volumul din 1857, **dar nu ediția-sursă** | rev. 115307 (28.01.2019) | <https://ro.wikisource.org/wiki/Alexandru_L%C4%83pu%C8%99neanul> | consultat (raport); wikitext salvat în `local/alexandru-lapusneanul/wikisource-rev115307.wikitext` |
+| Costache Negruzzi, „Alexandru Lăpușneanul” | **B.** *Păcatele tinerețelor*, „Biblioteca pentru toți” nr. 1137, Minerva, 1982, ed. îngrijită de Liviu Leonte, prefață și tabel cronologic de Elvira Sorohan | Internet Archive, `pacatele-tineretelor` (scanare + OCR) | <https://archive.org/details/pacatele-tineretelor> | consultat (raport), prin OCR; OCR salvat în `local/alexandru-lapusneanul/bpt1137-1982-ocr.txt`. Licența afișată (CC BY-NC-ND 4.0) este declarată de cel care a încărcat fișierul |
+| Mihail Kogălniceanu, „Introducție” la *Dacia literară* | Transcriere Wikisource, fără ediție-sursă indicată | rev. 135602 | <https://ro.wikisource.org/wiki/Introduc%C8%9Bie_la_%22Dacia_literar%C4%83%22> | consultat (raport); un singur citat, folosit în lecția „Alexandru Lăpușneanul” |
 
 **Observații:**
 
 - Pentru „Ion”, **nu a fost consultată nicio ediție tipărită** sau scanare. Citatele au fost verificate doar pe transcrierea Wikisource.
-- Pentru „Moara cu noroc” și „Harap-Alb”, ediția B a fost citită **prin OCR**, cu potriviri aproximative (vezi secțiunea 7).
-- Nu au fost consultate edițiile princeps (*Novele din popor*, 1881; *Convorbiri literare*, 1877) și nici ediții critice moderne.
+- Pentru „Moara cu noroc”, „Harap-Alb” și „Alexandru Lăpușneanul”, ediția B a fost citită **prin OCR**, cu potriviri aproximative (vezi secțiunea 7).
+- Nu au fost consultate edițiile princeps (*Novele din popor*, 1881; *Convorbiri literare*, 1877; *Dacia literară*, 1840) și nici ediții critice moderne.
 
 ### 4.1. Dicționare
 
@@ -162,7 +167,7 @@ Sursele de interpretare sunt separate de textele literare. **Nicio sursă din ac
 | Autor, editură, an | **Neidentificabile** (nu apar în text; metadatele PDF conțin doar programele de generare), conform `audit-ion-2026-10-25.md`, §1.1 |
 | Pagini | 62 (numărare la 26.10.2026; raportul din prima rundă Ion indică 63, vezi secțiunea 7) |
 | Conținut (cuprins, p. 2) | Plumb, Eu nu strivesc corola de minuni a lumii, Flori de mucigai, Riga Crypto și lapona Enigel, Leoaica tânără, iubirea, Floare-albastră, Povestea lui Harap-Alb, Moara cu noroc, Baltagul, Ion, Ultima noapte de dragoste, întâia noapte de război, Enigma Otiliei, Moromeții |
-| Folosire | Doar confruntare. Capitole citite: Ion (p. 32–36), Moara cu noroc (p. 25–27), Harap-Alb (p. 21–25). Numerele din cuprins nu corespund paginilor reale (de exemplu, Ion: p. 29 în cuprins, p. 32 în fișier). |
+| Folosire | Doar confruntare. **Nu are capitol despre „Alexandru Lăpușneanul”** (Negruzzi e pomenit o singură dată, în context pașoptist). Capitole citite: Ion (p. 32–36), Moara cu noroc (p. 25–27), Harap-Alb (p. 21–25). Numerele din cuprins nu corespund paginilor reale (de exemplu, Ion: p. 29 în cuprins, p. 32 în fișier). |
 | Erori găsite | Consemnate în rapoarte: Ion – §4 din `audit-ion-2026-10-25.md`; Moara – §3.1 din `audit-moara-cu-noroc-2026-10-25.md`; Harap-Alb – §3 din `audit-povestea-lui-harap-alb-2026-10-25.md` |
 
 ### 5.2. Surse critice și editoriale consultate
@@ -174,6 +179,8 @@ Sursele de interpretare sunt separate de textele literare. **Nicio sursă din ac
 | Al. Piru, prefața la BPT 1967 | Harap-Alb | consultat (raport), OCR zgomotos | Doar ideea generală despre probe; nu este citată |
 | ro.wikipedia, „Povestea lui Harap-Alb” | Harap-Alb | consultat (raport); sursă terțiară | Doar confirmarea datei 1 august 1877; celelalte afirmații nu au fost preluate |
 | Wikipedia (articol nespecificat), pentru „Jar” (1934) ca roman | Ion | consultat (raport); sursă terțiară | Mențiune de context; unica sursă |
+| Elvira Sorohan, prefața și tabelul cronologic la *Păcatele tinerețelor*, BPT 1982 (ediția B pentru „Alexandru Lăpușneanul”) | Alexandru Lăpușneanul | consultat (raport), prin OCR | Prima apariție (*Dacia literară*, nr. 1, 1840), ciclul „Scene istorice din cronicele Moldaviei”, volumul din 1857; observațiile despre raportul cu cronica (parafrazate, p. XXI–XXII); discuția personaj static/dinamic |
+| Internet Archive (fișa `nuvele0000negr`) și ro.wikipedia, „Constantin Negruzzi” (rev. 17986222) | Alexandru Lăpușneanul | consultat (raport); surse terțiare | Doar anii 1808–1868 |
 
 ### 5.3. Surse critice mediate sau neconsultate
 
@@ -184,6 +191,7 @@ Sursele de interpretare sunt separate de textele literare. **Nicio sursă din ac
 | N. Manolescu, E. Lovinescu, G. Călinescu, T. Vianu; L. Rebreanu, *Amalgam* | Citate în comentariul școlar (capitolul Ion) | **neverificat**; nu sunt folosite în lecție |
 | Magdalena Popescu, Al. Philippide, G. Călinescu („în alb și negru”), P. Marcea („moralistul nostru prin excelență”) | Citate în comentariul școlar (capitolul Moara cu noroc) | **neverificat**; nu sunt folosite |
 | V. Propp, T. Vianu, E. M. Forster, J. Boutière, B. P. Hasdeu, Novalis, Vl. Streinu, Boroianu | Atribuiri din comentariul școlar (capitolul Harap-Alb) | **neverificat**; nu sunt citate (Propp apare doar ca terminologie) |
+| G. Călinescu („romantism pozitiv”) și T. Vianu, citați în prefața Elvirei Sorohan (BPT 1982) | Prefața ediției B pentru „Alexandru Lăpușneanul” | mediat; **necitate** în lecție |
 
 ---
 
@@ -238,6 +246,21 @@ Fișiere: `content/romana/opere/povestea-lui-harap-alb.mdx`, `content/romana/ope
 | ro.wikipedia | terțiară | Confirmarea datei | raport §1.4 |
 | `comentarii-opere-romana.pdf`, p. 21–25 | secundară | Doar confruntare | raport §1.4, §3 |
 
+### 6.4. „Alexandru Lăpușneanul” – Costache Negruzzi
+
+Fișiere: `content/romana/opere/alexandru-lapusneanul.mdx`, `content/romana/opere/alexandru-lapusneanul-interactiv.ts`, `content/romana/exercitii/alexandru-lapusneanul.ts`.
+
+| Sursă | Tip | Folosire | Dovadă |
+|---|---|---|---|
+| Programa 2014, p. 4–6 (copie locală, vezi 2.1) | oficială | Negruzzi **nu** este autor canonic; nuvela, perioada pașoptistă, romantismul; textele la prima vedere | `audit-alexandru-lapusneanul-2026-10-26.md` §0 |
+| `Programa-Bac-2030-Romana-1.pdf`, MO p. 8 și 28 | oficială, locală | „Nuvela romantică (text integral)”; lista autorilor canonici 2030 | idem |
+| Subiecte și bareme 2026: real/tehnologic Model, Var. 3–6; uman/ped. Model, Var. 6; secții maghiare Var. 6 | oficiale, locale | Formularea cerințelor (autor / specie / perioadă); reperele și punctajul | idem; Surse din lecție |
+| Wikisource rev. 115307 (ediția A) | text literar | Lectură integrală; textul tuturor citatelor (101 segmente) | raport §1.2 |
+| BPT 1982, Internet Archive (ediția B) | text literar, OCR | Confruntarea citatelor | raport §1.2, §3 |
+| Prefața și cronologia E. Sorohan (în B) | critică / editorială | Date de publicare; istorie și ficțiune | raport §1.3 |
+| Wikisource, „Introducție” la *Dacia literară*, rev. 135602 | text primar | Un citat (lecția, 3.2) | raport §1.3 |
+| Scriptul `local/alexandru-lapusneanul/check_quotes.py` | instrument | Confruntarea automată a citatelor în A și B | raport §1.2 |
+
 ---
 
 ## 7. Limitări și neconcordanțe
@@ -247,7 +270,7 @@ Neconcordanțele de mai jos sunt **consemnate, nu rezolvate**.
 ### 7.1. Programe și documente oficiale
 
 1. **Programa citată de `analiza-ion.md` este greșită pentru 2026–2027.** Analiza folosește programa din 2021; runda a 2-a a auditului Ion a stabilit că se aplică programa din 2013/2014. Fișierul `analiza-ion.md` **nu a fost corectat**. Corecția se află în `audit-ion-2026-10-25-runda2.md`, §1.3.
-2. **Programa 2014 lipsește din folder**, deși e baza tuturor lecțiilor. Recomandarea de a o adăuga apare în runda 2 Ion (§7) și în auditul Harap-Alb (§1.1).
+2. **Programa 2014 lipsea din folder** până la 26.10.2026; acum există o copie locală (vezi 2.1), tot din surse secundare (presă, inspectorat). Recomandarea de a o adăuga apare în runda 2 Ion (§7) și în auditul Harap-Alb (§1.1).
 3. **Două copii externe nu au mai putut fi redeschise la 26.10.2026** (edupedu.ro răspunde cu HTTP 403 la accesul automat): programa 2014 real/tehnologic și facsimilul Ordinului 5.211/2026. Ele au fost consultate în auditurile din 25.10.2026, potrivit raportului.
 4. **Numele fișierului `programa-Limba-Romana-Bac-2022.pdf`** nu corespunde antetului (anul școlar 2020–2021).
 5. **`subiect-bac-romana-2026-tehnologic.pdf` este duplicat** al `E_a_romana_real_tehn_2026_var_model.pdf`. Numele poate induce în eroare.
@@ -258,10 +281,11 @@ Neconcordanțele de mai jos sunt **consemnate, nu rezolvate**.
 1. **Wikisource nu indică ediția-sursă** pentru „Moara cu noroc” și „Harap-Alb”. Pentru „Ion”, transcrierea este atribuită ediției Alcalay, 1920, dar **nu a fost comparată cu o ediție tipărită**.
 2. **OCR-ul nu este o reproducere exactă a edițiilor tipărite.** Ediția BPT 1965 („Moara cu noroc”): potriviri de 0,91–1,00 pentru citatele lungi; citatele scurte (0,86–0,89) au fost confirmate manual. Ediția BPT 1967 („Harap-Alb”): patru pasaje cu coloane amestecate au confirmare doar parțială (raport Harap-Alb, §1.2).
 3. **Numărul de capitole din transcrierea Wikisource a „Morii cu noroc”:** raportul de documentare (§2.1) spune că ediția A are capitolele I–XVII. Raportul de exerciții (§2) spune că transcrierea Wikisource **nu are marcajele XII, XV și XVI**, iar numerotarea a fost confruntată cu ediția 1965. **Verificat online la 26.10.2026:** textul-sursă (wikitext) al reviziei 129071 conține titluri pentru toate capitolele, I–XVII. Afirmația din raportul de exerciții nu este susținută de wikitext; cauza (de exemplu, o extragere diferită a textului în sesiunea de audit) nu este cunoscută. Raportul nu a fost modificat.
-4. **„Păun” / „Pârvu”** în cap. XVI din „Moara cu noroc”: inconsecvență din textul original, notată de ediția 1965. Lecția folosește „Păun”.
-5. **Anul apariției „Poveștii lui Harap-Alb”:** 1877 (nota din BPT 1967, Wikisource, ro.wikipedia) față de 1878 (cronologia din BPT 1967 și comentariul școlar). Lecția folosește 1877; contradicția din ediția 1967 nu a fost explicată.
-6. **Variante de formă între ediții** (de exemplu, „rânjetul” / „rînjitul”); lecția „Moara cu noroc” evită pasajele de acest tip.
-7. **Ortografie:** transcrierile folosesc ortografia actuală; edițiile din 1965 și 1967, ortografia cu „î” și cu sedilă.
+4. **„Alexandru Lăpușneanul”:** diferențe între A și B („eu vă vreau” / „eu vă vreu” în replica din cap. I; „greșeală” / „greșală”; „pîn-a” / „păn-a”); motto-ul cap. III ilizibil în OCR-ul B; motto-ul cap. IV („De mă voi scula”) diferă de replica din text („de mă voi îndrepta”) în ambele ediții. Vezi `audit-alexandru-lapusneanul-2026-10-26.md`, §3.
+5. **„Păun” / „Pârvu”** în cap. XVI din „Moara cu noroc”: inconsecvență din textul original, notată de ediția 1965. Lecția folosește „Păun”.
+6. **Anul apariției „Poveștii lui Harap-Alb”:** 1877 (nota din BPT 1967, Wikisource, ro.wikipedia) față de 1878 (cronologia din BPT 1967 și comentariul școlar). Lecția folosește 1877; contradicția din ediția 1967 nu a fost explicată.
+7. **Variante de formă între ediții** (de exemplu, „rânjetul” / „rînjitul”); lecția „Moara cu noroc” evită pasajele de acest tip.
+8. **Ortografie:** transcrierile pentru „Moara cu noroc” și „Harap-Alb” folosesc ortografia actuală, cea pentru „Alexandru Lăpușneanul” folosește „î” și „sînt” (lecția citează în ortografia actuală, păstrând formele vechi ale cuvintelor); edițiile din 1965 și 1967, ortografia cu „î” și cu sedilă.
 
 ### 7.3. Surse secundare
 
@@ -272,7 +296,7 @@ Neconcordanțele de mai jos sunt **consemnate, nu rezolvate**.
 
 ### 7.4. Fișiere de lucru pierdute
 
-Transcrierile, OCR-urile, scripturile și listele de citate folosite la confruntare (de exemplu `moara.txt`, `bpt1965.txt`, `check_quotes.py`, `quotes.json`) erau în directorul temporar al sesiunilor de audit. **Nu sunt în repository**, deci verificarea citatelor nu poate fi reprodusă de pe alt calculator fără a le descărca din nou.
+Transcrierile, OCR-urile, scripturile și listele de citate folosite la confruntare (de exemplu `moara.txt`, `bpt1965.txt`, `check_quotes.py`, `quotes.json`) erau în directorul temporar al sesiunilor de audit. **Nu sunt în repository**, deci verificarea citatelor nu poate fi reprodusă de pe alt calculator fără a le descărca din nou. Pentru „Alexandru Lăpușneanul”, fișierele de lucru și scriptul sunt păstrate în `references/bac-romana/local/alexandru-lapusneanul/` (tot în afara Git).
 
 ---
 
@@ -327,7 +351,7 @@ Regula din `.gitignore`:
 - `references/bac-romana/local/` este locul pentru materialele care **nu se publică în repository**: comentarii și culegeri cu drepturi neclare, scanări și OCR-uri, texte descărcate, scripturi și liste de citate folosite la verificare.
 - **Conținutul lui nu este sincronizat prin Git.** Pe un alt calculator, folderul nu există după `git clone` (Git nu păstrează foldere goale sau ignorate). Fișierele trebuie copiate separat, de exemplu printr-un spațiu de stocare privat.
 - Acest README rămâne lista de referință: orice fișier pus în `local/` trebuie trecut în catalog (secțiunile 4–6) cu identificarea și proveniența lui, ca să poată fi recuperat de pe alt calculator.
-- La 26.10.2026, folderul conține cele 22 de PDF-uri descrise în secțiunile 2, 3 și 5. Clasificarea din 9.2 rămâne valabilă dacă unele dintre ele vor fi readuse în repository.
+- La 26.10.2026, folderul conține cele 22 de PDF-uri descrise în secțiunile 2, 3 și 5, cele două copii ale programei 2014 (secțiunea 2.1) și subfolderul `alexandru-lapusneanul/` (wikitext Wikisource, OCR BPT 1982, metadate Archive, „Introducție” la *Dacia literară*, scriptul `check_quotes.py`; secțiunile 4 și 6.4), precum și subfolderul `enigma-otiliei/` (scriptul de confruntare, citatele candidate și metadatele Archive pentru ediția BPT 1967; **fără** textul romanului, protejat prin drept de autor; vezi `docs/rapoarte/documentare-enigma-otiliei-2026-10-26.md`). Clasificarea din 9.2 rămâne valabilă dacă unele dintre ele vor fi readuse în repository.
 
 **Atenție:** regula nu scoate din Git fișierele deja urmărite. Pentru asta este nevoie de `git rm --cached` (vezi 9.4), iar fișierele rămân oricum în istoric, dacă istoricul nu este rescris (cum s-a făcut pentru PDF-uri, vezi 9.1).
 

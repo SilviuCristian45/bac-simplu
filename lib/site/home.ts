@@ -18,7 +18,7 @@ export const SUBJECTS: Subject[] = [
     description:
       "Lecții despre operele studiate pentru BAC: încadrare, temă, structură, personaje și redactarea eseului.",
     link: { href: "/romana/opere", label: "Vezi operele" },
-    note: "Lecțiile publicate („Ion” de Liviu Rebreanu, „Moara cu noroc” de Ioan Slavici) sunt în curs de verificare.",
+    note: "Toate lecțiile publicate sunt în curs de verificare: nu au fost încă validate de un profesor.",
   },
   {
     id: "matematica",
