@@ -1,0 +1,430 @@
+export const lesson = {
+  id: "romana-povestea-lui-harap-alb-creanga",
+  slug: "povestea-lui-harap-alb",
+  subject: "romana",
+  title: "„Povestea lui Harap-Alb” de Ion Creangă",
+  author: "Ion Creangă",
+  sections: ["teorie"],
+  status: "draft-neverificat",
+  lastReviewed: null,
+  referenceAnalysis: "docs/rapoarte/audit-povestea-lui-harap-alb-2026-10-25.md",
+};
+
+import {
+  AutoevaluareHarap,
+  CaracterizareHarap,
+  ComparatieHarapSpan,
+  DiagramaProbelor,
+  DrumulLuiHarapAlb,
+  EvolutiaLuiHarapAlb,
+  FaptSauInterpretare,
+  FormuleSiOralitate,
+  HartaRelatiilorHarap,
+  LaboratorInterpretare,
+  MomenteleSubiectuluiHarap,
+  PlanEseuHarap,
+  TrasaturiBasm,
+} from "@/components/lesson/figures/povestea-lui-harap-alb";
+
+# „Povestea lui Harap-Alb” de Ion Creangă
+
+> **Stadiul lecției:** material în curs de verificare. Acțiunea și citatele au fost verificate pe textul basmului, în două ediții (vezi Surse), dar lecția nu a fost încă validată de un profesor. Pentru examen, citește basmul integral și consultă manualul și profesorul tău.
+
+## Cum să folosești această lecție
+
+Informațiile din lecție sunt marcate după tipul lor:
+
+- **Despre basm** – ce se întâmplă în text: personaje, acțiune, formule. Le poți verifica citind basmul.
+- **Interpretare** – o lectură posibilă, susținută cu exemple din text, dar nu singura corectă. La examen poți susține și alte interpretări, dacă le argumentezi.
+- **Cerință oficială** – ce scrie în documentele oficiale ale examenului, cu documentul și pagina.
+- **Recomandare** – sfaturi de învățare și de redactare. Nu sunt cerințe ale examenului.
+
+Basmul nu are capitole, deci citatele sunt însoțite de episodul în care apar, nu de un număr de capitol. Ortografia citatelor este cea actuală.
+
+## 1. Ce trebuie să știi despre examen
+
+> **Cerință oficială.** Programa de bacalaureat îl enumeră pe Ion Creangă printre autorii canonici și precizează că examenul presupune „studierea a cel puțin unui text din opera acestora”.
+> Sursa: Programa de examen pentru disciplina Limba și literatura română, Anexa nr. 2 la Ordinul ministrului educației naționale nr. 4.923/29.08.2013, p. 6 – programa indicată pentru sesiunile 2026 și 2027 (vezi `docs/rapoarte/audit-ion-2026-10-25-runda2.md`).
+
+> **Cerință oficială.** Basmul cult este una dintre speciile epice pe care programa le enumeră la analiza textului narativ: „specii epice: basm cult, nuvelă, roman”.
+> Sursa: aceeași programă, competența 2.2, p. 4.
+
+> **Cerință oficială.** În Varianta 3 din 2026 (filiera teoretică – profil real; filiera tehnologică; filiera vocațională, cu excepția profilului pedagogic), Subiectul al III-lea cere un eseu de **minimum 400 de cuvinte**, notat cu **30 de puncte** (18 pentru conținut, 12 pentru redactare), în care să prezinți „particularități de construcție a unui personaj într-un basm cult studiat”. Reperele, de câte 6 puncte, sunt: prezentarea statutului social, psihologic, moral etc. al personajului ales; evidențierea unei trăsături prin două episoade sau secvențe comentate; analiza a două elemente de structură, de compoziție și/sau de limbaj ale basmului cult, relevante pentru construcția personajului.
+> Sursa: Examenul național de bacalaureat 2026, Proba E. a), Varianta 3, subiecte p. 2 și barem p. 2.
+
+> **Cerință oficială.** Modelul din 2026 (aceleași filiere) cere un eseu despre „particularități de construcție a unui personaj într-un text narativ aparținând lui Ion Creangă”, cu aceleași trei repere.
+> Sursa: Examenul național de bacalaureat 2026, Proba E. a), Model, subiecte p. 2.
+
+Programa **nu** numește o operă anume a lui Creangă. „Povestea lui Harap-Alb” este textul ales pentru această lecție, nu o operă impusă. În fișierele cu subiecte 2026 din proiect, Creangă și basmul cult apar doar în Varianta 3 și în Model; celelalte variante nu cer un text de Creangă.
+
+> **Cerință oficială.** Programa pentru Bacalaureat 2030 (Monitorul Oficial nr. 737 bis/2.IX.2026), citată pentru orientare, trece printre conținuturi „literatură populară și literatură cultă (basmul popular și basmul cult)”.
+> Sursa: programa din `references/bac-romana/Programa-Bac-2030-Romana-1.pdf`, p. 4 și p. 12 ale fișierului.
+
+> **Recomandare.** Pregătește basmul pentru ambele tipuri de cerințe: construcția personajului (Harap-Alb) și particularitățile basmului cult. Citește atent formularea de la examen: ea decide ce personaj, ce trăsătură și ce elemente analizezi.
+
+## 2. Fișă rapidă
+
+**Despre basm** (date verificate pe text și în ediția din 1967; vezi Surse):
+
+- **Autor:** Ion Creangă.
+- **Apariție:** în revista *Convorbiri literare*, la 1 august 1877. Data apare în nota de la sfârșitul textului din ediția „Biblioteca pentru toți” din 1967 și pe Wikisource. Atenție: cronologia din aceeași ediție și un comentariu școlar din proiect dau anul 1878. Lecția folosește 1877; verifică în manualul tău.
+- **Gen / specie:** epic / basm cult.
+- **Structură:** text continuu, fără capitole. Acțiunea se desface în episoade legate prin formule.
+- **Spațiul și timpul:** nedeterminate: „într-o țară”, „pe vremile acelea”, drumuri „peste nouă mări”.
+- **Narator:** la persoana a III-a, care povestește ca în fața unor ascultători și comentează.
+- **Personaje:** Harap-Alb (fiul mezin al craiului), craiul și ceilalți doi fii, Verde-împărat și fetele lui, Spânul, Sfânta Duminică, calul, cinci ființe fabuloase (Gerilă, Flămânzilă, Setilă, Ochilă, Păsări-Lăți-Lungilă), împăratul Roș și fata lui.
+
+<DrumulLuiHarapAlb />
+
+## 3. Încadrarea: basm cult
+
+### 3.1. Ce cere baremul
+
+> **Cerință oficială.** Baremul pentru Varianta 3 din 2026 acordă 3 puncte pentru analiza fiecărui element de structură, de compoziție și/sau de limbaj, „justificând relevanța acestuia pentru construcția personajului”, 2 puncte pentru analiza fără justificarea relevanței și 1 punct pentru abordarea schematică.
+> Sursa: Barem, Bacalaureat 2026, Varianta 3, p. 2.
+
+Încadrarea într-o perioadă, un curent sau o orientare apare la alte cerințe, de exemplu la cea despre particularitățile unui text narativ (vezi lecția despre „Moara cu noroc”, 3.1). Aici ne interesează mai ales **specia**: de ce „Povestea lui Harap-Alb” este un basm și de ce este un basm *cult*.
+
+### 3.2. Basmul popular și basmul cult
+
+Basmul este o specie epică în care întâmplări fabuloase urmează un tipar: un erou pornește la drum, trece prin probe, este ajutat de ființe sau obiecte cu puteri neobișnuite și, la sfârșit, binele învinge.
+
+**Trăsături ale basmului în general** (se întâlnesc și în basmul popular):
+
+- fantasticul: personaje și obiecte cu puteri neobișnuite;
+- drumul eroului: plecare, probe, ajutoare, victorie, nuntă;
+- numere simbolice (trei, nouă) și hiperbole;
+- formule inițiale, mediane și finale;
+- lupta dintre bine și rău, încheiată cu victoria binelui;
+- timp și spațiu nedeterminate.
+
+**Ce adaugă basmul cult**, scris de un autor cunoscut:
+
+- un text fixat în scris, cu un autor identificabil;
+- personaje individualizate prin vorbire, gesturi, atitudini;
+- oralitate stilizată: scriitorul imită vorbirea povestitorului;
+- umor;
+- un narator care comentează și se adresează ascultătorilor;
+- un fantastic apropiat de lumea cunoscută, „umanizat”.
+
+**Interpretare.** Distincția dintre basmul popular și cel cult este mai degrabă de grad decât o linie netă: și basmul popular are formule și oralitate. De aceea, la examen, nu enumera doar trăsături: arată în text **unde** se vede fiecare.
+
+> **Recomandare.** Alege trăsături pe care le poți ilustra cu un exemplu scurt și exact din basm. Ele devin elemente de limbaj sau de structură analizate, cu relevanță pentru construcția personajului.
+
+### 3.3. Trăsături ale basmului în „Povestea lui Harap-Alb”
+
+Fiecare trăsătură de mai jos este însoțită de un exemplu din text.
+
+1. **Drumul inițiatic și probele.**
+   - **Despre basm:** craiul își încearcă feciorii sub forma unui urs; Spânul îl trimite apoi pe Harap-Alb în trei locuri primejdioase; Roș pune șase încercări (vezi 5.2).
+2. **Personaje și obiecte fantastice.**
+   - **Despre basm:** calul vorbește și zboară; bătrâna care îi dă sfatul se ridică în văzduh „învăluită într-un hobot alb”; furnicile și albinele dau câte o aripă; apa vie și apa moartă îl învie pe erou; cei cinci tovarăși au însușiri exagerate.
+3. **Numărul trei și hiperbola.**
+   - **Despre basm:** trei feciori, trei întâlniri cu Spânul, trei probe ale Spânului, trei smicele; drum „peste nouă mări, peste nouă țări și peste nouă ape mari”.
+4. **Formule.**
+   - **Despre basm:** începutul „Amu cică era odată…”, formula mediană „cuvântul din poveste, înainte mult mai este” și finalul ironic „Iar pe la noi…” (vezi 6.5).
+5. **Victoria binelui.**
+   - **Despre basm:** Spânul este pedepsit, Harap-Alb este înviat, urmează nunta.
+   - **Interpretare:** binele nu învinge ușor sau repede. Eroul suferă, este umilit și moare înainte de final.
+6. **Amprenta autorului (basm cult).**
+   - **Despre basm:** cei cinci tovarăși se ceartă ca niște oameni obișnuiți („Ia tacă-ți gura, măi Gerilă!”); naratorul glumește și își cere scuze („Dar ia să nu ne depărtăm cu vorba…”); proverbele apar la tot pasul („Vorba ceea: …”).
+   - **Interpretare:** în asemenea locuri se vede mâna scriitorului: personajele sunt individualizate prin vorbire, iar fantasticul este umanizat.
+
+<TrasaturiBasm />
+
+## 4. Tema, titlul și viziunea despre lume
+
+### 4.1. Tema
+
+**Interpretare.** O formulare posibilă a temei: **drumul de maturizare al unui tânăr care, prin greșeli, probe și prietenii, învață ce înseamnă răbdarea, bunătatea și cuvântul dat, într-o luptă dintre bine și rău încheiată cu victoria binelui.**
+
+Alte formulări la fel de bune pun accentul pe **importanța sfatului și a experienței**, pe **răsplata milosteniei** sau pe **conflictul dintre înșelăciune și cinste**.
+
+> **Recomandare.** Formulează tema într-o propoziție, apoi leagă de ea fiecare secvență comentată.
+
+### 4.2. Titlul
+
+**Despre basm.** Titlul numește eroul prin numele pe care îl primește de la Spân, după fântână: „De-acum înainte să știi că te cheamă Harap-Alb; aista ți-i numele, și altul nu.” Până atunci, personajul este numit „fiul craiului”. Textul își spune și el „poveste”: „firul poveștii”, „cuvântul din poveste”.
+
+**Despre cuvinte.** „Harap” este o variantă a lui „arap”, cuvânt care desemnează, în dicționare, un om de rasă neagră (DEX '09 trimite de la „harap” la „arap”). „Alb” este culoarea opusă.
+
+**Interpretare.** Numele poate fi citit ca un **oximoron**: doi termeni opuși într-un singur nume, potrivit unui personaj cu identitate dublă, fiu de crai și slugă. Lectura nu este singura posibilă: titlul poate fi citit și ca numele unei condiții pe care eroul o trece, nu doar ca numele unui personaj.
+
+> **Recomandare.** Unele comentarii explică „harap” prin „rob” sau „slugă”. Lecția nu se sprijină pe această explicație, pe care nu am putut-o confirma într-un dicționar (vezi raportul de audit).
+
+### 4.3. Viziunea despre lume
+
+**Interpretare.** În lumea basmului, valorile (milostenia, prietenia, cuvântul dat, răbdarea) sunt puse la încercare și, până la urmă, răsplătite, iar răul (viclenia, minciuna, lăcomia de putere) este pedepsit. Două replici susțin lectura:
+
+- Sfânta Duminică: „nu eu, ci puterea milosteniei și inima ta cea bună te ajută”.
+- Tot ea, despre viitorul eroului: „Când vei ajunge și tu odată mare și tare, îi căuta să judeci lucrurile de-a fir-a-păr și vei crede celor asupriți și necăjiți, pentru că știi acum ce e necazul.”
+
+**Interpretare.** Viziunea nu este ingenuă. Răul nu dispare ușor: Spânul stăpânește mult timp. Iar formula finală scoate basmul din lumea fabuloasă: „Iar pe la noi, cine are bani bea și mănâncă, iară cine nu, se uită și rabdă.” Poți citi aici o ironie sau o observație despre lumea reală; important este să o argumentezi.
+
+### 4.4. Fapt, citat sau interpretare?
+
+> **Recomandare.** La eseu, separă ce spune textul de ce interpretezi tu. Un enunț care începe cu „basmul arată că…” este, de regulă, o interpretare; unul care spune ce face un personaj este un fapt. Exersează distincția:
+
+<FaptSauInterpretare />
+
+## 5. Acțiunea și probele
+
+### 5.1. Rezumatul acțiunii
+
+**Despre basm.** Acțiunea, pe scurt:
+
+1. Un crai are trei feciori. Fratele lui, Verde-împărat, nu are feciori și îi scrie să-i trimită „pe cel mai vrednic dintre nepoți”, ca să-l lase împărat.
+2. Craiul își încearcă feciorii: se îmbracă într-o piele de urs și se pune sub un pod. Fiul cel mare și cel mijlociu se întorc speriați.
+3. Cel mic, mustrat de tată, plânge în grădină. O bătrână cerșetoare îi dă un sfat, după ce el îi dă un ban: să ceară calul, armele și hainele cu care tatăl fusese mire. Calul, găsit prin proba jăraticului, devine tovarășul lui.
+4. Tatăl, ascuns iar sub piele de urs, îl recunoaște ca vrednic. Îi spune să se ferească de omul roș și, mai ales, de cel spân.
+5. În codru, fiul de crai se întâlnește de trei ori cu un spân și, rătăcit, îl ia slugă. Spânul îl momește în fântână, îl silește să jure pe paloș ascultare, îi ia banii, armele și scrisoarea și îi dă numele Harap-Alb.
+6. La curtea lui Verde, Spânul trece drept nepotul împăratului. Îl trimite pe Harap-Alb după sălăți din Grădina Ursului și după pielea și capul cerbului. Eroul reușește cu ajutorul Sfintei Duminici, bătrâna de la început.
+7. Spânul cere apoi fata împăratului Roș. Pe drum, Harap-Alb nu strivește furnicile, face adăpost albinelor și își face cinci tovarăși.
+8. La Roș trece încercările: casa de aramă, ospățul, macul și nisipul, străjuirea fetei, alegerea fetei adevărate, apoi smicelele, apa vie și apa moartă.
+9. Pe drumul de întoarcere, el și fata se îndrăgostesc. La curtea lui Verde, fata îl dezvăluie pe Spân; Spânul îi taie capul lui Harap-Alb; calul îl ridică pe Spân în cer și îl lasă să cadă; fata îl învie pe erou.
+10. Harap-Alb și fata primesc binecuvântarea lui Verde și împărăția. Urmează nunta.
+
+### 5.2. Drumul inițiatic și probele
+
+**Interpretare.** Probele alcătuiesc un lanț: fiecare are nevoie de ajutorul câștigat înainte. Milostenia față de bătrână aduce ajutorul Sfintei Duminici; mila față de furnici și albine rezolvă două probe de la Roș. Drumul seamănă cu o **inițiere**: eroul pornește neexperimentat, greșește, este pus la încercare și iese schimbat.
+
+**Despre basm.** Probele vin de la trei „examinatori”: craiul (ursul), Spânul (sălăți, cerb, fata lui Roș) și Roș (șase încercări). Unele încercări nu sunt puse de cineva: fântâna este o greșeală a eroului.
+
+<DiagramaProbelor />
+
+### 5.3. Secvența 1: fântâna și numele Harap-Alb
+
+**Despre basm.** Tatăl îl avertizase să se ferească de omul spân. Spânul îi iese în cale de trei ori; la a treia oară, fiul de crai se rătăcise și gândește: „mai-mi vine a crede că asta-i țara spânilor”. Îl ia slugă. Spânul îi varsă apa din ploscă, apoi îl duce la o fântână. Narațiunea spune: „Fiul craiului, boboc în felul său la trebi de aieste, se potrivește Spânului și se bagă în fântână”. Spânul închide capacul, îi cere jurământ și îi spune: „până când îi muri și iar îi învia”.
+
+**Interpretare (comentariu posibil).** Secvența arată **naivitatea** eroului, numită direct de narator („boboc”). Greșeala îl face să piardă libertatea și identitatea, dar îi pune în față exact lecția de care are nevoie: sfatul părintelui contează, iar aparențele pot înșela. Spânul rostește și o condiție: slujba durează până când eroul va muri și va învia, ceea ce pregătește finalul. Pentru temă, secvența este începutul drumului de maturizare.
+
+### 5.4. Secvența 2: milostenia răsplătită
+
+**Despre basm.** Înainte de orice încercare, eroul dă un ban unei bătrâne care cerșește. Ea îi dă sfatul cu calul și hainele tatălui. Mai târziu se arată că este Sfânta Duminică și îl ajută la prima probă a Spânului. Spune: „nu eu, ci puterea milosteniei și inima ta cea bună te ajută”. Pe drumul spre Roș, Harap-Alb nu trece peste nunta furnicilor: „Tot mai bine să dau prin apă, cum a da Dumnezeu, decât să curm viața atâtor gâzulițe nevinovate”. Roiul de albine nu are unde să se așeze, iar el le face adăpost. Furnicile și albinele îi dau câte o aripă, cu care să le cheme la nevoie, și vin în ajutor la două probe de la Roș.
+
+**Interpretare (comentariu posibil).** Secvența susține tema: binele făcut fără să aștepți ceva se întoarce. Gestul eroului contrastează cu viclenia Spânului. Există și un efect de structură: aripile sunt introduse înainte de a fi folosite, așa încât ajutorul nu pare picat din cer.
+
+### 5.5. Secvența 3: moartea și învierea
+
+**Despre basm.** Pe drumul de întoarcere, Harap-Alb și fata lui Roș se îndrăgostesc. La curtea lui Verde, Spânul vrea s-o ia pe fată în brațe, dar ea îl respinge: „Lipsește dinaintea mea, Spânule!” Spune că a venit pentru Harap-Alb, „căci el este adevăratul nepot al împăratului Verde”. Spânul îi taie capul și strigă: „Na! așa trebuie să pățească cine calcă jurământul!” Calul îl duce pe Spân în înaltul cerului și îi dă drumul. Fata pune capul la loc și îl învie cu smicelele, apa moartă și apa vie. Harap-Alb spune: „Ei, da’ din greu mai adormisem!”
+
+**Interpretare (comentariu posibil).** Aici se rezolvă conflictul și se pecetluiește maturizarea. Dezvăluirea vine de la fată, iar pedeapsa Spânului de la cal: eroul nu mai este singur, ci poate conta pe cei pe care și i-a făcut aliați. Învierea încheie drumul deschis la fântână, când Spânul spusese „până când îi muri și iar îi învia”. Scena poate fi citită și ca trecere simbolică de la slugă la împărat.
+
+## 6. Structură, compoziție și tehnici narative
+
+### 6.1. Ce cere baremul
+
+> **Cerință oficială.** Reperul despre structură, compoziție și limbaj cere „analiza a două elemente de structură, de compoziție și/sau de limbaj ale basmului cult studiat, relevante pentru construcția personajului ales”. Exemple din subiect: „acțiune, conflict, modalități de caracterizare, relații temporale și spațiale, incipit, final, tehnici narative, instanțe ale comunicării narative, perspectivă narativă, registre stilistice, limbaj”.
+> Sursa: Subiect, Bacalaureat 2026, Varianta 3, p. 2.
+
+### 6.2. Momentele subiectului
+
+**Interpretare.** O împărțire posibilă a acțiunii pe momentele subiectului:
+
+- **Expozițiunea:** craiul cu trei feciori și fratele lui, Verde-împărat, fără feciori, la capete opuse ale pământului.
+- **Intriga:** scrisoarea lui Verde-împărat, care cere pe cel mai vrednic nepot.
+- **Desfășurarea acțiunii:** ursul de sub pod, sfatul Sfintei Duminici, calul, Spânul, fântâna, probele Spânului, drumul cu ajutoarele, probele lui Roș, întoarcerea.
+- **Punctul culminant:** confruntarea de la curtea lui Verde, când fata îl dezvăluie pe Spân și Spânul îi taie capul eroului.
+- **Deznodământul:** pedepsirea Spânului, învierea, nunta.
+
+Delimitările diferă de la o sursă la alta: unii situează punctul culminant în probele lui Roș. Important la examen este să-ți justifici împărțirea cu fapte din text.
+
+<MomenteleSubiectuluiHarap />
+
+### 6.3. Incipitul și finalul
+
+**Despre basm.** Basmul începe cu „Amu cică era odată într-o țară un crai, care avea trei feciori.” și, după primul paragraf, despre cei doi frați, naratorul spune: „Dar ia să nu ne depărtăm cu vorba și să încep a depăna firul poveștii.” Se încheie cu nunta („Lumea de pe lume s-a strâns de privea”), apoi: „Și a ținut veselia ani întregi, și acum mai ține încă; cine se duce acolo bea și mănâncă. Iar pe la noi, cine are bani bea și mănâncă, iară cine nu, se uită și rabdă.”
+
+**Interpretare.** Incipitul intră în lumea basmului cu o formulă cunoscută, dar o schimbă („amu cică”), așa încât se aude un povestitor. Finalul iese din lumea basmului printr-o comparație cu realitatea. Pentru construcția lui Harap-Alb, finalul contează pentru că arată statutul dobândit (nunta, împărăția), iar incipitul pentru că arată de unde pornește (un fiu de crai neexperimentat).
+
+### 6.4. Perspectiva narativă și instanțele comunicării
+
+**Despre basm.** Naratorul nu este personaj: povestește la persoana a III-a și cunoaște gândurile personajelor (de exemplu, aflăm ce zice Spânul „în sine”). În același timp, intervine direct: „Eu sunt dator să spun povestea și vă rog să ascultați.” Alteori își pierde firul și se corectează: „Dar iaca ce m-am apucat de spus. Mai bine vă spuneam că…”
+
+**Interpretare.** Naratorul este **omniscient și apropiat de ascultători**. Putem distinge mai multe instanțe: autorul (Ion Creangă, persoană reală), naratorul (vocea din text) și personajele; textul își imaginează și un ascultător căruia i se adresează. Pentru construcția lui Harap-Alb, comentariile naratorului contează: el spune direct că eroul e „boboc” și lasă apoi faptele să-l arate.
+
+> **Recomandare.** Dacă alegi perspectiva narativă ca element, spune cine povestește, ce știe, cum se adresează cititorului și de ce contează asta pentru personajul ales.
+
+### 6.5. Formulele basmului și oralitatea
+
+**Despre basm.** Basmul are formule inițială, mediană și finală, proverbe, versuri, interjecții și dialoguri colocviale. **Interpretare.** Împreună, ele dau textului aspect de poveste spusă cu voce tare (oralitate).
+
+<FormuleSiOralitate />
+
+### 6.6. Limbaj, umor și stil
+
+**Despre basm.** Limbajul imită vorbirea: „amu”, „iaca”, „aista”, diminutive („căluțul meu”), imperative („Dă-i cu cinstea, să piară rușinea”), expresii populare introduse cu „vorba ceea”. Umorul vine din situații (casa de aramă, pe care Gerilă o face să înghețe; ospățul, în care Flămânzilă și Setilă golesc tot; furnicile care îl pișcă pe împărat) și din glumele naratorului (la nuntă sunt poftiți și „un păcat de povestar, fără bani în buzunar”).
+
+**Interpretare.** Umorul nu face basmul ușuratic: alături apar momente grave (moartea eroului). El ajută la individualizarea personajelor și la apropierea fantasticului de lumea cunoscută.
+
+### 6.7. Conflictul
+
+**Interpretare.** Conflictul principal este cel dintre Harap-Alb și Spân. La început nu este deschis, pentru că Spânul stăpânește prin înșelăciune și jurământ; devine deschis la final. Există și un **conflict interior**: între naivitate și experiență, între deznădejde („mai bine moarte de o mie de ori!”) și speranță, între dragoste și datorie („pe fata împăratului Roș mai nu-i venea s-o ducă, fiind nebun de dragostea ei”). La nivel simbolic, conflictul este cel dintre bine și rău.
+
+### 6.8. Timpul și spațiul
+
+**Despre basm.** Timpul și spațiul sunt nedeterminate: „într-o țară”, „la o margine a pământului”, „pe vremile acelea”. Distanțele sunt hiperbolice: „peste nouă mări, peste nouă țări și peste nouă ape mari”. Locurile au rol în acțiune: podul (ursul), codrul (rătăcirea), fântâna (închiderea), ostrovul din mijlocul mării (casa Sfintei Duminici), casa de aramă, locul „unde se bat munții în capete”, de unde se aduc smicelele, apa vie și apa moartă.
+
+**Interpretare.** Locurile marchează etape ale drumului: podul, ca prag; fântâna, ca loc al pierderii identității. Succesiunea este liniară, în ordinea cronologică a faptelor.
+
+## 7. Personajele
+
+### 7.1. Tipuri de personaje
+
+**Despre basm.** Personajele pot fi grupate în: protagonist (Harap-Alb), antagonist (Spânul), ajutoare (Sfânta Duminică, calul, furnicile, albinele, cei cinci tovarăși, fata lui Roș) și personaje episodice sau secundare (craiul, frații, Verde-împărat și fetele lui, împăratul Roș).
+
+> **Recomandare.** Unele comentarii folosesc terminologia lui V. Propp (erou, antagonist, donator, ajutor), pe care nu am verificat-o la sursă. La examen poți folosi și termeni mai simpli: personaj principal, personaj-ajutor, personaj negativ.
+
+**Interpretare.** Multe personaje sunt „tipuri”, personificări ale unei însușiri: Spânul, viclenia; Gerilă, frigul; Flămânzilă, foamea. Harap-Alb este singurul care evoluează clar.
+
+### 7.2. Harap-Alb
+
+**Statutul personajului.**
+
+- **Social (despre basm):** fiul mezin al unui crai; după fântână, slugă a Spânului; la final primește împărăția.
+- **Psihologic (interpretare):** sensibil și rușinos la început („făcându-se atunci roș cum îi gotca”), naiv, apoi șovăielnic și, în final, matur.
+- **Moral (interpretare):** milos, loial, își ține cuvântul chiar în situații grele.
+
+**Patru trăsături, fiecare cu episoade:**
+
+1. **Naivitatea.** Cele trei întâlniri cu Spânul și fântâna (5.3).
+2. **Bunătatea.** Banul dat bătrânei, furnicile și albinele (5.4).
+3. **Loialitatea.** Își ține jurământul pe paloș, deși Spânul îl trimite spre primejdii; după probe, își duce stăpânului sălățile „cu toată inima”.
+4. **Stăpânirea de sine și răbdarea.** În groapă, nu răspunde capului cerbului care îl strigă, „tăcea molcum”.
+
+**Despre basm.** Eroul nu este fără defecte. Are momente de deznădejde („mai bine moarte de o mie de ori!”) și Sfânta Duminică îl mustră: „parcă nu te-aș fi crezut așa slab de înger”. Mai târziu șovăie între dragoste și datorie.
+
+<EvolutiaLuiHarapAlb />
+
+> **Recomandare.** Alege **o trăsătură** și **două episoade**, nu patru trăsături. Pentru fiecare episod, arată ce face eroul și ce reiese de aici.
+
+### 7.3. Spânul
+
+**Despre basm.** „Spân” înseamnă, în dicționare, „lipsit de barbă și de mustăți”. Spânul apare de trei ori în codru, deghizat („prefăcut în alte straie”), se oferă ca slugă, apoi îl momește pe fiul de crai în fântână, îi ia identitatea și îl trimite în trei locuri primejdioase. La curte vorbește cu viclenie: „Frica păzește bostănăria”, spune el, iar despre oameni zice că „cea mai mare parte sunt dobitoace, care trebuiesc ținuți din frâu”. La final își taie sluga și este ridicat de cal în cer.
+
+**Interpretare.** Spânul întruchipează **viclenia și ambiția fără scrupule**. Este și o figură comică, aproape caricaturală („Spânului îi mergea gura ca pupăza”, spune naratorul). Unele comentarii îl numesc „rău necesar”, pentru că prin el eroul învață. Textul îl sprijină în parte: calul spune că „unii ca aceștia sunt trebuitori pe lume câteodată, pentru că fac pe oameni să prindă la minte”. Lectura este totuși o interpretare, nu un fapt.
+
+### 7.4. Harap-Alb și Spânul: o comparație
+
+**Interpretare.** Cei doi sunt în opoziție, dar opoziția nu este simplistă: eroul greșește, iar Spânul are momente de teamă și de ciudă („tremurând de ciudă”). Compară-i pe aspecte, cu fapte:
+
+<ComparatieHarapSpan />
+
+### 7.5. Ajutoarele
+
+**Despre basm.**
+
+- **Calul** este tovarășul din tinerețea craiului. Pare o „răpciugă”, dar după ce mănâncă jăratic se scutură și devine frumos și vorbitor. Îl sfătuiește, îl duce pe drumuri și, la sfârșit, îl ridică pe Spân în cer. Eroul îi spune „dragul meu tovarăș”.
+- **Sfânta Duminică** apare mai întâi ca o bătrână cerșetoare, apoi își spune numele și îl ajută la primele două probe ale Spânului.
+- **Furnica și albina** (sau crăiesele lor) dau câte o aripă; ajutoarele vin la mac și nisip și la alegerea fetei.
+- **Cei cinci tovarăși:** Gerilă (frigul), Flămânzilă (foamea), Setilă (setea), Ochilă (vederea) și Păsări-Lăți-Lungilă (se lățește și se lungește). Fiecare rezolvă o încercare la Roș. Păsări-Lăți-Lungilă și Ochilă o prind pe fata lui Roș, care se prefăcuse în păsărică.
+
+**Interpretare.** Ajutoarele nu apar din senin: ele răspund unei calități a eroului (milostenia, mila, deschiderea). Cei cinci sunt exagerări ale unor trăsături omenești și, totodată, personaje comice, care se ceartă și glumesc.
+
+### 7.6. Alte personaje
+
+**Despre basm.**
+
+- **Craiul** își încearcă feciorii și îl sfătuiește pe cel mic: „să te ferești de omul roș, iară mai ales de cel spân”. Despre calul ales spune: „bun tovarăș ți-ai ales”.
+- **Frații mai mari** se întorc speriați de urs și pun în lumină curajul mezinului.
+- **Verde-împărat** este bătrân, bucuros să-și primească nepotul și ușor de înșelat: Spânul vorbește atât de mult, încât împăratul „a uitat și de Harap-Alb, și de cerb, și de tot”.
+- **Fetele lui Verde** simt că Spânul nu le este văr și se uită cu milă la Harap-Alb.
+- **Împăratul Roș** este prezentat de narator, cu rezerve („zice, cică”), ca „un om pâclișit și răutăcios la culme”. Faptele lui (casa de aramă încinsă, probele) îl arată ostil față de pețitori.
+- **Fata lui Roș** se preface în păsărică, pune ultima încercare, îl respinge pe Spân și îl învie pe Harap-Alb.
+
+### 7.7. Relațiile dintre personaje
+
+**Interpretare.** Relațiile se adaugă pe măsură ce eroul înaintează: întâi tovărășia cu calul și ajutorul Sfintei Duminici, apoi stăpânirea Spânului, apoi ajutoarele din probe, apoi dragostea.
+
+<HartaRelatiilorHarap />
+
+### 7.8. Modalitățile de caracterizare
+
+**Despre basm.** Personajele sunt caracterizate:
+
+- **direct**, de narator („boboc în felul său la trebi de aieste”), de alte personaje (Sfânta Duminică: „slab de înger”; Verde-împărat: „o slugă așa de vrednică și credincioasă”) sau de ele însele (Spânul: „Mie unuia știu că nu-mi suflă nimene în borș”);
+- **indirect**, prin fapte, vorbe, relațiile cu ceilalți (bunătatea lui Harap-Alb reiese din furnici și albine, stăpânirea de sine din tăcerea în fața cerbului).
+
+<CaracterizareHarap />
+
+## 8. Redactarea eseului
+
+### 8.1. Ce cere baremul
+
+> **Cerință oficială.** Pentru redactarea eseului se acordă 12 puncte: existența părților componente (introducere, cuprins, încheiere) – 1 punct; logica înlănțuirii ideilor – 1 punct; abilități de analiză și de argumentare – 3 puncte; utilizarea limbii literare – 2 puncte; ortografia – 2 puncte; punctuația – 2 puncte; așezarea în pagină, lizibilitatea – 1 punct. Eseul trebuie să aibă minimum 400 de cuvinte și să dezvolte subiectul propus.
+> Sursa: Barem, Bacalaureat 2026, Varianta 3, p. 2.
+
+### 8.2. Plan: construcția personajului Harap-Alb
+
+> **Recomandare.** Planul de mai jos este unul posibil, nu singurul corect. Ordinea reperelor este la alegere.
+
+1. **Introducere:** autorul, titlul, specia (basm cult) și personajul ales.
+2. **Statutul social, psihologic și moral** al lui Harap-Alb, legat de text (7.2).
+3. **O trăsătură prin două episoade**, de exemplu bunătatea (furnicile și albinele) sau naivitatea (fântâna).
+4. **Două elemente de structură sau de limbaj**, de exemplu probele și modalitățile de caracterizare sau oralitatea, cu relevanța lor pentru personaj.
+5. **Încheiere:** o judecată de valoare argumentată.
+
+### 8.3. Plan: particularitățile basmului cult
+
+> **Recomandare.** Pentru o cerință despre particularitățile basmului: încadrarea (specia și două trăsături ilustrate în text), tema cu două secvențe comentate, două elemente de structură sau de limbaj (de exemplu, incipitul și finalul sau perspectiva narativă). Alege un plan și respectă-l.
+
+<PlanEseuHarap />
+
+### 8.4. Formulări-model
+
+> **Recomandare.** Modelele de mai jos arată cum se leagă faptul de interpretare. Sunt exemple de construcție, nu texte de memorat; formulează cu cuvintele tale.
+
+**Model de introducere (personaj).** „În «Povestea lui Harap-Alb», basm cult publicat de Ion Creangă în *Convorbiri literare*, protagonistul este fiul mezin al unui crai, care ajunge slugă prin înșelăciune și își câștigă, prin probe, locul de urmaș la împărăție. Statutul lui social se schimbă, iar cel psihologic și moral se maturizează.”
+
+**Model de comentariu (episod).** „Naivitatea eroului se vede în episodul fântânii. Deși tatăl îl avertizase să se ferească de omul spân, fiul de crai se bagă în fântână «fără să-i trăsnească prin minte ce i se poate întâmpla», iar naratorul îl numește «boboc în felul său». Prin acest episod, Creangă arată că neexperiența se plătește, dar și că lecția greșelii este începutul maturizării.”
+
+**Model de justificare a relevanței (element de limbaj).** „Oralitatea este un element de limbaj relevant pentru construcția lui Harap-Alb, pentru că personajul se caracterizează prin vorbă și prin faptă într-un registru familiar. De pildă, când e disperat, el spune «mai bine moarte de o mie de ori!», iar replica arată slăbiciunea unui om, nu pe cea a unui erou fără greș.”
+
+### 8.5. Greșeli de evitat
+
+- Spânul și împăratul Roș sunt personaje diferite, cu roluri diferite.
+- Harap-Alb nu îl ucide pe Spân: îl ridică în cer calul.
+- Harap-Alb nu rămâne mort: fata lui Roș îl învie.
+- Sfânta Duminică nu apare doar la probe: prima dată este o bătrână cerșetoare, căreia eroul îi dă un ban.
+- Basmul nu are capitole. Nu scrie „în capitolul…”.
+- Nu atribui eroului o trăsătură fără un episod care să o susțină.
+- Nu cita din memorie. Verifică formularea în text.
+- Nu prezenta o interpretare ca fapt (de exemplu, „Spânul este un rău necesar”).
+
+## 9. Sinteză pentru eseu
+
+### 9.1. Ideile centrale
+
+**Interpretare.** Idei pe care le poți folosi, fiecare cu episoade din text:
+
+- Harap-Alb parcurge un **drum de maturizare**: de la naivitate (fântâna), prin slujire și probe, la recunoaștere și împărăție.
+- Bunătatea și milostenia sunt **răsplătite**: banul dat bătrânei, furnicile, albinele.
+- Eroul nu reușește **singur**: calul, Sfânta Duminică, tovarășii și fata lui Roș îl ajută, dar nu îl scutesc de efort.
+- Spânul este **antagonistul** prin care se verifică eroul: vicleșug și amenințare contra răbdare și credință.
+- Basmul este **cult** prin oralitate, umor, individualizare și fantastic umanizat, adică prin voce și limbaj.
+- Finalul **iese din lumea basmului**: „Iar pe la noi…”.
+
+### 9.2. Laborator de interpretare
+
+**Recomandare.** Alege un episod și vezi cum îl poți lega de o trăsătură, de temă și de un element de structură sau de limbaj. Fiecare rând este un model de gândire.
+
+<LaboratorInterpretare />
+
+## 10. Autoevaluare
+
+> **Recomandare.** După ce scrii eseul, verifică-l cu lista de mai jos. Lista este o recomandare a lecției, nu un barem oficial.
+
+<AutoevaluareHarap />
+
+## Surse
+
+**Textul basmului** (citatele din lecție au fost confruntate în ambele ediții):
+
+- **A.** *Povestea lui Harap-Alb*, ro.wikisource.org, revizia 152404 (24 septembrie 2026), consultată pe 25 octombrie 2026. Ortografie actuală. Pagina este marcată „calitate 100%” și nu indică ediția-sursă.
+- **B.** Ion Creangă, *Povești, amintiri, povestiri*, colecția „Biblioteca pentru toți”, Editura pentru Literatură, ediția a II-a, 1967, prefață de Al. Piru. Textele sunt reproduse după *Opere* de Ion Creangă (ediție de Iorgu Iordan și Elisabeta Brîncuș). Scanare cu text OCR pe Internet Archive (identificator `6-ion-creanga-povesti-amintiri-povestiri-1967`). Nota de la sfârșitul basmului: „Convorbiri literare, 1 august 1877”.
+
+**Documente oficiale:** programa de examen (Anexa nr. 2 la OMEN nr. 4.923/2013), subiectele și baremele Bacalaureat 2026 (Varianta 3 și Model), programa Bacalaureat 2030 (în `references/bac-romana/`).
+
+**Dicționare:** dexonline.ro, intrările „spân” și „arap”/„harap”.
+
+**Surse secundare:** comentariul școlar din `references/bac-romana/comentarii-opere-romana.pdf` (p. 21–25 ale fișierului), folosit doar pentru confruntare. Raportul de audit (`docs/rapoarte/audit-povestea-lui-harap-alb-2026-10-25.md`) arată ce afirmații au fost verificate, ce a fost exclus și ce rămâne incert.

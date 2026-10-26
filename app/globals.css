@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
+/*
+ * Theme: the inline script in app/layout.tsx sets data-theme="light" | "dark" on <html> before
+ * the first paint. Without JavaScript there is no data-theme, and the system preference applies.
+ */
+@custom-variant dark {
+  &:where([data-theme="dark"], [data-theme="dark"] *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme]), :root:not([data-theme]) *) {
+      @slot;
+    }
+  }
+}
+
+/* Semantic colour tokens. Components use bg-canvas, bg-surface, border-line, text-ink… */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --canvas: #f4f6fb;
+  --canvas-accent: #e3eafc;
+  --surface: #ffffff;
+  --surface-muted: #eef1f8;
+  --line: #dde2ed;
+  --line-strong: #c3cad9;
+  --ink: #0f172a;
+  --ink-body: #283247;
+  --ink-muted: #4c566b;
+  --accent: #2459d6;
+  --accent-hover: #1c47b3;
+  --accent-ink: #1d4bbd;
+  --accent-soft: #e6edfd;
+  --on-accent: #ffffff;
+}
+
+:root {
+  /* Applies through the dark variant above: data-theme="dark", or the system preference without JS. */
+  @variant dark {
+    color-scheme: dark;
+    --canvas: #0a0a0b;
+    --canvas-accent: color-mix(in oklab, #1e3a8a 45%, transparent);
+    --surface: #18181b;
+    --surface-muted: #1f1f23;
+    --line: #27272a;
+    --line-strong: #3f3f46;
+    --ink: #ffffff;
+    --ink-body: #e4e4e7;
+    --ink-muted: #a1a1aa;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --accent-ink: #93b4fd;
+    --accent-soft: #172554;
+    --on-accent: #ffffff;
+  }
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-canvas: var(--canvas);
+  --color-canvas-accent: var(--canvas-accent);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-ink-body: var(--ink-body);
+  --color-ink-muted: var(--ink-muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-on-accent: var(--on-accent);
+  /* Kept for existing code that reads the create-next-app names. */
+  --color-background: var(--canvas);
+  --color-foreground: var(--ink);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Short colour cross-fade, only while the reader switches theme (never on load). */
+  html.theme-switching,
+  html.theme-switching *,
+  html.theme-switching *::before,
+  html.theme-switching *::after {
+    transition-property: background-color, border-color, color, fill, stroke !important;
+    transition-duration: 200ms !important;
+    transition-timing-function: ease-out !important;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--canvas);
+  /* A soft wash at the top keeps the light theme from being a flat white sheet. */
+  background-image: radial-gradient(ellipse 80% 420px at 50% -120px, var(--canvas-accent), transparent);
+  background-repeat: no-repeat;
+  color: var(--ink-body);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
 }
