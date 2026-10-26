@@ -1,0 +1,370 @@
+export const lesson = {
+  id: "romana-enigma-otiliei-calinescu",
+  slug: "enigma-otiliei",
+  subject: "romana",
+  title: "„Enigma Otiliei” de George Călinescu",
+  author: "George Călinescu",
+  sections: ["teorie"],
+  status: "draft-neverificat",
+  lastReviewed: null,
+  referenceAnalysis: "docs/rapoarte/audit-enigma-otiliei-2026-10-26.md",
+};
+
+import {
+  AutoevaluareOtilia,
+  CaracterizareOtilia,
+  FaptSauInterpretareOtilia,
+  HartaRelatiilorOtilia,
+  IncipitSiFinalOtilia,
+  OtiliaVazutaDeCeilalti,
+  PersonajeTipOtilia,
+  PlanEseuOtilia,
+  StructuraRomanuluiOtilia,
+  TrasaturiRealismOtilia,
+} from "@/components/lesson/figures/enigma-otiliei";
+
+# „Enigma Otiliei” de George Călinescu
+
+> **Stadiul lecției:** material în curs de verificare. Acțiunea, personajele și citatele au fost verificate pe textul romanului, într-o singură ediție (vezi Surse), dar lecția nu a fost încă validată de un profesor. Pentru examen, citește romanul integral și consultă manualul și profesorul tău.
+
+## Cum să folosești această lecție
+
+Informațiile din lecție sunt marcate după tipul lor:
+
+- **Despre roman** – ce se întâmplă în text: personaje, acțiune, structură. Le poți verifica citind romanul.
+- **Interpretare** – o lectură posibilă, susținută cu exemple din text, dar nu singura corectă. La examen poți susține și alte interpretări, dacă le argumentezi.
+- **Cerință oficială** – ce scrie în documentele oficiale ale examenului, cu documentul și pagina.
+- **Recomandare** – sfaturi de învățare și de redactare. Nu sunt cerințe ale examenului.
+
+Romanul are 20 de capitole, numerotate cu cifre romane și fără titluri. Citatele sunt urmate de capitol și de pagina din ediția folosită: G. Călinescu, *Enigma Otiliei*, „Biblioteca pentru toți”, Editura pentru Literatură, 1967, în două volume (de exemplu, „vol. I, p. 3”). Dacă ai altă ediție, paginile vor fi altele.
+
+Ediția din 1967 scrie cu „î” în interiorul cuvântului („tînăr”) și „sînt”. Lecția redă citatele în ortografia actuală („tânăr”, „sunt”), fără alte schimbări.
+
+## 1. Ce trebuie să știi despre examen
+
+> **Cerință oficială.** Programa de bacalaureat enumeră „G. Călinescu” printre cei 17 autori canonici și precizează că examenul presupune „studierea a cel puțin unui text din opera acestora”.
+> Sursa: Programa de examen pentru disciplina Limba și literatura română, Anexa nr. 2 la Ordinul ministrului educației naționale nr. 4.923/29.08.2013, p. 6 (ambele variante ale programei). Este programa indicată pentru sesiunile 2026 și 2027 (vezi lecția „Ion”, secțiunea 1).
+
+Programa **nu** numește un roman anume de Călinescu. „Enigma Otiliei” este textul ales pentru această lecție, nu o operă impusă de programă.
+
+> **Cerință oficială.** La contextul cultural, aceeași programă cere „perioada interbelică (orientări tematice în romanul interbelic, tipuri de roman: psihologic și al experienței […])” și, între curente, „realismul”.
+> Sursa: aceeași programă, p. 5 (competența 3.2).
+
+**Ce înseamnă asta pentru tine.** În fișierele cu subiecte 2026 din proiect (Model și variantele 3–6, toate filierele), **nicio cerință nu îl numește pe Călinescu**. Cerințele de la Subiectul al III-lea numesc alți autori canonici (de exemplu, „aparținând lui Liviu Rebreanu sau lui Camil Petrescu”, Varianta 4) sau doar o specie ori o perioadă („un roman scris după 1980”, Model, profil umanist). Prin urmare:
+
+- o cerință care îl numește pe G. Călinescu îți permite să scrii despre „Enigma Otiliei”;
+- o cerință formulată prin perioadă sau specie (de exemplu, una care cere un roman interbelic) ar putea-o permite, dacă formularea se potrivește;
+- o cerință care numește alți autori **nu** o permite.
+
+> **Cerință oficială.** Programa pentru examenul din **2030** îl păstrează pe George Călinescu între autorii canonici. La „Perioada interbelică”, ea trece „Realismul în romanul interbelic” și, între forme, „romanul citadin (text integral)”.
+> Sursa: Programe de examen pentru disciplina Limba și literatura română, Examenul național de bacalaureat – 2030, Monitorul Oficial nr. 737 bis/2.IX.2026, p. 9 și 28. Programa 2030 nu se aplică sesiunilor actuale; o menționăm doar ca reper.
+
+> **Recomandare.** Pregătește romanul pentru ambele tipuri de cerințe din 2026: particularitățile unui text narativ și construcția unui personaj (Otilia sau Felix). Întreabă-ți profesorul ce text de Călinescu ați studiat: programa lasă alegerea textului la clasă.
+
+## 2. Fișă rapidă
+
+**Despre roman** (date verificate în ediția din 1967; vezi Surse):
+
+- **Autor:** George Călinescu (19 iunie 1899, București – 12 martie 1965, după tabelul cronologic al ediției, vol. I, p. XIX și XXXIII), critic și istoric literar, poet și prozator. Prefața ediției pomenește și alte romane ale lui: *Cartea nunții* (1933) și *Bietul Ioanide*.
+- **Apariție:** 1938, după prefața ediției din 1967 (vol. I, p. V–VI). Lecția nu dă editura primei ediții: ea nu apare în paginile verificate.
+- **Gen / specie:** epic / roman.
+- **Structură:** 20 de capitole numerotate, fără titluri.
+- **Timpul:** acțiunea începe „într-o seară de la începutul lui iulie 1909” (cap. I) și se încheie cu un epilog petrecut după război, „peste câțiva ani” (cap. XX).
+- **Spațiul:** Bucureștiul: strada Antim, cu casa lui moș Costache și casa vecină a familiei Tulea. Felix și Otilia merg și la moșia lui Pascalopol, coborând „în gara Ciulnița” (cap. VI).
+- **Narator:** la persoana a III-a, care nu participă la acțiune.
+- **Personaje:** Felix Sima, orfan venit din Iași să studieze la București; Otilia Mărculescu, fiica celei de-a doua soții a lui moș Costache; Costache Giurgiuveanu (moș Costache), tutorele lui Felix; Leonida Pascalopol, moșier; Aglae Tulea, sora lui Costache, cu soțul ei, Simion, și copiii Olimpia, Aurica și Titi; Stănică Rațiu, avocat, soțul Olimpiei; Marina, servitoarea; Georgeta; Weissmann, colegul lui Felix.
+
+<StructuraRomanuluiOtilia />
+
+## 3. Încadrarea: roman realist, de tip balzacian
+
+### 3.1. Ce cere baremul
+
+> **Cerință oficială.** Reperul „evidențierea a două trăsături care fac posibilă încadrarea textului narativ studiat într-o perioadă, într-un curent cultural/literar sau într-o orientare tematică” se notează cu 6 puncte: precizarea încadrării (2 puncte), numirea a două trăsături (2 × 1 punct) și evidențierea lor prin valorificarea textului (2 × 1 punct).
+> Sursa: Barem, Bacalaureat 2026, Varianta 4, p. 2. Cerința din această variantă se referă la alți autori; baremul arată doar cum se notează reperul.
+
+### 3.2. Încadrări posibile
+
+> **Recomandare.** Alege **o singură** încadrare și folosește-o în tot eseul.
+
+- **Curent literar: realismul.** Programa îl enumeră între curentele studiate (Programa 2014, p. 5). Romanul are trăsături realiste ușor de arătat în text (vezi 3.3).
+- **Perioadă: perioada interbelică.** Romanul a apărut în 1938. Programa cere „orientări tematice în romanul interbelic” (p. 5). Dacă alegi perioada, arată în text trăsăturile romanului, nu doar anul apariției.
+- **Orientare tematică: romanul citadin.** Acțiunea se petrece la București, iar orașul are un rol important în roman (strada, casele, familia burgheză). Prefața ediției din 1967 îl socotește pe Călinescu, alături de Camil Petrescu și Hortensia Papadat-Bengescu, între „creatorii adevăratului roman citadin la noi” (vol. I, p. VIII). Termenul apare și în programa pentru 2030; pentru 2026–2027, folosește-l ca orientare tematică și argumentează-l.
+
+**De ce „balzacian”.** Honoré de Balzac este romancierul francez care a pus banul și moștenirea în centrul romanelor lui și a legat caracterul personajelor de mediul în care trăiesc. Prefața ediției din 1967, semnată de Paul Georgescu, spune că „Cu *Enigma Otiliei* (1938) asistăm la un triumf (aș zice la o invazie) a realismului în formula balzaciană” (vol. I, p. VI) și că „romanul e balzacian în zidăria lui” (p. IX).
+
+> **Recomandare.** „Balzacian” este o etichetă a criticii, nu un termen din programă. Poți scrie „roman realist de tip balzacian”, dar explică ce înseamnă și arată în text.
+
+### 3.3. Trăsături ale realismului balzacian în roman
+
+**Interpretare.** Patru trăsături care pot fi arătate în „Enigma Otiliei”, fiecare cu elementul din text care o susține:
+
+1. **Repere precise de timp și de spațiu.**
+   - Trăsătura: romanul realist creează impresia de viață reală prin date și locuri exacte.
+   - În roman: „Într-o seară de la începutul lui iulie 1909, cu puțin înainte de orele zece, un tânăr de vreo optsprezece ani, îmbrăcat în uniformă de licean, intra în strada Antim, venind dinspre strada Sfinții Apostoli” (cap. I; vol. I, p. 3).
+2. **Mediul descris în detaliu, care spune ceva despre personaje.**
+   - Trăsătura: casele, străzile și obiectele sunt descrise amănunțit, iar descrierea pregătește portretul celor care le locuiesc.
+   - În roman: strada Antim este „o caricatură în moloz a unei străzi italice” (vol. I, p. 4), iar casa lui moș Costache are „patru ferestre de o înălțime absurdă” (p. 5). Interiorul arată „intenția de a executa grandiosul clasic în materiale atât de nepotrivite” (p. 7). Casa veche și dărăpănată anunță un stăpân zgârcit.
+3. **Banul și moștenirea în centrul conflictului.**
+   - Trăsătura: personajele sunt mânate de interese materiale.
+   - În roman: familia Tulea pândește averea lui moș Costache și se opune adoptării Otiliei („Niciodată! Cât trăiesc eu, niciodată”, spune Aglae, cap. IX; vol. I, p. 230). Conflictul culminează cu furtul banilor bătrânului (cap. XX; vol. II, p. 311). Prefața rezumă: „întreg conflictul cărții e lupta titanică pentru moștenirea unei case părăsite” (vol. I, p. IX).
+4. **Personaje-tip.**
+   - Trăsătura: personajul ilustrează o categorie umană.
+   - În roman: prefața ediției le numește astfel: „moș Costache e Avarul, Aurica e Fata bătrână, Otilia e Adolescenta, Aglae, «baba absolută», iar Stănică Rațiu, Arivistul demagog” (vol. I, p. VIII). În text, avariția lui moș Costache se vede în fapte: ține banii asupra lui și apoi sub saltea (vol. II, p. 303).
+
+> **Recomandare.** Pentru reperul de încadrare, două trăsături bine arătate în text valorează mai mult decât multe trăsături doar enumerate.
+
+<TrasaturiRealismOtilia />
+
+### 3.4. Ce nu se potrivește cu formula balzaciană
+
+**Interpretare.** Romanul nu este doar „balzacian”. Otilia nu se lasă închisă într-un tip: o vedem schimbătoare, de la o scenă la alta, mai ales prin ochii lui Felix. Prefața observă că scriitorul a renunțat aici la „formula clasicistă” ca să păstreze „indeterminarea Otiliei” (vol. I, p. XVI). Tot prefața numește câteva elemente romantice, precum „Opoziția Otilia-Aglae (angelic-demonic)” și descrierea Bărăganului (p. XI). Finalul rămâne deschis: nu aflăm ce a gândit Otilia, ci doar ce spun alții despre ea.
+
+Poți folosi aceste observații la elementele de structură (perspectiva narativă, finalul), nu la încadrarea în realism.
+
+## 4. Tema, titlul și viziunea despre lume
+
+### 4.1. Tema
+
+**Interpretare.** O formulare posibilă a temei: **viața unei familii bucureștene de la începutul secolului al XX-lea, dominată de lupta pentru moștenirea lui moș Costache, văzută prin ochii lui Felix, care trăiește în această casă prima lui iubire.**
+
+Alte formulări la fel de bune pun accentul pe **moștenire și pe puterea banului**, pe **formarea unui tânăr** (Felix) sau pe **iubirea** dintre Felix și Otilia.
+
+> **Recomandare.** Formulează tema într-o propoziție, apoi leagă de ea fiecare secvență comentată.
+
+### 4.2. Titlul
+
+**Despre roman.** Cuvântul „enigmă” apare în roman în replicile personajelor și ale naratorului. Pascalopol spune despre Otilia, în epilog: „A fost o fată delicioasă, dar ciudată. Pentru mine e o enigmă.” Naratorul adaugă: „Nu numai Otilia era o enigmă, ci și destinul însuși.” (cap. XX; vol. II, p. 348)
+
+**Interpretare.** Otilia este „enigmatică” pentru că o vedem mai ales din afară, prin ochii celor care o iubesc: Felix nu o înțelege („E o fată admirabilă, pe care n-o înțeleg”, cap. XI; vol. I, p. 299), iar Pascalopol o numește o enigmă. Finalul extinde enigma de la o fată la destinul oamenilor. Prefața ediției scrie, comparând-o cu eroina altui roman al lui Călinescu: „Otilia este enigmatică” (vol. I, p. XVI).
+
+> **Recomandare.** Unele materiale școlare afirmă că romanul s-a numit inițial „Părinții Otiliei”. Nu am găsit această informație în ediția verificată, așa că lecția nu o prezintă ca pe un fapt. Dacă vrei să o folosești, verific-o într-o sursă de istorie literară și citeaz-o.
+
+### 4.3. Viziunea despre lume
+
+**Interpretare.** Lumea romanului este una în care banul strică relațiile de familie. Aglae și ai ei își pândesc fratele bolnav; Stănică îl fură pe bătrânul care moare; moș Costache o iubește pe Otilia, dar nu se poate despărți de bani ca să-i asigure viitorul. Doi tineri, Felix și Otilia, rămân în afara acestei lupte: amândoi sunt orfani, iar prefața spune că sunt „doar două personaje” care scapă „determinismului social și caracterologic, prin tinerețea lor” (vol. I, p. X). Finalul nu este însă optimist: Felix își face cariera, dar o pierde pe Otilia, iar casa din strada Antim ajunge o ruină.
+
+## 5. Secvențe semnificative pentru temă
+
+### 5.1. Ce cere baremul
+
+> **Cerință oficială.** Reperul „comentarea a două episoade/secvențe semnificative pentru tema textului narativ studiat” se notează cu 6 puncte: precizarea temei (2 puncte) și comentarea fiecărui episod (2 + 2 puncte). Pentru „simpla numire a unor episoade/secvențe sau tendința de rezumare” se acordă doar 1 punct pe episod.
+> Sursa: Barem, Bacalaureat 2026, Varianta 4, p. 2.
+
+### 5.2. Secvența 1: sosirea lui Felix în strada Antim
+
+**Despre roman** (cap. I). Felix Sima, care terminase liceul la Iași, vine la București la tutorele lui, Costache Giurgiuveanu. Strada și casa sunt descrise pe larg (vezi 3.3). Bătrânul care îi deschide îl privește „vădit contrariat” și îi răspunde: „Nu-nu-nu știu... nu-nu stă *nimeni* aici, nu cunosc...” (vol. I, p. 8). Abia când Felix sună a doua oară, o „voce cristalină” strigă de sus: „Dar, papa, e Felix!” (p. 12). Otilia îl primește: „Eu sunt Otilia.” (p. 13). În salon, Felix îi găsește pe Pascalopol și pe Aglae jucând table, pe Aurica privind jocul și pe Simion brodând „pe un mic gherghef” (p. 13–16). Aglae îl primește ostil: „N-am știut: faci azil de orfani.” (p. 17)
+
+**Interpretare (comentariu posibil).** Incipitul prezintă lumea romanului prin ochii unui tânăr care vine din afară. Descrierea străzii și a casei anunță zgârcenia și decăderea, iar primirea lui moș Costache, care își neagă propria casă, arată un om bănuitor, care se teme de orice cheltuială. Otilia apare de sus, ca o „voce cristalină”, opusă bătrânului și Aglaei. Scena din salon adună aproape toate personajele și conflictele: Pascalopol o admiră pe Otilia, Aglae îl vede pe Felix ca pe un intrus. Secvența este importantă pentru temă pentru că așază de la început problema moștenirii (cine are drept la casa lui Costache) și privirea lui Felix.
+
+### 5.3. Secvența 2: moartea lui moș Costache
+
+**Despre roman** (cap. XX). Bolnav, moș Costache îi dă lui Pascalopol, pentru Otilia, „un pachețel de o sută de mii” și păstrează restul banilor sub saltea (vol. II, p. 303). Familia Tulea scoate între timp lucrurile din casă, „ca să nu simtă bătrânul” (p. 305). Otilia îl îngrijește, iar naratorul notează: „Otilia era socotită ușuratică și se dovedea devotată.” (p. 307). Într-o zi, Stănică o convinge pe Otilia să iasă în oraș, rămâne singur cu bătrânul, scoate pachetul cu bani de sub saltea și pleacă. Bătrânul strigă „Banii, ba-banii, pu-pungașule!” și se prăbușește (p. 311). Când familia îl găsește mort, Stănică pretinde că plecase doar ca să o cheme pe Aurica, la rugămintea Otiliei, iar Aglae caută banii prin toată casa.
+
+**Interpretare (comentariu posibil).** Aici tema moștenirii ajunge la capăt. Bătrânul moare pentru că nu s-a putut despărți de bani la timp, iar banii nu ajung nici la Otilia, nici la familie, ci la cel mai abil dintre pândari. Scena are ceva grotesc: rudele scotocesc casa lângă trupul bătrânului. Replica bâlbâită a lui moș Costache, care repetă silabele ca în tot romanul, face ca moartea lui să fie și tragică, și comică. Secvența este punctul culminant al conflictului pentru moștenire.
+
+### 5.4. Secvența 3: plecarea Otiliei și epilogul
+
+**Despre roman** (cap. XX). După moartea lui moș Costache, Otilia îi explică lui Felix că „pentru o fată, reușita în viață nu e o chestiune de studiu și de energie” și că „Rostul femeii este să placă, în afară de asta nu poate fi fericire!” (vol. II, p. 337–338). Într-o noapte vine în camera lui, îi spune că acum nu se pot căsători și doarme în patul lui, în timp ce Felix doarme pe o canapea (p. 344–345). A doua zi pleacă devreme, cu Pascalopol, la Paris. Felix primește o carte poștală: „Cine a fost în stare de atâta stăpânire, e capabil să învingă și o dragoste nepotrivită pentru marele lui viitor.” (p. 346). Află că Otilia se căsătorise cu Pascalopol. În epilog, Felix este profesor universitar, iar Stănică s-a însurat cu Georgeta și a ajuns prefect (p. 347). Pascalopol, îmbătrânit, îi arată o fotografie a Otiliei, acum soția altcuiva, și îi spune că el însuși îi redase libertatea (p. 348). Felix trece apoi prin strada Antim și găsește casa părăginită; își amintește replica bătrânului: „Aici nu stă *nimeni*!” (p. 349)
+
+**Interpretare (comentariu posibil).** Otilia renunță la Felix ca să nu-i încurce cariera, dar și pentru că vede lucid ce îi rezervă viața unei femei fără avere. Felix devine ce își dorise („Am de gând să mă specializez, să devin un nume”, p. 336), dar pierde iubirea. Fotografia arată o femeie „frumoasă, cu linii fine, dar nu era Otilia” (p. 348): timpul a șters fata pe care o iubise. Ultima replică întoarce romanul la începutul lui: casa care la sosirea lui Felix era a nimănui este acum, cu adevărat, pustie.
+
+### 5.5. Fapt sau interpretare?
+
+> **Recomandare.** La eseu, separă ce spune textul de ce interpretezi tu. Un enunț care spune ce face un personaj este un fapt; unul care spune ce „arată” sau ce „simbolizează” este, de regulă, o interpretare. Exersează distincția:
+
+<FaptSauInterpretareOtilia />
+
+## 6. Structură, compoziție și tehnici narative
+
+### 6.1. Ce cere baremul
+
+> **Cerință oficială.** Pentru fiecare dintre cele două elemente de structură, de compoziție și/sau de limbaj se acordă 3 puncte pentru analiza cu justificarea relevanței, 2 puncte fără justificarea relevanței și 1 punct pentru abordarea schematică. Exemplele din subiect sunt: „acțiune, conflict, relații temporale și spațiale, incipit, final, tehnici narative, instanțe ale comunicării narative, perspectivă narativă, registre stilistice, limbaj etc.”
+> Sursa: Subiect și barem, Bacalaureat 2026, Varianta 4, p. 2.
+
+### 6.2. Structura și firele narative
+
+**Despre roman.** Cele 20 de capitole urmăresc, în ordine cronologică, viața din casa lui moș Costache de la sosirea lui Felix, în iulie 1909, până la moartea bătrânului și plecarea Otiliei. Ultimele pagini sar câțiva ani, după război. Câteva repere: excursia la moșia lui Pascalopol (cap. VI), opoziția Aglaei față de adoptarea Otiliei (cap. IX), cartea poștală trimisă de Otilia de la Paris (cap. XII), un atac al bolii lui moș Costache („L-a lovit damblaua”, spune Stănică, cap. XII), căderea bătrânului printre cărămizi (cap. XVIII), moartea lui și plecarea Otiliei (cap. XX).
+
+**Interpretare.** Acțiunea are două fire care se împletesc:
+
+- **firul moștenirii**: familia Tulea și Stănică pândesc averea lui moș Costache, iar bătrânul amână să o ajute pe Otilia;
+- **firul formării lui Felix**: studiile, prietenia și iubirea pentru Otilia, rivalitatea cu Pascalopol.
+
+Cele două fire se întâlnesc în casa din strada Antim și se rezolvă în același capitol: moartea bătrânului o lasă pe Otilia fără sprijin și grăbește plecarea ei.
+
+### 6.3. Incipitul și finalul
+
+**Despre roman.** Romanul începe cu o dată și un loc precise și cu descrierea străzii Antim și a casei lui moș Costache, la care Felix primește răspunsul „nu-nu stă *nimeni* aici” (cap. I; vol. I, p. 3–8). Se încheie tot în strada Antim: casa este „leproasă, înnegrită”, poarta e „ținută cu un lanț”, iar Felix își amintește aceeași replică: „Aici nu stă *nimeni*!” (cap. XX; vol. II, p. 348–349).
+
+**Interpretare.** Incipitul și finalul se oglindesc: aceeași stradă, aceeași casă, aceeași replică. Romanul are o **structură circulară**. Între cele două momente, sensul replicii se schimbă: la început era o minciună a bătrânului, la sfârșit este adevărul.
+
+**Justificarea relevanței (exemplu):** simetria incipit–final susține tema. Casa pentru care s-a luptat toată familia ajunge goală, iar Felix, care o privește la sfârșit ca un străin, înțelege că lumea tinereții lui s-a încheiat.
+
+<IncipitSiFinalOtilia />
+
+### 6.4. Perspectiva narativă
+
+**Despre roman.** Naratorul relatează la persoana a III-a și nu participă la acțiune. Cunoaște gândurile mai multor personaje: ale lui Felix, dar și ale lui Stănică („Mama ta de pezevenghi — gândi Stănică, în sinea lui”, vol. II, p. 304) sau ale Otiliei, care se roagă „în gând” (p. 339). Cele mai multe scene sunt însă văzute prin ochii lui Felix: el sosește în casă la început și el o privește la sfârșit.
+
+**Interpretare.** Perspectiva este a unui narator **omniscient**, dar romanul folosește mult **privirea lui Felix**. Prefața spune că Felix este „în carte martorul” (vol. I, p. XV). Așa se explică titlul: Otilia este o enigmă mai ales pentru că o vedem cu ochii lui Felix, care nu o înțelege.
+
+**Justificarea relevanței (exemplu):** pentru că naratorul ne arată Otilia mai ales din afară, cititorul o descoperă la fel ca Felix: îi vede gesturile, îi aude vorbele, dar nu îi cunoaște până la capăt motivele. Perspectiva aleasă construiește chiar „enigma” din titlu.
+
+### 6.5. Conflictul
+
+**Despre roman.** Aglae și familia ei vor ca averea lui moș Costache să rămână în familie și se opun adoptării Otiliei (cap. IX). Felix și Pascalopol o iubesc amândoi pe Otilia. Stănică se amestecă în toate, ca să profite.
+
+**Interpretare.** Conflictul principal este **exterior** și **social-economic**: lupta pentru moștenire. Lui i se adaugă un conflict **erotic**, între Felix și Pascalopol, și un conflict **interior**, al Otiliei, care trebuie să aleagă între iubirea pentru Felix și siguranța oferită de Pascalopol.
+
+**Justificarea relevanței (exemplu):** conflictul pentru moștenire leagă cele două fire ale acțiunii. Din cauza lui, Otilia rămâne fără avere, iar lipsa averii explică alegerea ei din final.
+
+### 6.6. Tehnica descrierii
+
+**Despre roman.** Personajele sunt prezentate adesea printr-un portret fizic amănunțit, imediat după ce apar. Moș Costache este „un omuleț subțire și puțin încovoiat”, cu „o calviție totală”, cu buzele „galbene de prea mult fumat” (cap. I; vol. I, p. 8). Pascalopol este „un om cam de vreo cincizeci de ani, oarecum voluminos”, cu „tăietura englezească a mustății cărunte” (p. 13).
+
+**Interpretare.** Descrierea merge de la exterior spre interior: strada, casa, camera, apoi omul. Detaliul fizic anunță caracterul: bătrânul care clipește „întocmai ca bufnițele supărate de o lumină bruscă” (p. 8) este un om care se ascunde de ceilalți. Aceasta este o tehnică pe care critica o leagă de romanul balzacian.
+
+## 7. Personajele
+
+### 7.1. Ce cere baremul
+
+> **Cerință oficială.** La cerința despre construcția unui personaj, reperele sunt: „prezentarea statutului social, psihologic, moral etc. al personajului ales” (6 puncte); „evidențierea unei trăsături a personajului ales, prin două episoade/secvențe comentate” (6 puncte); analiza a două elemente de structură, de compoziție și/sau de limbaj relevante pentru construcția personajului (2 × 3 puncte).
+> Sursa: Subiect și barem, Bacalaureat 2026, Model, p. 2 (cerința a vizat alt autor).
+
+### 7.2. Otilia Mărculescu
+
+**Statutul social.**
+
+- **Despre roman:** este fata vitregă a lui moș Costache, „din a doua” lui căsătorie, cum îi explică Pascalopol medicului (cap. XX; vol. II, p. 304). Pentru lume trece „drept fata lui Costache” (cap. I; vol. I, p. 10). Cântă la pian. Nu are avere proprie: tot ce primește depinde de bătrân și de Pascalopol.
+- **Interpretare:** este o orfană fără protecție legală. De aceea Aglae se teme de adoptarea ei, iar viitorul ei depinde de bărbații din jur.
+
+**Statutul psihologic.**
+
+- **Despre roman:** trece repede de la joacă la gravitate. Când Felix îi spune „Pentru mine, Otilia, ai început să devii o enigmă”, ea „se răsucise încet pe taburet și cânta la pian, fără să răspundă” (vol. II, p. 117); alteori îi vorbește serios despre viitor (p. 337–343). Știe că tinerețea trece repede: „Cât crezi tu că mai am de trăit, în înțelesul adevărat al cuvântului? Cinci, șase ani!” (p. 338).
+- **Interpretare:** este spontană și capricioasă în aparență, dar lucidă în fond. Felix o vede „frivolă numai în aparență, fiind în fond inteligentă și profundă” (p. 341).
+
+**Statutul moral.**
+
+- **Despre roman:** îl îngrijește pe moș Costache bolnav (p. 307), își împarte lucrurile celorlalți (p. 339) și pleacă pentru ca Felix să-și facă cariera, cum îi scrie în cartea poștală (p. 346).
+- **Interpretare:** este generoasă și altruistă, deși lumea o judecă ușuratică. Naratorul spune chiar acest lucru: „Otilia era socotită ușuratică și se dovedea devotată.” (p. 307)
+
+**Trăsături, fiecare cu episoade:**
+
+1. **Generozitatea și devotamentul.** Îngrijirea bătrânului bolnav (5.3); renunțarea la Felix pentru cariera lui (5.4).
+2. **Luciditatea.** Discuția cu Felix despre „rostul femeii” și despre cei „cinci, șase ani” (5.4).
+3. **Spontaneitatea.** Prima întâlnire cu Felix, când îi întinde „cu franchețe” brațul și i se prezintă direct (5.2); jocul cu bătrânul și cu Pascalopol în seara sosirii (cap. I).
+
+<OtiliaVazutaDeCeilalti />
+
+> **Recomandare.** Alege **o trăsătură** și **două episoade**, nu patru trăsături. Pentru fiecare episod, arată ce face personajul și ce reiese de aici.
+
+### 7.3. Felix Sima
+
+**Despre roman.** Felix este fiul doctorului Iosif Sima, care murise cu un an înainte. Moștenise o casă „în strada Lăpușneanu” și niște bani, administrate de moș Costache, tutorele lui (cap. I; vol. I, p. 9). Vine la București ca să studieze medicina. Își descrie ambiția: „Am de gând să mă specializez, să devin un nume.” (vol. II, p. 336). O iubește pe Otilia și vrea să se căsătorească cu ea; îi spune că nu va consimți „niciodată să nu mă port leal cu viitoarea mea soție” (p. 343). În epilog este profesor universitar și „specialist cunoscut” (p. 347).
+
+**Interpretare.** Felix este tânărul în formare: învață despre lume, despre bani și despre iubire privind familia lui moș Costache. Este ambițios și serios, dar naiv în iubire. Prefața îl numește „martorul” din carte (vol. I, p. XV). Destinul lui arată că reușita profesională nu aduce automat și împlinirea afectivă.
+
+### 7.4. Moș Costache Giurgiuveanu
+
+**Despre roman.** Este un bătrân avar, bâlbâit, care își neagă casa la prima apariție (5.2). O iubește pe Otilia, pe care o numește „fe-fetița mea”: „fac eu ceva pentru fe-fetița mea!” (vol. II, p. 147). Adună materiale vechi de construcție, ca să zidească o casă cu prăvălii, din care Otilia să aibă după moartea lui locuință și venit (p. 147). Felix descoperă că materialele fuseseră trecute în contul lui: „Bătrânul făcea o casă pe spinarea lui” (vol. II, p. 177). Bolnav, îi dă lui Pascalopol doar o parte din bani pentru Otilia (p. 303). Moare după ce Stănică îl fură (p. 311).
+
+**Interpretare.** Moș Costache este **avarul**, dar nu un avar fără suflet: dragostea pentru Otilia este reală. Tragedia lui este că nu poate transforma dragostea în fapte, pentru că avariția îl împiedică.
+
+### 7.5. Leonida Pascalopol
+
+**Despre roman.** Moșier bogat, „cam de vreo cincizeci de ani” (vol. I, p. 13), prieten al casei. Îi spune lui Felix că o iubește pe Otilia și că „n-am prea stat ca să disting ce e patern și ce e viril în dragostea mea” (vol. I, p. 135). Pleacă împreună cu Otilia la Paris (Felix află din cartea poștală de la începutul cap. XII); mai târziu îi spune lui Felix că s-a purtat cu ea acolo „ca un tată” (vol. II, p. 141). La sfârșit se căsătorește cu ea. În epilog spune că a lăsat-o liberă, pentru că era „prea bătrân” (vol. II, p. 348).
+
+**Interpretare.** Pascalopol este rivalul lui Felix, dar nu un personaj negativ. Iubirea lui amestecă grija de tată cu dorința de bărbat, iar în final o lasă pe Otilia să plece, din aceeași delicatețe.
+
+### 7.6. Familia Tulea și Stănică Rațiu
+
+- **Aglae Tulea** – sora lui moș Costache, aspră și bănuitoare. Îl primește ostil pe Felix (5.2) și se opune adoptării Otiliei: „Niciodată! Cât trăiesc eu, niciodată.” (cap. IX; vol. I, p. 230).
+- **Simion** – soțul Aglaei; la prima apariție brodează (vol. I, p. 16). Prefața vorbește despre „Nebunia lui Simion” (vol. I, p. XI).
+- **Olimpia, Aurica și Titi** – copiii Aglaei. Aurica, „o fată cam de treizeci de ani” (vol. I, p. 15), își caută un soț.
+- **Stănică Rațiu** – avocat, soțul Olimpiei („sunt avocat”, îi spune lui moș Costache, vol. II, p. 308). Fură banii bătrânului (p. 311), divorțează de Olimpia (p. 334), se însoară cu Georgeta și ajunge prefect (p. 347). Prefața îl numește „singurul biruitor” al familiei (vol. I, p. XIV).
+
+**Interpretare.** Familia Tulea arată lăcomia și meschinăria. Stănică este **arivistul**: nu are principii, dar câștigă, pentru că știe să profite de orice.
+
+<PersonajeTipOtilia />
+
+### 7.7. Relațiile dintre personaje
+
+<HartaRelatiilorOtilia />
+
+### 7.8. Modalitățile de caracterizare
+
+**Despre roman.** Personajele sunt caracterizate **direct**, de narator („Otilia era socotită ușuratică și se dovedea devotată”, vol. II, p. 307), de alte personaje (Felix despre Otilia: „o fată admirabilă, o fată superioară”, vol. I, p. 299) și prin **autocaracterizare** (Felix: „Am de gând să mă specializez, să devin un nume”, vol. II, p. 336). Sunt caracterizate și **indirect**, prin fapte, vorbe și gesturi, și prin **portret** (moș Costache și Pascalopol, cap. I).
+
+**Interpretare.** Otilia este construită mai ales prin felul în care o văd ceilalți și prin gesturi. Din această cauză, imaginea ei rămâne deschisă.
+
+<CaracterizareOtilia />
+
+## 8. Redactarea eseului
+
+### 8.1. Ce cere baremul
+
+> **Cerință oficială.** Pentru redactarea eseului se acordă 12 puncte: existența părților componente (introducere, cuprins, încheiere) – 1 punct; logica înlănțuirii ideilor – 1 punct; abilități de analiză și de argumentare – 3 puncte; utilizarea limbii literare – 2 puncte; ortografia – 2 puncte; punctuația – 2 puncte; așezarea în pagină, lizibilitatea – 1 punct. Eseul trebuie să aibă minimum 400 de cuvinte și să dezvolte subiectul propus.
+> Sursa: Barem, Bacalaureat 2026, Varianta 4, p. 2.
+
+### 8.2. Plan de eseu: particularitățile romanului
+
+> **Recomandare.** Un plan posibil, nu singurul corect:
+>
+> 1. **Introducere.** Autorul, titlul, anul apariției (1938) și încadrarea (de exemplu, roman realist de tip balzacian).
+> 2. **Încadrarea.** Realismul și două trăsături, fiecare arătată în text (vezi 3.3).
+> 3. **Tema.** Formulează tema și comentează două secvențe, legate explicit de ea (vezi 5.2–5.4).
+> 4. **Două elemente de structură.** De exemplu, incipitul și finalul, perspectiva narativă sau conflictul: numește, arată în text, justifică relevanța (vezi 6.3–6.5).
+> 5. **Încheiere.** O judecată de valoare argumentată, fără informații noi neargumentate.
+
+### 8.3. Plan de eseu: construcția personajului Otilia
+
+> **Recomandare.** Un plan posibil (îl poți adapta pentru Felix, cu 7.3):
+>
+> 1. **Introducere.** Autorul, titlul, personajul ales și locul lui în roman.
+> 2. **Statutul.** Social, psihologic, moral, fiecare legat de text (vezi 7.2).
+> 3. **O trăsătură prin două secvențe.** De exemplu, generozitatea: îngrijirea bătrânului și plecarea din final (5.3 și 5.4).
+> 4. **Două elemente de structură.** De exemplu, modalitățile de caracterizare și perspectiva narativă, cu relevanța pentru construcția personajului (vezi 6.4 și 7.8).
+> 5. **Încheiere.** O judecată de valoare despre personaj, argumentată.
+
+<PlanEseuOtilia />
+
+### 8.4. Formulări-model
+
+> **Recomandare.** Modelele de mai jos arată cum se leagă faptul de interpretare. Sunt exemple de construcție, nu texte de memorat; formulează cu cuvintele tale.
+
+**Model de introducere (particularități).** „Romanul «Enigma Otiliei» de George Călinescu, apărut în 1938, este un roman realist de tip balzacian. Acțiunea, care începe în iulie 1909, urmărește viața unei familii bucureștene adunate în jurul moștenirii lui moș Costache, văzută prin ochii tânărului Felix Sima.”
+
+**Model de comentariu (secvență).** „Lăcomia familiei se vede cel mai bine în scena morții lui moș Costache. Stănică îl lasă pe bătrân fără bani chiar sub ochii lui, iar bătrânul se prăbușește strigând «Banii, ba-banii». Imediat după aceea, Aglae scotocește casa în căutarea banilor, lângă trupul fratelui ei. Scena arată că, în lumea romanului, moștenirea contează mai mult decât omul.”
+
+**Model de justificare a relevanței (element de structură).** „Incipitul și finalul sunt relevante pentru că închid romanul în cerc. Replica «nu-nu stă nimeni aici», o minciună a avarului în prima seară, devine la sfârșit adevărul despre casa pustie. Simetria arată că lupta pentru moștenire a fost zadarnică.”
+
+### 8.5. Greșeli de evitat
+
+> **Recomandare.** Pe baza criteriilor din barem și a confuziilor frecvente, evită:
+> - **repovestirea** acțiunii în locul comentariului;
+> - **confuzii de fapt**: Otilia **nu** se căsătorește cu Felix, ci cu Pascalopol (cap. XX); banii lui moș Costache **nu** ajung la Otilia: o parte i-a dat lui Pascalopol pentru ea, iar restul îi fură Stănică;
+> - suma dată lui Pascalopol: în ediția verificată este „o sută de mii” (vol. II, p. 303), nu o altă cifră;
+> - să citezi critici sau replici din culegeri fără să le verifici: unele formulări care circulă în materialele școlare nu apar în roman (vezi 4.2);
+> - să confunzi casa lui Felix (strada Lăpușneanu) cu casa lui moș Costache (strada Antim);
+> - eseurile **sub 400 de cuvinte**.
+
+## 9. Autoevaluare
+
+> **Recomandare.** Folosește lista după ce scrii un eseu. Te ajută să verifici reperele din barem, dar **nu înlocuiește evaluarea unui profesor și nu îți spune ce notă ai lua la examen**.
+
+<AutoevaluareOtilia />
+
+## Surse
+
+**Documente oficiale citate în această lecție:**
+
+- Programa de examen pentru disciplina Limba și literatura română (Examenul național de bacalaureat 2014), Anexa nr. 2 la Ordinul ministrului educației naționale nr. 4.923/29.08.2013, p. 5–6 (ambele variante, copii locale descărcate pe 26 octombrie 2026 de pe edupedu.ro și de pe site-ul ISJ Vaslui).
+- Programe de examen pentru disciplina Limba și literatura română, Examenul național de bacalaureat – 2030, Monitorul Oficial al României, Partea I, nr. 737 bis/2.IX.2026, p. 9 și 28.
+- Examenul național de bacalaureat 2026, Proba E. a), Limba și literatura română: subiecte și bareme – filiera teoretică, profil real; filiera tehnologică (Model, Variantele 3–6); profil umanist; profil pedagogic (Model, Varianta 6), p. 2.
+
+**Textul romanului:** G. Călinescu, *Enigma Otiliei*, roman, vol. I–II, prefață de Paul Georgescu, Editura pentru Literatură, București, 1967, colecția „Biblioteca pentru toți”, nr. 53–54, ediția a II-a. Textul ediției este reprodus după G. Călinescu, *Opere*, vol. III–IV, Editura pentru literatură, 1966. Citatele, faptele și paginile au fost confruntate pe imaginile unei scanări a acestei ediții (Internet Archive), fără a păstra o copie în proiect. Romanul este protejat prin drept de autor; lecția folosește doar citate scurte, pentru analiză.
+
+**Prefața și tabelul cronologic** din aceeași ediție (Paul Georgescu) sunt sursa datelor despre autor și apariție și a citatelor critice din lecție (prefața: vol. I, p. V–XVI; tabelul cronologic: p. XIX–XXXIII).
+
+Raportul de audit (`docs/rapoarte/audit-enigma-otiliei-2026-10-26.md`) arată ce afirmații au fost verificate, ce a fost exclus și ce rămâne incert.

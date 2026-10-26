@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# materiale de referință locale (nu se sincronizează prin Git)
+/references/bac-romana/local/

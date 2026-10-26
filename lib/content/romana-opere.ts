@@ -19,6 +19,8 @@ const opere: Record<OperaSlug, () => Promise<LessonModule>> = {
   ion: () => import("@/content/romana/opere/ion.mdx"),
   "moara-cu-noroc": () => import("@/content/romana/opere/moara-cu-noroc.mdx"),
   "povestea-lui-harap-alb": () => import("@/content/romana/opere/povestea-lui-harap-alb.mdx"),
+  "alexandru-lapusneanul": () => import("@/content/romana/opere/alexandru-lapusneanul.mdx"),
+  "enigma-otiliei": () => import("@/content/romana/opere/enigma-otiliei.mdx"),
 };
 
 export type Opera = {

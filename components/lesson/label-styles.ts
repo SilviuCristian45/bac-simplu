@@ -32,7 +32,7 @@ export const FIGURE_TAGS: Record<FigureTagKind, { label: string; className: stri
     label: "Exemplu didactic – nu este citat",
     className: "bg-orange-100 text-orange-900 dark:bg-orange-950 dark:text-orange-200",
   },
-  citat: { label: "Citat din roman", className: "bg-teal-100 text-teal-900 dark:bg-teal-950 dark:text-teal-200" },
+  citat: { label: "Citat din operă", className: "bg-teal-100 text-teal-900 dark:bg-teal-950 dark:text-teal-200" },
   oficial: { label: "Cerință oficială", className: LABEL_CHIP.oficial },
   recomandare: { label: "Recomandare", className: LABEL_CHIP.recomandare },
 };
