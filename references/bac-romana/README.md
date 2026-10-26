@@ -1,8 +1,8 @@
 # Surse pentru Limba și literatura română – catalog
 
-Acest fișier descrie sursele din `references/bac-romana/` și sursele folosite pentru lecțiile deja redactate („Ion”, „Moara cu noroc”, „Povestea lui Harap-Alb”, „Alexandru Lăpușneanul”).
+Acest fișier descrie sursele din `references/bac-romana/` și sursele folosite pentru lecțiile deja redactate („Ion”, „Moara cu noroc”, „Povestea lui Harap-Alb”, „Alexandru Lăpușneanul”, „Enigma Otiliei”).
 
-- **Redactat:** 26 octombrie 2026, de Claude (asistent AI), pe baza fișierelor din proiect și a rapoartelor din `docs/rapoarte/`. Completat în aceeași zi cu sursele pentru „Alexandru Lăpușneanul” (secțiunile 2.1, 4, 5, 6.4, 7 și 9.3).
+- **Redactat:** 26 octombrie 2026, de Claude (asistent AI), pe baza fișierelor din proiect și a rapoartelor din `docs/rapoarte/`. Completat în aceeași zi cu sursele pentru „Alexandru Lăpușneanul” (secțiunile 2.1, 4, 5, 6.4, 7 și 9.3) și pentru „Enigma Otiliei” (secțiunile 4, 5, 6.5, 7.2 și 9.3).
 - **Nu este o validare făcută de un profesor sau de un jurist.** Recomandările despre redistribuire (secțiunea 9) nu sunt opinii juridice.
 
 **Legendă pentru coloana „Stare”:**
@@ -139,12 +139,14 @@ Structura probei diferă: eseu de minimum 300 de cuvinte, 22 + 8 puncte (vezi `d
 | Costache Negruzzi, „Alexandru Lăpușneanul” | **A.** Transcriere Wikisource, ortografie cu „î” și „sînt”; nota paginii indică prima apariție (*Dacia literară*, 1840) și volumul din 1857, **dar nu ediția-sursă** | rev. 115307 (28.01.2019) | <https://ro.wikisource.org/wiki/Alexandru_L%C4%83pu%C8%99neanul> | consultat (raport); wikitext salvat în `local/alexandru-lapusneanul/wikisource-rev115307.wikitext` |
 | Costache Negruzzi, „Alexandru Lăpușneanul” | **B.** *Păcatele tinerețelor*, „Biblioteca pentru toți” nr. 1137, Minerva, 1982, ed. îngrijită de Liviu Leonte, prefață și tabel cronologic de Elvira Sorohan | Internet Archive, `pacatele-tineretelor` (scanare + OCR) | <https://archive.org/details/pacatele-tineretelor> | consultat (raport), prin OCR; OCR salvat în `local/alexandru-lapusneanul/bpt1137-1982-ocr.txt`. Licența afișată (CC BY-NC-ND 4.0) este declarată de cel care a încărcat fișierul |
 | Mihail Kogălniceanu, „Introducție” la *Dacia literară* | Transcriere Wikisource, fără ediție-sursă indicată | rev. 135602 | <https://ro.wikisource.org/wiki/Introduc%C8%9Bie_la_%22Dacia_literar%C4%83%22> | consultat (raport); un singur citat, folosit în lecția „Alexandru Lăpușneanul” |
+| George Călinescu, „Enigma Otiliei” | G. Călinescu, *Enigma Otiliei*, roman, vol. I–II, prefață de Paul Georgescu, Editura pentru Literatură, 1967, „Biblioteca pentru toți” nr. 53–54, ed. a II-a; textul reprodus după *Opere*, vol. III–IV, Editura pentru literatură, 1966 (date citite pe imaginile foii de titlu, ale versoului ei și ale copertei) | Internet Archive, `53-george-calinescu-enigma-otiliei-vol-i-1967` (scanare + OCR, ambele volume); pe ultima pagină: „Scanare și prelucrare digitală de Anonim și CAT Graur, Antwerpen, 2025” | <https://archive.org/details/53-george-calinescu-enigma-otiliei-vol-i-1967> | consultat (raport), prin OCR și pe imaginile paginilor. **Textul este protejat prin drept de autor**; statutul legal al încărcării este incert, iar licența afișată (CC BY-NC-ND 4.0) este declarată de cel care a încărcat fișierul. Copia nu a fost păstrată în proiect; amprentele SHA-256 sunt în `audit-enigma-otiliei-2026-10-26.md`, §1.2 |
 
 **Observații:**
 
 - Pentru „Ion”, **nu a fost consultată nicio ediție tipărită** sau scanare. Citatele au fost verificate doar pe transcrierea Wikisource.
 - Pentru „Moara cu noroc”, „Harap-Alb” și „Alexandru Lăpușneanul”, ediția B a fost citită **prin OCR**, cu potriviri aproximative (vezi secțiunea 7).
-- Nu au fost consultate edițiile princeps (*Novele din popor*, 1881; *Convorbiri literare*, 1877; *Dacia literară*, 1840) și nici ediții critice moderne.
+- Pentru „Enigma Otiliei” există **o singură ediție** consultată (BPT 1967), citită prin OCR și confirmată pe imaginile paginilor; nu există o transcriere liberă cu care să fie confruntată.
+- Nu au fost consultate edițiile princeps (*Novele din popor*, 1881; *Convorbiri literare*, 1877; *Dacia literară*, 1840; „Enigma Otiliei”, 1938) și nici ediții critice moderne.
 
 ### 4.1. Dicționare
 
@@ -167,7 +169,7 @@ Sursele de interpretare sunt separate de textele literare. **Nicio sursă din ac
 | Autor, editură, an | **Neidentificabile** (nu apar în text; metadatele PDF conțin doar programele de generare), conform `audit-ion-2026-10-25.md`, §1.1 |
 | Pagini | 62 (numărare la 26.10.2026; raportul din prima rundă Ion indică 63, vezi secțiunea 7) |
 | Conținut (cuprins, p. 2) | Plumb, Eu nu strivesc corola de minuni a lumii, Flori de mucigai, Riga Crypto și lapona Enigel, Leoaica tânără, iubirea, Floare-albastră, Povestea lui Harap-Alb, Moara cu noroc, Baltagul, Ion, Ultima noapte de dragoste, întâia noapte de război, Enigma Otiliei, Moromeții |
-| Folosire | Doar confruntare. **Nu are capitol despre „Alexandru Lăpușneanul”** (Negruzzi e pomenit o singură dată, în context pașoptist). Capitole citite: Ion (p. 32–36), Moara cu noroc (p. 25–27), Harap-Alb (p. 21–25). Numerele din cuprins nu corespund paginilor reale (de exemplu, Ion: p. 29 în cuprins, p. 32 în fișier). |
+| Folosire | Doar confruntare. Capitolul „Enigma Otiliei” (p. 41–46) a fost citit pentru documentare; mai multe formulări din el diferă de ediția 1967 sau nu apar în ea (vezi `documentare-enigma-otiliei-2026-10-26.md`, §2). **Nu are capitol despre „Alexandru Lăpușneanul”** (Negruzzi e pomenit o singură dată, în context pașoptist). Capitole citite: Ion (p. 32–36), Moara cu noroc (p. 25–27), Harap-Alb (p. 21–25). Numerele din cuprins nu corespund paginilor reale (de exemplu, Ion: p. 29 în cuprins, p. 32 în fișier). |
 | Erori găsite | Consemnate în rapoarte: Ion – §4 din `audit-ion-2026-10-25.md`; Moara – §3.1 din `audit-moara-cu-noroc-2026-10-25.md`; Harap-Alb – §3 din `audit-povestea-lui-harap-alb-2026-10-25.md` |
 
 ### 5.2. Surse critice și editoriale consultate
@@ -181,6 +183,7 @@ Sursele de interpretare sunt separate de textele literare. **Nicio sursă din ac
 | Wikipedia (articol nespecificat), pentru „Jar” (1934) ca roman | Ion | consultat (raport); sursă terțiară | Mențiune de context; unica sursă |
 | Elvira Sorohan, prefața și tabelul cronologic la *Păcatele tinerețelor*, BPT 1982 (ediția B pentru „Alexandru Lăpușneanul”) | Alexandru Lăpușneanul | consultat (raport), prin OCR | Prima apariție (*Dacia literară*, nr. 1, 1840), ciclul „Scene istorice din cronicele Moldaviei”, volumul din 1857; observațiile despre raportul cu cronica (parafrazate, p. XXI–XXII); discuția personaj static/dinamic |
 | Internet Archive (fișa `nuvele0000negr`) și ro.wikipedia, „Constantin Negruzzi” (rev. 17986222) | Alexandru Lăpușneanul | consultat (raport); surse terțiare | Doar anii 1808–1868 |
+| Paul Georgescu, prefața la *Enigma Otiliei*, BPT 1967 (vol. I, p. V–XVI), și tabelul cronologic din același volum (p. XIX–XXXIII) | Enigma Otiliei | consultat (raport), pe imaginile paginilor | Anul apariției (1938), datele nașterii și morții autorului; citate critice (realismul balzacian, personajele-tip, „roman citadin”, Felix „martorul”, „indeterminarea Otiliei”) |
 
 ### 5.3. Surse critice mediate sau neconsultate
 
@@ -192,6 +195,8 @@ Sursele de interpretare sunt separate de textele literare. **Nicio sursă din ac
 | Magdalena Popescu, Al. Philippide, G. Călinescu („în alb și negru”), P. Marcea („moralistul nostru prin excelență”) | Citate în comentariul școlar (capitolul Moara cu noroc) | **neverificat**; nu sunt folosite |
 | V. Propp, T. Vianu, E. M. Forster, J. Boutière, B. P. Hasdeu, Novalis, Vl. Streinu, Boroianu | Atribuiri din comentariul școlar (capitolul Harap-Alb) | **neverificat**; nu sunt citate (Propp apare doar ca terminologie) |
 | G. Călinescu („romantism pozitiv”) și T. Vianu, citați în prefața Elvirei Sorohan (BPT 1982) | Prefața ediției B pentru „Alexandru Lăpușneanul” | mediat; **necitate** în lecție |
+| Ov. S. Crohmălniceanu (*Curs de istorie a literaturii române între cele două războaie mondiale*, p. 468) și G. Călinescu (*Clasicism, romantism, baroc*), citați în prefața lui Paul Georgescu (BPT 1967) | Prefața ediției pentru „Enigma Otiliei” | mediat; **necitate** în lecție |
+| Crohmălniceanu („primul nostru roman citadin…”), Manolescu, Călinescu („Nu Otilia are o enigmă…”, „tipizarea mea…”), citatul „noi vom putea fi tolstoieni sau balzacieni…” | Comentariul școlar (capitolul Enigma Otiliei) | **neverificat**; nu apar în ediția 1967; excluse din lecție |
 
 ---
 
@@ -261,6 +266,20 @@ Fișiere: `content/romana/opere/alexandru-lapusneanul.mdx`, `content/romana/oper
 | Wikisource, „Introducție” la *Dacia literară*, rev. 135602 | text primar | Un citat (lecția, 3.2) | raport §1.3 |
 | Scriptul `local/alexandru-lapusneanul/check_quotes.py` | instrument | Confruntarea automată a citatelor în A și B | raport §1.2 |
 
+### 6.5. „Enigma Otiliei” – George Călinescu
+
+Fișiere: `content/romana/opere/enigma-otiliei.mdx`, `content/romana/opere/enigma-otiliei-interactiv.ts`, `content/romana/exercitii/enigma-otiliei.ts`.
+
+| Sursă | Tip | Folosire | Dovadă |
+|---|---|---|---|
+| Programa 2014, p. 5–6 (copie locală, vezi 2.1) | oficială | Călinescu este autor canonic; programa nu numește opera; romanul interbelic, realismul | `audit-enigma-otiliei-2026-10-26.md` §0 |
+| `Programa-Bac-2030-Romana-1.pdf`, MO p. 9 și 28 | oficială, locală | „Realismul în romanul interbelic”, „romanul citadin (text integral)”; autorii canonici 2030 | idem |
+| Subiecte și bareme 2026 (aceleași ca la 6.4) | oficiale, locale | Reperele și punctajul; niciun subiect nu numește Călinescu | idem |
+| BPT 1967, Internet Archive (vezi 4) | text literar, OCR + imagini | Faptele, citatele și paginile din lecție | raport §1–§2 |
+| Prefața lui Paul Georgescu și tabelul cronologic (în aceeași ediție) | critică / editorială | Date despre autor și apariție; citate critice | raport §1.3 |
+| `comentarii-opere-romana.pdf`, p. 41–46 | secundară | Doar confruntare; formulările divergente sau negăsite sunt excluse | `documentare-enigma-otiliei-2026-10-26.md` §2 |
+| Scripturile din `local/enigma-otiliei/` (`check_quotes.py`, `check_lesson_quotes.py`, `find_page.py`) | instrumente | Confruntarea citatelor cu OCR-ul și găsirea paginii tipărite | raport §1.2 |
+
 ---
 
 ## 7. Limitări și neconcordanțe
@@ -282,10 +301,11 @@ Neconcordanțele de mai jos sunt **consemnate, nu rezolvate**.
 2. **OCR-ul nu este o reproducere exactă a edițiilor tipărite.** Ediția BPT 1965 („Moara cu noroc”): potriviri de 0,91–1,00 pentru citatele lungi; citatele scurte (0,86–0,89) au fost confirmate manual. Ediția BPT 1967 („Harap-Alb”): patru pasaje cu coloane amestecate au confirmare doar parțială (raport Harap-Alb, §1.2).
 3. **Numărul de capitole din transcrierea Wikisource a „Morii cu noroc”:** raportul de documentare (§2.1) spune că ediția A are capitolele I–XVII. Raportul de exerciții (§2) spune că transcrierea Wikisource **nu are marcajele XII, XV și XVI**, iar numerotarea a fost confruntată cu ediția 1965. **Verificat online la 26.10.2026:** textul-sursă (wikitext) al reviziei 129071 conține titluri pentru toate capitolele, I–XVII. Afirmația din raportul de exerciții nu este susținută de wikitext; cauza (de exemplu, o extragere diferită a textului în sesiunea de audit) nu este cunoscută. Raportul nu a fost modificat.
 4. **„Alexandru Lăpușneanul”:** diferențe între A și B („eu vă vreau” / „eu vă vreu” în replica din cap. I; „greșeală” / „greșală”; „pîn-a” / „păn-a”); motto-ul cap. III ilizibil în OCR-ul B; motto-ul cap. IV („De mă voi scula”) diferă de replica din text („de mă voi îndrepta”) în ambele ediții. Vezi `audit-alexandru-lapusneanul-2026-10-26.md`, §3.
-5. **„Păun” / „Pârvu”** în cap. XVI din „Moara cu noroc”: inconsecvență din textul original, notată de ediția 1965. Lecția folosește „Păun”.
-6. **Anul apariției „Poveștii lui Harap-Alb”:** 1877 (nota din BPT 1967, Wikisource, ro.wikipedia) față de 1878 (cronologia din BPT 1967 și comentariul școlar). Lecția folosește 1877; contradicția din ediția 1967 nu a fost explicată.
-7. **Variante de formă între ediții** (de exemplu, „rânjetul” / „rînjitul”); lecția „Moara cu noroc” evită pasajele de acest tip.
-8. **Ortografie:** transcrierile pentru „Moara cu noroc” și „Harap-Alb” folosesc ortografia actuală, cea pentru „Alexandru Lăpușneanul” folosește „î” și „sînt” (lecția citează în ortografia actuală, păstrând formele vechi ale cuvintelor); edițiile din 1965 și 1967, ortografia cu „î” și cu sedilă.
+5. **„Enigma Otiliei”:** o singură ediție (BPT 1967); OCR-ul nu recunoaște sigur cifrele romane ale capitolelor (numărul de 20 a fost stabilit pe imagini). Câteva formulări din comentariul școlar diferă de ediție (de exemplu, „orele 10” față de „orele zece”; suma de „300000 lei” față de „o sută de mii”). Vezi `audit-enigma-otiliei-2026-10-26.md`, §3.
+6. **„Păun” / „Pârvu”** în cap. XVI din „Moara cu noroc”: inconsecvență din textul original, notată de ediția 1965. Lecția folosește „Păun”.
+7. **Anul apariției „Poveștii lui Harap-Alb”:** 1877 (nota din BPT 1967, Wikisource, ro.wikipedia) față de 1878 (cronologia din BPT 1967 și comentariul școlar). Lecția folosește 1877; contradicția din ediția 1967 nu a fost explicată.
+8. **Variante de formă între ediții** (de exemplu, „rânjetul” / „rînjitul”); lecția „Moara cu noroc” evită pasajele de acest tip.
+9. **Ortografie:** transcrierile pentru „Moara cu noroc” și „Harap-Alb” folosesc ortografia actuală, cea pentru „Alexandru Lăpușneanul” folosește „î” și „sînt” (lecția citează în ortografia actuală, păstrând formele vechi ale cuvintelor); edițiile din 1965 și 1967, ortografia cu „î” și cu sedilă.
 
 ### 7.3. Surse secundare
 
@@ -351,7 +371,7 @@ Regula din `.gitignore`:
 - `references/bac-romana/local/` este locul pentru materialele care **nu se publică în repository**: comentarii și culegeri cu drepturi neclare, scanări și OCR-uri, texte descărcate, scripturi și liste de citate folosite la verificare.
 - **Conținutul lui nu este sincronizat prin Git.** Pe un alt calculator, folderul nu există după `git clone` (Git nu păstrează foldere goale sau ignorate). Fișierele trebuie copiate separat, de exemplu printr-un spațiu de stocare privat.
 - Acest README rămâne lista de referință: orice fișier pus în `local/` trebuie trecut în catalog (secțiunile 4–6) cu identificarea și proveniența lui, ca să poată fi recuperat de pe alt calculator.
-- La 26.10.2026, folderul conține cele 22 de PDF-uri descrise în secțiunile 2, 3 și 5, cele două copii ale programei 2014 (secțiunea 2.1) și subfolderul `alexandru-lapusneanul/` (wikitext Wikisource, OCR BPT 1982, metadate Archive, „Introducție” la *Dacia literară*, scriptul `check_quotes.py`; secțiunile 4 și 6.4), precum și subfolderul `enigma-otiliei/` (scriptul de confruntare, citatele candidate și metadatele Archive pentru ediția BPT 1967; **fără** textul romanului, protejat prin drept de autor; vezi `docs/rapoarte/documentare-enigma-otiliei-2026-10-26.md`). Clasificarea din 9.2 rămâne valabilă dacă unele dintre ele vor fi readuse în repository.
+- La 26.10.2026, folderul conține cele 22 de PDF-uri descrise în secțiunile 2, 3 și 5, cele două copii ale programei 2014 (secțiunea 2.1) și subfolderul `alexandru-lapusneanul/` (wikitext Wikisource, OCR BPT 1982, metadate Archive, „Introducție” la *Dacia literară*, scriptul `check_quotes.py`; secțiunile 4 și 6.4), precum și subfolderul `enigma-otiliei/` (scripturile de confruntare `check_quotes.py`, `check_lesson_quotes.py` și `find_page.py`, citatele candidate, raportul `raport-citate-lectie.txt` și metadatele Archive pentru ediția BPT 1967; **fără** textul romanului, protejat prin drept de autor; vezi `docs/rapoarte/audit-enigma-otiliei-2026-10-26.md`). Clasificarea din 9.2 rămâne valabilă dacă unele dintre ele vor fi readuse în repository.
 
 **Atenție:** regula nu scoate din Git fișierele deja urmărite. Pentru asta este nevoie de `git rm --cached` (vezi 9.4), iar fișierele rămân oricum în istoric, dacă istoricul nu este rescris (cum s-a făcut pentru PDF-uri, vezi 9.1).
 

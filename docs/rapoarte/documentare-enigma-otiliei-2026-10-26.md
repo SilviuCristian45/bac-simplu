@@ -2,7 +2,7 @@
 
 - **Data:** 2026-10-26 (completat în aceeași zi cu ediția de lucru și confruntarea primelor citate).
 - **Realizat de:** Claude (asistent AI). Nu este o validare didactică.
-- **Stadiu:** documentare înainte de implementare. **Nu există încă lecție, figuri sau exerciții** pentru această operă.
+- **Stadiu:** documentare înainte de implementare. **Actualizare (aceeași zi):** lecția a fost implementată; rezultatele verificării și corecturile față de acest raport (numărul de capitole, pagina „fe-fetița mea”) sunt în `audit-enigma-otiliei-2026-10-26.md`.
 - **Convenție:** **[V]** verificat într-o sursă identificabilă (indicată); **[E]** verificat în ediția de lucru (§1); **[S]** afirmat doar de o sursă secundară, neconfruntat; **[I]** interpretare critică; **[?]** neverificat sau incert.
 
 ---
