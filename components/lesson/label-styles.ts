@@ -14,6 +14,8 @@ export type FigureTagKind =
   | "fapt"
   | "fapt-nuvela"
   | "fapt-basm"
+  | "fapt-piesa"
+  | "fapt-poezie"
   | "interpretare"
   | "concept"
   | "exemplu-didactic"
@@ -26,6 +28,8 @@ export const FIGURE_TAGS: Record<FigureTagKind, { label: string; className: stri
   fapt: { label: "Despre roman", className: LABEL_CHIP.text },
   "fapt-nuvela": { label: "Despre nuvelă", className: LABEL_CHIP.text },
   "fapt-basm": { label: "Despre basm", className: LABEL_CHIP.text },
+  "fapt-piesa": { label: "Despre piesă", className: LABEL_CHIP.text },
+  "fapt-poezie": { label: "Despre poezie", className: LABEL_CHIP.text },
   interpretare: { label: "Interpretare", className: LABEL_CHIP.interpretare },
   concept: { label: "Concept literar", className: "bg-sky-100 text-sky-900 dark:bg-sky-950 dark:text-sky-200" },
   "exemplu-didactic": {

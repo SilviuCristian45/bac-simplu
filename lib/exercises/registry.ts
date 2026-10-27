@@ -1,9 +1,23 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { alexandruLapusneanulExercises } from "@/content/romana/exercitii/alexandru-lapusneanul";
+import { baltagulExercises } from "@/content/romana/exercitii/baltagul";
+import { blagaExercises } from "@/content/romana/exercitii/eu-nu-strivesc-corola-de-minuni-a-lumii";
 import { enigmaOtilieiExercises } from "@/content/romana/exercitii/enigma-otiliei";
+import { inContraDirectieiExercises } from "@/content/romana/exercitii/in-contra-directiei-de-astazi";
 import { ionExercises } from "@/content/romana/exercitii/ion";
+import { ionaExercises } from "@/content/romana/exercitii/iona";
+import { leoaicaExercises } from "@/content/romana/exercitii/leoaica-tanara-iubirea";
+import { luceafarulExercises } from "@/content/romana/exercitii/luceafarul";
 import { moaraCuNorocExercises } from "@/content/romana/exercitii/moara-cu-noroc";
+import { morometiiExercises } from "@/content/romana/exercitii/morometii-volumul-1";
+import { oNoapteFurtunoasaExercises } from "@/content/romana/exercitii/o-noapte-furtunoasa";
+import { oScrisoarePierdutaExercises } from "@/content/romana/exercitii/o-scrisoare-pierduta";
+import { plumbExercises } from "@/content/romana/exercitii/plumb";
+import { scrisoareaIIIExercises } from "@/content/romana/exercitii/scrisoarea-iii";
+import { sincronismulExercises } from "@/content/romana/exercitii/sincronismul-lovinescu";
+import { testamentExercises } from "@/content/romana/exercitii/testament";
+import { ultimaNoapteExercises } from "@/content/romana/exercitii/ultima-noapte-de-dragoste";
 import { povesteaLuiHarapAlbExercises } from "@/content/romana/exercitii/povestea-lui-harap-alb";
 import { extractHeadings } from "@/lib/content/headings";
 import { findExerciseSetProblems } from "./grading";
@@ -45,6 +59,76 @@ const REGISTRY: Record<string, RegistryEntry> = {
     set: enigmaOtilieiExercises,
     lessonFile: "romana/opere/enigma-otiliei.mdx",
     lessonHref: "/romana/opere/enigma-otiliei",
+  },
+  [oScrisoarePierdutaExercises.key]: {
+    set: oScrisoarePierdutaExercises,
+    lessonFile: "romana/opere/o-scrisoare-pierduta.mdx",
+    lessonHref: "/romana/opere/o-scrisoare-pierduta",
+  },
+  [luceafarulExercises.key]: {
+    set: luceafarulExercises,
+    lessonFile: "romana/opere/luceafarul.mdx",
+    lessonHref: "/romana/opere/luceafarul",
+  },
+  [plumbExercises.key]: {
+    set: plumbExercises,
+    lessonFile: "romana/opere/plumb.mdx",
+    lessonHref: "/romana/opere/plumb",
+  },
+  [testamentExercises.key]: {
+    set: testamentExercises,
+    lessonFile: "romana/opere/testament.mdx",
+    lessonHref: "/romana/opere/testament",
+  },
+  [scrisoareaIIIExercises.key]: {
+    set: scrisoareaIIIExercises,
+    lessonFile: "romana/opere/scrisoarea-iii.mdx",
+    lessonHref: "/romana/opere/scrisoarea-iii",
+  },
+  [oNoapteFurtunoasaExercises.key]: {
+    set: oNoapteFurtunoasaExercises,
+    lessonFile: "romana/opere/o-noapte-furtunoasa.mdx",
+    lessonHref: "/romana/opere/o-noapte-furtunoasa",
+  },
+  [inContraDirectieiExercises.key]: {
+    set: inContraDirectieiExercises,
+    lessonFile: "romana/opere/in-contra-directiei-de-astazi.mdx",
+    lessonHref: "/romana/opere/in-contra-directiei-de-astazi",
+  },
+  [baltagulExercises.key]: {
+    set: baltagulExercises,
+    lessonFile: "romana/opere/baltagul.mdx",
+    lessonHref: "/romana/opere/baltagul",
+  },
+  [blagaExercises.key]: {
+    set: blagaExercises,
+    lessonFile: "romana/opere/eu-nu-strivesc-corola-de-minuni-a-lumii.mdx",
+    lessonHref: "/romana/opere/eu-nu-strivesc-corola-de-minuni-a-lumii",
+  },
+  [ultimaNoapteExercises.key]: {
+    set: ultimaNoapteExercises,
+    lessonFile: "romana/opere/ultima-noapte-de-dragoste.mdx",
+    lessonHref: "/romana/opere/ultima-noapte-de-dragoste",
+  },
+  [ionaExercises.key]: {
+    set: ionaExercises,
+    lessonFile: "romana/opere/iona.mdx",
+    lessonHref: "/romana/opere/iona",
+  },
+  [leoaicaExercises.key]: {
+    set: leoaicaExercises,
+    lessonFile: "romana/opere/leoaica-tanara-iubirea.mdx",
+    lessonHref: "/romana/opere/leoaica-tanara-iubirea",
+  },
+  [sincronismulExercises.key]: {
+    set: sincronismulExercises,
+    lessonFile: "romana/opere/sincronismul-lovinescu.mdx",
+    lessonHref: "/romana/opere/sincronismul-lovinescu",
+  },
+  [morometiiExercises.key]: {
+    set: morometiiExercises,
+    lessonFile: "romana/opere/morometii-volumul-1.mdx",
+    lessonHref: "/romana/opere/morometii-volumul-1",
   },
 };
 

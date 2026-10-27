@@ -1,0 +1,288 @@
+export const lesson = {
+  id: "romana-o-scrisoare-pierduta-caragiale",
+  slug: "o-scrisoare-pierduta",
+  subject: "romana",
+  title: "„O scrisoare pierdută” de I. L. Caragiale",
+  author: "I. L. Caragiale",
+  sections: ["teorie"],
+  status: "draft-neverificat",
+  lastReviewed: null,
+  referenceAnalysis: "docs/rapoarte/documentare-opere-noi-2026-10-26.md",
+};
+
+import {
+  AutoevaluareScrisoare,
+  CaracterizareScrisoare,
+  FaptSauInterpretareScrisoare,
+  HartaRelatiilorScrisoare,
+  PlanEseuScrisoare,
+  StructuraActelor,
+  TipuriDeComic,
+} from "@/components/lesson/figures/o-scrisoare-pierduta";
+
+# „O scrisoare pierdută” de I. L. Caragiale
+
+> **Stadiul lecției:** material în curs de verificare. Acțiunea, personajele și citatele au fost verificate pe textul piesei, într-o singură transcriere online (vezi Surse), iar lecția **nu a fost validată de un profesor**. Pentru examen, citește piesa integral și consultă manualul și profesorul tău.
+
+## Cum să folosești această lecție
+
+Informațiile din lecție sunt marcate după tipul lor:
+
+- **Despre piesă** – ce se întâmplă în text: personaje, acțiune, structură. Le poți verifica citind piesa.
+- **Interpretare** – o lectură posibilă, susținută cu exemple din text, dar nu singura corectă.
+- **Cerință oficială** – ce scrie în documentele oficiale ale examenului, cu documentul și pagina.
+- **Recomandare** – sfaturi de învățare și de redactare. Nu sunt cerințe ale examenului.
+
+Piesa are patru acte, împărțite în scene. Citatele sunt urmate de act și scenă (de exemplu, „I, 4” înseamnă actul I, scena IV). Ortografia și formele de vorbire sunt cele din transcrierea folosită; cuvintele „stâlcite” (de exemplu „soțietate”, „prințipuri”) sunt păstrate, pentru că fac parte din comicul piesei.
+
+## 1. Ce trebuie să știi despre examen
+
+> **Cerință oficială.** Programa de bacalaureat aplicabilă sesiunilor 2026 și 2027 enumeră 17 autori canonici, printre care **I. L. Caragiale**, și precizează că examenul presupune „studierea a cel puțin unui text din opera acestora”.
+> Sursa: Programa de examen pentru disciplina Limba și literatura română, Anexa nr. 2 la OMEN nr. 4.923/29.08.2013, p. 6.
+
+> **Cerință oficială.** Aceeași programă are, la competența 2.3 (identificarea și analiza componentelor de structură și de limbaj ale textului dramatic), conținuturile: „particularități ale construcției subiectului în textul dramatic”, „particularități ale compoziției textului dramatic”, „modalități de caracterizare a personajelor”, „registre stilistice, limbajul personajelor, notațiile autorului” și „specii dramatice: comedia, drama”.
+> Sursa: aceeași programă, p. 4.
+
+> **Cerință oficială.** Nici programa, nici subiectele din proiect nu numesc piesa „O scrisoare pierdută”. Programa nu dă o listă de opere.
+> Sursa: programa de mai sus; subiectele 2026 din `references/bac-romana/` (Model și variantele 3–6).
+
+**Ce înseamnă asta pentru tine.** Între subiectele 2026 din proiect, **niciunul nu cere un eseu despre un text dramatic**: Subiectul al III-lea cere personaj dintr-un basm sau un text narativ, un text narativ al unor autori numiți, un text poetic (Bacovia, Arghezi) sau un roman scris după 1980. De aceea:
+
+- nu avem în proiect un barem oficial pentru un eseu despre un text dramatic; planul din secțiunea 9 **adaptează** reperele cerințelor despre texte narative și poetice și este o recomandare, nu un barem;
+- dacă la examen apare o cerință despre un text dramatic sau despre comedie, piesa lui Caragiale este o alegere firească, pentru că autorul este canonic, dar verifică ce texte ați studiat la clasă;
+- fragmente din piesă pot apărea și ca text la prima vedere.
+
+> **Recomandare.** Citește cu atenție formularea cerinței: ea stabilește ce poți alege (autor, specie, perioadă).
+
+## 2. Fișă rapidă
+
+**Despre piesă** (date verificate pe text; datele despre premieră sunt dintr-o sursă secundară, vezi Surse):
+
+- **Autor:** Ion Luca Caragiale (1852–1912).
+- **Gen / specie:** dramatic / comedie (comedie de moravuri politice și sociale).
+- **Întindere:** patru acte. Actul I are 9 scene, actul II 14, actul III 7, actul IV 14.
+- **Premieră:** 13 noiembrie 1884 (13/25 noiembrie, după sursa secundară), la Teatrul Național din București.
+- **Timp și loc:** didascaliile spun: „În capitala unui județ de munte, în zilele noastre”. În text apare anul 1883 („suntem în anul de grație 1883”, III, 1).
+- **Acțiunea:** un șantaj politic, câteva zile înainte și în timpul alegerilor pentru un loc de deputat.
+- **Obiectul declanșator:** o scrisoare de dragoste de la prefectul Tipătescu către Zoe Trahanache, pierdută de ea și ajunsă la adversarul politic Nae Cațavencu.
+- **Personaje:** Ștefan Tipătescu (prefectul), Zaharia Trahanache (președintele comitetelor), Zoe Trahanache (soția lui), Nae Cațavencu (avocat, director de ziar), Tache Farfuridi și Iordache Brânzovenescu (avocați, membri ai comitetelor), Ghiță Pristanda (polițaiul), Agamemnon Dandanache (candidatul impus din capitală), un cetățean turmentat, Ionescu și Popescu (institutori, colaboratori la ziarul lui Cațavencu).
+
+<StructuraActelor />
+
+## 3. Încadrarea: comedia de moravuri
+
+### 3.1. Ce spune programa
+
+> **Cerință oficială.** Programa enumeră, la contextul cultural, perioada modernă (secolul al XIX-lea – începutul secolului al XX-lea) cu curentele „romantismul, realismul, simbolismul, prelungiri ale romantismului și clasicismului” și „criticismul junimist”.
+> Sursa: Programa 2014, p. 5.
+
+**Despre piesă.** Potrivit surselor secundare consultate, piesa a fost citită în cercul Junimii și publicată în *Convorbiri literare* (datele nu coincid între surse; vezi Surse). Caragiale a legat piesa de actualitatea vremii: în text apare chiar anul 1883 și discuția despre „revizuire” (revizuirea Constituției).
+
+> **Recomandare.** Alege **o singură** încadrare (de specie, de curent sau de perioadă) și susține-o cu două trăsături arătate în text.
+
+### 3.2. Specia: comedia
+
+**Interpretare.** Piesa este o comedie pentru că:
+
+- conflictul nu duce la o catastrofă, ci la o împăcare comică: la sfârșit, rivalii se îmbrățișează;
+- personajele sunt tipuri sociale (prefectul, polițaiul, avocatul demagog) surprinse în defectele lor;
+- comicul domină toate nivelurile piesei (vezi 3.4);
+- deznodământul este fericit pentru personajele principale, deși nimic din situația morală nu s-a schimbat.
+
+**Interpretare.** Piesa este o **comedie de moravuri** pentru că satirizează obiceiurile unei societăți (politicianismul de provincie, șantajul, corupția, demagogia), nu doar defecte individuale.
+
+### 3.3. Curentul: realismul
+
+**Interpretare.** Trăsături ale realismului care pot fi arătate în text:
+
+1. **Subiect din actualitatea epocii.** Acțiunea se petrece „în zilele noastre” (didascalie), cu alegeri, comitete, ziare, telegraf și polițai; personajele discută despre revizuirea Constituției.
+2. **Personaje tipice, în mediul lor social.** Fiecare reprezintă un tip: prefectul influent, burghezul „onorabil”, demagogul, polițaiul care ia de la toți.
+3. **Limbaj apropiat de vorbirea de zi cu zi.** Replicile au un ton colocvial, cu cuvinte neologice folosite greșit („soțietate”, „prințipuri”, „docoment”).
+4. **Critica unei societăți.** Piesa arată cum funcționează o rețea politică locală, fără a propune soluții.
+
+> **Recomandare.** În unele manuale piesa este încadrată și în clasicism (comedie cu intrigă bine construită, tipuri umane). Programa nu leagă piesa de un curent: întreabă profesorul ce încadrare ați folosit la clasă și rămâi la ea.
+
+### 3.4. Comicul
+
+**Definiție.** Comicul poate fi de: **nume** (numele personajelor), **limbaj**, **situație**, **caracter** și **moravuri**. Clasificarea este un instrument de analiză, nu o regulă a autorului.
+
+Exemple din piesă:
+
+- **Comic de limbaj.** Farfuridi propune: „Din două una, dați-mi voie: ori să se revizuiască, primesc! dar să nu se schimbe nimica; ori să nu se revizuiască, primesc! dar atunci să se schimbe pe ici pe colo, și anume în punctele... esențiale” (III, 1). Fraza pare o dilemă, dar nu spune nimic precis.
+- **Comic de limbaj (contradicție).** Cațavencu: „Industria română e admirabilă, e sublimă, putem zice, dar lipsește cu desăvârșire” (III, 5).
+- **Comic de situație.** Cetățeanul turmentat vine de mai multe ori să întrebe: „Eu pentru cine votez?”, iar la sfârșit aduce scrisoarea, găsită în căptușeala unei pălării.
+- **Comic de caracter.** Cațavencu plânge în tribună („plânsul îl îneacă”, spune didascalia), apoi își revine „d-odată” și începe să strige (III, 5). Emoția este jucată.
+- **Comic de nume.** Un „vechi luptător de la 48” (așa îl descriu personajele din lista de la început) se numește Agamemnon Dandanache. Numele mitologic contrastează cu personajul.
+- **Comic de moravuri.** Tipătescu și Pristanda își spun „curat” același lucru: „Murdar!” – „Curat murdar!” (I, 1).
+
+<TipuriDeComic />
+
+## 4. Tema, titlul și viziunea despre lume
+
+### 4.1. Tema
+
+**Interpretare.** O formulare posibilă a temei: **mecanismele luptei pentru putere într-o societate de provincie, în care șantajul, corupția și compromisul țin loc de principii.**
+
+Arată că tema este susținută de:
+
+- obiectul care pune totul în mișcare, o scrisoare de dragoste folosită ca armă politică;
+- nimeni nu iese „curat”: și cei care par să reprezinte ordinea (Tipătescu, Zoe, Trahanache), și opoziția (Cațavencu) folosesc falsul și șantajul;
+- finalul: după ce toate planurile se încurcă, toți se împacă, iar sistemul rămâne neschimbat.
+
+### 4.2. Titlul
+
+**Interpretare.** Titlul numește obiectul care dă mișcare intrigii. Scrisoarea este pierdută de Zoe, găsită de cetățeanul turmentat, ajunge la Cațavencu, care o pierde în căptușeala pălăriei, și este găsită iar de același cetățean. „Pierdută” sugerează și un alt sens: în lumea piesei, ceea ce se pierde nu sunt doar obiecte, ci principii morale.
+
+**Despre piesă.** Scrisoarea trece prin mâinile mai multor personaje: Zoe, cetățeanul turmentat, Cațavencu, din nou cetățeanul, apoi Zoe.
+
+### 4.3. Viziunea despre lume
+
+**Interpretare.** Piesa nu propune un model pozitiv. Trahanache, președintele comitetelor, invocă mereu principiile („Într-o soțietate fără moral și fără prințip...”, I, 4), dar răspunde șantajului cu un șantaj: „dacă umblă el cu machiavelicuri, să-i dau eu machiavelicuri” (III, 4). Lumea piesei funcționează pe interese, nu pe principii.
+
+## 5. Subiectul și compoziția
+
+### 5.1. Cele patru acte
+
+**Despre piesă.** Actele sunt prezentate în figura din secțiunea 2. Pe scurt:
+
+- **Actul I.** Trahanache îi spune lui Tipătescu că Cațavencu i-a arătat o scrisoare compromițătoare, atribuită prefectului. Zoe recunoaște că a pierdut-o. Farfuridi și Brânzovenescu bănuiesc o trădare. Cetățeanul turmentat povestește cum a găsit scrisoarea și cum i-a luat-o Cațavencu. Trahanache descoperă o poliță cu semnătură falsificată.
+- **Actul II.** Farfuridi și Brânzovenescu pregătesc o depeșă anonimă. Pristanda îl arestează pe Cațavencu, iar Zoe îl eliberează. Cațavencu cere mandatul de deputat în schimbul scrisorii, iar Zoe îl convinge pe Tipătescu să cedeze. Sosește o depeșă: capitala impune alt candidat, pe Agamemnon Dandanache.
+- **Actul III.** La întrunire, Farfuridi ține un discurs încurcat, Cațavencu un discurs demagogic, iar Trahanache proclamă candidatura lui Dandanache. Cațavencu strigă „Trădare!”, iar grupul lui Pristanda îl scoate cu forța.
+- **Actul IV.** Dandanache povestește cum a obținut mandatul prin șantaj. Cațavencu recunoaște că a pierdut scrisoarea, iar cetățeanul turmentat o aduce lui Zoe. Zoe îl iartă pe Cațavencu cu o condiție, iar piesa se încheie cu o petrecere în grădina lui Trahanache.
+
+### 5.2. Timpul și spațiul
+
+**Despre piesă.** Spațiul: un oraș de provincie („capitala unui județ de munte”), cu un decor diferit pe acte: o anticameră și apoi „același salon” (actele I–II; didascaliile nu spun al cui), „sala cea mare a pretoriului primăriei” (actul III), „grădina lui Trahanache” (actul IV). Timpul: câteva zile, în preajma alegerilor. În actul IV, personajele spun că scandalul de la întrunire a avut loc „alaltăieri seara”.
+
+### 5.3. Conflictul
+
+**Interpretare.** Piesa are două linii de conflict care se întrețes:
+
+- **conflictul principal:** grupul puterii locale (Tipătescu, Zoe, Trahanache) contra lui Cațavencu, care deține scrisoarea;
+- **conflictul secundar:** Farfuridi și Brânzovenescu, care se tem că prefectul îi trădează, contra aceluiași grup.
+
+Conflictul se încheie fără învingători morali: Dandanache este ales, Cațavencu este iertat, iar Zoe recapătă scrisoarea.
+
+### 5.4. Elemente ale textului dramatic
+
+**Definiție.** Textul dramatic este scris pentru a fi reprezentat. Elemente prezente în piesă:
+
+- **Didascaliile** (notațiile autorului) descriu decorul și indică gesturile, tonul, mișcarea. Programa le numește „notațiile autorului” (p. 4). Exemple: „(aparte)”, „(sughite)”, „(nervos)”.
+- **Dialogul** este forma de bază: personajele se caracterizează prin ce spun și cum spun.
+- **Monologul**: Pristanda singur (I, 2), Zoe singură (II, 5), Cațavencu singur (II, 8).
+- **Apartele**: personajul spune cu voce tare ceea ce ceilalți nu aud.
+- **Actul și scena**: actul grupează o etapă a acțiunii, scena se schimbă când intră sau iese un personaj.
+
+## 6. Secvențe relevante
+
+### 6.1. Secvența 1: vestea scrisorii (I, 4)
+
+**Despre piesă.** Trahanache îi povestește lui Tipătescu vizita la Cațavencu și îi recită din memorie scrisoarea, pe care o crede o plastografie. Tipătescu se turbură; Trahanache, calm, repetă „Ai puțintică răbdare”. Scena arată cum reacționează fiecare: Tipătescu, înfuriat, vrea să-l „împuște”; Trahanache vrea să păstreze aparențele.
+
+**Interpretare.** Scena stabilește conflictul și două caractere: Tipătescu, impulsiv; Trahanache, în aparență naiv, dar atent la interesul lui. Faptul că scrisoarea este de la Tipătescu către Zoe și Trahanache o citește calm este sursa comicului de situație.
+
+### 6.2. Secvența 2: discursul lui Farfuridi (III, 1)
+
+**Despre piesă.** Farfuridi începe discursul de la „una-mie-opt-sute-două-zeci-și-unu... fix”, este întrerupt de grupul lui Cațavencu, trece la „plebicist” și ajunge la revizuirea Constituției, unde spune: „ori să se revizuiască, primesc! dar să nu se schimbe nimica; ori să nu se revizuiască, primesc! dar atunci să se schimbe pe ici pe colo, și anume în punctele... esențiale”.
+
+**Interpretare.** Discursul este un exemplu de comic de limbaj și de satiră politică: vorbitorul vrea să pară profund, dar rostește o contradicție. Aplauzele lui Brânzovenescu arată cum funcționează admirația de grup, nu înțelegerea.
+
+### 6.3. Secvența 3: întrunirea și lovitura de teatru (III, 5–7)
+
+**Despre piesă.** Cațavencu urcă la tribună și plânge, apoi trece brusc la un discurs despre progres. Pristanda tușește de trei ori, semnalul convenit; Trahanache anunță că „candidatul pe care-l susține comitetul” este Agamiță Dandanache. Cațavencu strigă „Trădare!”, apoi încearcă să dezvăluie scrisoarea, dar este împiedicat de Pristanda și de ceilalți.
+
+**Interpretare.** Scena duce conflictul la punctul culminant: planul puterii locale se realizează cu ajutorul unei polițe falsificate (descoperită în actul I) și al unui semnal convenit între Pristanda și Trahanache. Comicul vine din contrastul dintre gravitatea discursului lui Cațavencu și haosul scenei.
+
+### 6.4. Secvența 4: finalul (IV, 8–14)
+
+**Despre piesă.** Cetățeanul turmentat vine cu pălăria albă a lui Cațavencu și îi dă lui Zoe scrisoarea găsită în căptușeală. Zoe îl iartă pe Cațavencu cu o condiție: să conducă manifestația și banchetul. Piesa se încheie cu un toast: Cațavencu vorbește despre „avantajele progresului” și „binefacerile unui sistem constituțional”, iar Pristanda adaugă: „Curat constituțional!”
+
+**Interpretare.** Finalul este circular: scrisoarea revine la destinatară, ordinea inițială se restabilește, iar adversarii se împacă. Comicul final nu rezolvă problema morală, ci o acoperă cu festivitate. Trahanache spune: „Nu cunosc prefect eu! eu n-am prefect! eu am prietin!”.
+
+## 7. Personajele
+
+### 7.1. Harta relațiilor
+
+**Despre piesă.** Harta arată cum se leagă personajele principale. Alege un personaj ca să citești ce spune lecția despre el.
+
+<HartaRelatiilorScrisoare />
+
+### 7.2. Ștefan Tipătescu
+
+**Despre piesă.** Prefectul județului. Este iubitul lui Zoe și prietenul lui Trahanache. Se enervează ușor și vrea să rezolve problemele prin forță („Îl împușc! îi dau foc!”, I, 4). Cedează în fața lui Zoe.
+
+**Interpretare.** Statut social: prefect, om cu putere. Statut psihologic: impulsiv, vanitos, dependent de Zoe. Statut moral: își folosește funcția pentru interese personale; se arată indulgent cu corupția mărunță: „Nu mă uit dacă se folosește și el cu o para, două” (spune despre Pristanda, I, 1).
+
+### 7.3. Zoe Trahanache
+
+**Despre piesă.** Soția lui Zaharia Trahanache și iubita lui Tipătescu. Ea a pierdut scrisoarea. Este energică și hotărâtă: spune „Trebuie să alegem pe Cațavencu” (II, 5) și îl convinge pe Tipătescu să cedeze. La final îl iartă pe Cațavencu pentru a-l ține în mână.
+
+**Interpretare.** Statut social: soția unui om influent. Statut psihologic: pasională, calculată, folosește plânsul și amenințările cu moartea ca să obțină ce vrea. Statut moral: își înșală soțul, dar nu o spune nimeni deschis.
+
+### 7.4. Zaharia Trahanache
+
+**Despre piesă.** Președintele mai multor comitete („al Comitetului permanent, al Comitetului școlar, al Comitetului electoral, al Comițiului agricol și al altor comitete și comiții”, I, 4). Repetă „Ai puțintică răbdare” și invocă „moralul” și „prințipurile”, citându-l pe „fiu-meu de la facultate”.
+
+**Interpretare.** Este cel mai greu de „citit” personaj: pare naiv și înșelat, dar este sigur de sine, controlează adunarea și are polița prin care îl pune la punct pe Cațavencu. Interpretarea rămâne deschisă: poate nu știe de relația soției lui, poate preferă să nu știe. Piesa nu hotărăște.
+
+### 7.5. Nae Cațavencu
+
+**Despre piesă.** Avocat, director-proprietar al ziarului *Răcnetul Carpaților* și președinte-fondator al societății „Aurora Economică Română”. Deține scrisoarea și cere în schimb mandatul de deputat: „Vreau... mandatul de deputat, iată ce vreau: nimic altceva! nimic! nimic!” (II, 9). Falsifică o poliță, vorbește frumos și folosește emoția jucată.
+
+**Interpretare.** Demagog și șantajist, dar și victimă a propriilor trucuri: scrisoarea îi scapă din cauza unei pălării. Discursul lui conține cuvinte mari (progres, descentralizare) fără conținut: „Anglia-și are faliții săi, Franța-și are faliții săi [...] Numai noi să n-avem faliții noștri!” (III, 5).
+
+### 7.6. Farfuridi și Brânzovenescu
+
+**Despre piesă.** Doi avocați, membri ai comitetelor, care apar aproape mereu împreună. Se tem de „trădare”. Farfuridi spune: „iubesc trădarea”, urmat de „dar urăsc pe trădători” (I, 6).
+
+**Interpretare.** Sunt personaje-pereche: unul vorbește, celălalt îl aprobă. Comicul vine din repetiție și din ideea că ar accepta chiar trădarea, dacă „o cer interesele partidului”.
+
+### 7.7. Ghiță Pristanda
+
+**Despre piesă.** Polițaiul orașului. Spune mereu „Curat!” și se plânge: „Famelie mare, renumerație mică, după buget”. Execută ordinele prefectului, dar ascultă și de Zoe.
+
+**Interpretare.** Reprezintă funcționarul servil, care ia de la toți și servește pe toți. Replica „Curat murdar!” (I, 1) arată cum acceptă orice spune cel care are putere.
+
+### 7.8. Agamemnon Dandanache și cetățeanul turmentat
+
+**Despre piesă.** Dandanache este candidatul trimis din capitală. Vorbește peltic și spune că a fost ales prin șantaj, folosind o scrisoare de dragoste găsită în buzunarul unui pardesiu: „Găseste-mi, mă-nțeledzi, un coledzi, ori dau scrisoarea la «Răsboiul»” (IV, 3). Cetățeanul turmentat nu are nume, doar o dorință: să afle pentru cine să voteze.
+
+**Interpretare.** Dandanache este oglinda inversă a lui Cațavencu: șantajul lui reușește, al lui Cațavencu eșuează. Cetățeanul turmentat este, ironic, personajul care decide soarta scrisorii, dar nu decide nimic în politică: își cere votul de la alții.
+
+<CaracterizareScrisoare />
+
+### 7.9. Modalitățile de caracterizare
+
+**Definiție.** Într-un text dramatic, personajele se caracterizează mai ales prin:
+
+- **faptele și replicile lor** (caracterizare directă prin acțiune);
+- **limbaj**: fiecare vorbește într-un fel (Pristanda: „Curat!”, Trahanache: „Ai puțintică răbdare”, Dandanache: vorbire peltică);
+- **numele** (Agamemnon Dandanache);
+- **didascalii**: „(aparte)”, „(sughite)”, „(nervos)”;
+- **opinia altor personaje**: Tipătescu îl numește pe Cațavencu „mișel”, Zoe îl numește pe Dandanache „idiot” (IV, 3).
+
+**Interpretare.** Nu există un narator care să explice. Cititorul deduce caracterul din ce spun și ce fac personajele.
+
+## 8. Fapt și interpretare
+
+Verifică dacă înțelegi diferența dintre ce se petrece în text și ce se poate spune despre text.
+
+<FaptSauInterpretareScrisoare />
+
+## 9. Planul unui eseu
+
+> **Recomandare.** Subiectele din proiect nu conțin o cerință despre text dramatic. Planul de mai jos adaptează reperele cerințelor despre texte narative și poetice (încadrare, secvențe, elemente de structură sau de limbaj, câte 6 puncte pentru fiecare reper) la o comedie. Verifică formularea reală a cerinței la examen.
+
+<PlanEseuScrisoare />
+
+## 10. Autoevaluare
+
+<AutoevaluareScrisoare />
+
+## 11. Surse și limite
+
+- **Textul piesei:** transcriere Wikisource, „O scrisoare pierdută”, revizia 106053 (29.05.2017), ([pagina Wikisource](https://ro.wikisource.org/wiki/O_scrisoare_pierdut%C4%83)). **Ediția-sursă nu este indicată.** Textul a fost citit integral, iar citatele din lecție au fost confruntate cu această transcriere. Nu a fost confruntat cu o ediție tipărită sau critică.
+- **Date despre premieră și publicare:** ro.wikipedia.org, „O scrisoare pierdută” și „Ion Luca Caragiale”, consultate la 26.10.2026. Sursele secundare nu se potrivesc între ele în privința primei lecturi (6 sau 26 octombrie 1884) și a anului publicării în *Convorbiri literare* (1884 sau 1885); de aceea lecția nu dă aceste date. Premiera (13 noiembrie 1884, Teatrul Național din București) apare la ambele pagini.
+- **Programa:** Programa de examen, Bacalaureat 2014 (Anexa nr. 2 la OMEN nr. 4.923/2013), profil umanist, copie ISJ Vaslui, citită la 26.10.2026; copia profilului real nu a fost recitită.
+- **Nu am consultat:** studii critice despre Caragiale, ediții tipărite, înregistrări ale spectacolelor.
+- **Nu a existat validare de către un profesor.**

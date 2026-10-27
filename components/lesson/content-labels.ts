@@ -12,6 +12,8 @@ export const CONTENT_LABELS = {
   "Despre nuvelă": "text",
   "Despre operă": "text",
   "Despre basm": "text",
+  "Despre piesă": "text",
+  "Despre poezie": "text",
 } as const;
 
 export type ContentLabelKind = (typeof CONTENT_LABELS)[keyof typeof CONTENT_LABELS];

@@ -21,6 +21,20 @@ const opere: Record<OperaSlug, () => Promise<LessonModule>> = {
   "povestea-lui-harap-alb": () => import("@/content/romana/opere/povestea-lui-harap-alb.mdx"),
   "alexandru-lapusneanul": () => import("@/content/romana/opere/alexandru-lapusneanul.mdx"),
   "enigma-otiliei": () => import("@/content/romana/opere/enigma-otiliei.mdx"),
+  "o-scrisoare-pierduta": () => import("@/content/romana/opere/o-scrisoare-pierduta.mdx"),
+  luceafarul: () => import("@/content/romana/opere/luceafarul.mdx"),
+  plumb: () => import("@/content/romana/opere/plumb.mdx"),
+  testament: () => import("@/content/romana/opere/testament.mdx"),
+  "scrisoarea-iii": () => import("@/content/romana/opere/scrisoarea-iii.mdx"),
+  "o-noapte-furtunoasa": () => import("@/content/romana/opere/o-noapte-furtunoasa.mdx"),
+  "in-contra-directiei-de-astazi": () => import("@/content/romana/opere/in-contra-directiei-de-astazi.mdx"),
+  baltagul: () => import("@/content/romana/opere/baltagul.mdx"),
+  "eu-nu-strivesc-corola-de-minuni-a-lumii": () => import("@/content/romana/opere/eu-nu-strivesc-corola-de-minuni-a-lumii.mdx"),
+  "ultima-noapte-de-dragoste": () => import("@/content/romana/opere/ultima-noapte-de-dragoste.mdx"),
+  iona: () => import("@/content/romana/opere/iona.mdx"),
+  "leoaica-tanara-iubirea": () => import("@/content/romana/opere/leoaica-tanara-iubirea.mdx"),
+  "sincronismul-lovinescu": () => import("@/content/romana/opere/sincronismul-lovinescu.mdx"),
+  "morometii-volumul-1": () => import("@/content/romana/opere/morometii-volumul-1.mdx"),
 };
 
 export type Opera = {
