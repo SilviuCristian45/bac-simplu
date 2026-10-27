@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowRightIcon } from "@/components/home/icons";
-import { DraftBadge } from "@/components/lesson/draft-badge";
+import { INTRO_IDENTITIES } from "@/components/lesson/intro/intro-art";
+import { LessonIntro } from "@/components/lesson/intro/lesson-intro";
 import { TableOfContents } from "@/components/lesson/table-of-contents";
 import { Breadcrumb } from "@/components/site/breadcrumb";
-import { isDraft, sectionLabel, shortTitle } from "@/lib/content/lesson";
+import { LESSON_INTROS } from "@/content/romana/opere/introduceri";
+import { shortTitle } from "@/lib/content/lesson";
 import { getOpera, getOperaSlugs } from "@/lib/content/romana-opere";
+import { isOperaSlug } from "@/lib/content/romana-opere-slugs";
 import { getExerciseSet, romanaOperaSetKey } from "@/lib/exercises/registry";
-import { SUBJECTS } from "@/lib/site/home";
 
 export function generateStaticParams() {
   return getOperaSlugs().map((slug) => ({ slug }));
@@ -35,11 +35,10 @@ export default async function OperaPage({ params }: PageProps<"/romana/opere/[sl
   const { slug } = await params;
   const opera = await getOpera(slug);
   // dynamicParams is not available with cacheComponents, so unknown slugs 404 here.
-  if (!opera) notFound();
+  if (!opera || !isOperaSlug(slug)) notFound();
 
   const { meta, Content, headings } = opera;
   const exerciseSet = getExerciseSet(romanaOperaSetKey(slug));
-  const subjectTitle = SUBJECTS.find((subject) => subject.id === meta.subject)?.title ?? meta.subject;
 
   return (
     <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:px-6 sm:py-12">
@@ -52,37 +51,16 @@ export default async function OperaPage({ params }: PageProps<"/romana/opere/[sl
         ]}
       />
 
-      <header className="mt-6 max-w-3xl border-b border-line pb-8">
-        {isDraft(meta) && <DraftBadge />}
-        <h1 className="mt-4 text-3xl leading-tight font-bold tracking-tight text-balance text-ink sm:text-5xl">
-          {meta.title}
-        </h1>
-        <dl className="mt-6 flex flex-wrap gap-x-8 gap-y-3 text-sm">
-          <div>
-            <dt className="text-ink-muted">Autor</dt>
-            <dd className="mt-0.5 font-medium text-ink">{meta.author}</dd>
-          </div>
-          <div>
-            <dt className="text-ink-muted">Materie</dt>
-            <dd className="mt-0.5 font-medium text-ink">{subjectTitle}</dd>
-          </div>
-          <div>
-            <dt className="text-ink-muted">Conținut</dt>
-            <dd className="mt-0.5 font-medium text-ink">
-              {meta.sections.map(sectionLabel).join(" · ")}
-            </dd>
-          </div>
-        </dl>
-        {exerciseSet && (
-          <Link
-            href={`/romana/opere/${slug}/exercitii`}
-            className="mt-6 inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-3 font-semibold text-white shadow-sm hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-          >
-            Exersează: {exerciseSet.set.exercises.length} exerciții
-            <ArrowRightIcon className="size-4" />
-          </Link>
-        )}
-      </header>
+      <LessonIntro
+        meta={meta}
+        content={LESSON_INTROS[slug]}
+        identity={INTRO_IDENTITIES[slug]}
+        exercises={
+          exerciseSet
+            ? { href: `/romana/opere/${slug}/exercitii`, count: exerciseSet.set.exercises.length }
+            : null
+        }
+      />
 
       {headings.length > 0 && (
         <details className="group mt-6 rounded-xl border border-line bg-surface lg:hidden">

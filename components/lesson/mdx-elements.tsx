@@ -9,6 +9,8 @@ import {
   type ReactNode,
 } from "react";
 import { slugifyHeading } from "@/lib/content/headings";
+import { CardGrid } from "./card-grid";
+import { Disclosure } from "./disclosure";
 import { matchContentLabel, type ContentLabelKind } from "./content-labels";
 import { LABEL_CHIP } from "./label-styles";
 
@@ -169,4 +171,7 @@ export const lessonMdxElements: MDXComponents = {
   strong: Strong,
   hr: (props) => <hr className="my-10 border-line" {...props} />,
   a: MdxLink,
+  // Layout wrappers that lessons may use without importing them.
+  CardGrid,
+  Disclosure,
 };
