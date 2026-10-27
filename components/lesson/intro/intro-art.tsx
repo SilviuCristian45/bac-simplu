@@ -241,6 +241,85 @@ function OtiliaArt() {
   );
 }
 
+/** Plays: stage curtains, a lit stage and a mask. */
+function ScenaArt() {
+  return (
+    <Svg>
+      <rect x="0" y="150" width="320" height="50" className="fill-stone-400/60 dark:fill-stone-700/70" />
+      <path d="M0 0 H92 Q70 70 84 150 H0Z" className="intro-drift fill-rose-300 dark:fill-rose-800/70" />
+      <path d="M320 0 H228 Q250 70 236 150 H320Z" className="intro-drift fill-rose-300 dark:fill-rose-800/70" />
+      <path d="M92 0 H228 Q160 26 92 0Z" className="fill-rose-400 dark:fill-rose-700" />
+      <circle cx="160" cy="96" r="26" className="intro-glow fill-amber-200 dark:fill-amber-400/60" />
+      <path
+        d="M146 90 q4 -5 8 0 M166 90 q4 -5 8 0 M148 106 q12 12 24 0"
+        fill="none"
+        strokeWidth="3"
+        strokeLinecap="round"
+        className="intro-draw stroke-stone-700 dark:stroke-stone-900"
+      />
+    </Svg>
+  );
+}
+
+/** Poems: a moon, a few stars and flowing lines of verse. */
+function VersArt() {
+  return (
+    <Svg>
+      <circle cx="238" cy="52" r="24" className="intro-rise fill-amber-100 dark:fill-amber-200/70" />
+      <g className="fill-sky-400 dark:fill-sky-200">
+        <circle cx="52" cy="34" r="2" />
+        <circle cx="96" cy="64" r="1.6" />
+        <circle cx="146" cy="26" r="2" />
+        <circle cx="188" cy="80" r="1.6" />
+        <circle cx="290" cy="110" r="2" />
+      </g>
+      <g fill="none" strokeWidth="3" strokeLinecap="round" className="intro-draw stroke-sky-600/70 dark:stroke-sky-300/60">
+        <path d="M24 122 Q80 98 136 122 T248 122 T304 116" />
+        <path d="M24 148 Q88 124 152 148 T280 146" />
+        <path d="M24 174 Q96 152 168 174 T296 170" />
+      </g>
+    </Svg>
+  );
+}
+
+/** Novels: a road winding between hills toward a lit window. */
+function RomanArt() {
+  return (
+    <Svg>
+      <circle cx="84" cy="48" r="20" className="intro-rise fill-orange-200 dark:fill-orange-400/50" />
+      <path d="M0 120 Q70 70 150 110 T320 96 V200 H0Z" className="intro-drift fill-emerald-200 dark:fill-emerald-900/50" />
+      <path d="M0 150 Q100 120 190 144 T320 132 V200 H0Z" className="fill-emerald-300 dark:fill-emerald-950/70" />
+      <path
+        d="M120 200 Q150 160 176 140 T214 108"
+        fill="none"
+        strokeWidth="9"
+        strokeLinecap="round"
+        className="intro-draw stroke-stone-100 dark:stroke-stone-500/60"
+      />
+      <g className="fill-stone-500/80 dark:fill-stone-400/70">
+        <House x={226} y={92} w={20} />
+      </g>
+      <rect x="233" y="98" width="5" height="6" className="intro-glow fill-amber-300 dark:fill-amber-400" />
+    </Svg>
+  );
+}
+
+/** Critical texts: pages with lines and a bookmark. */
+function StudiuArt() {
+  return (
+    <Svg>
+      <g className="fill-white stroke-slate-400 dark:fill-slate-700 dark:stroke-slate-400" strokeWidth="1.5">
+        <rect x="88" y="34" width="104" height="132" rx="4" transform="rotate(-6 140 100)" />
+        <rect x="128" y="30" width="104" height="132" rx="4" transform="rotate(5 180 96)" className="intro-drift" />
+      </g>
+      <g fill="none" strokeWidth="3" strokeLinecap="round" className="intro-draw stroke-teal-600/70 dark:stroke-teal-300/60">
+        <path d="M150 62 H214 M150 80 H206 M150 98 H214 M150 116 H196" />
+      </g>
+      <path d="M214 30 v34 l8 -8 l8 8 v-34Z" className="fill-rose-400 dark:fill-rose-500" />
+    </Svg>
+  );
+}
+
 export type IntroIdentity = {
   Art: ComponentType;
   /** Background of the illustration frame. */
@@ -288,5 +367,103 @@ export const INTRO_IDENTITIES: Record<OperaSlug, IntroIdentity> = {
     wash: "from-violet-50 via-surface to-surface dark:from-violet-950/30",
     accent: "text-violet-800 dark:text-violet-300",
     badge: "bg-violet-100 text-violet-900 dark:bg-violet-950 dark:text-violet-200",
+  },
+  "o-scrisoare-pierduta": {
+    Art: ScenaArt,
+    frame: "bg-linear-to-b from-rose-100 to-orange-50 dark:from-rose-950/70 dark:to-zinc-900",
+    wash: "from-rose-50 via-surface to-surface dark:from-rose-950/30",
+    accent: "text-rose-800 dark:text-rose-300",
+    badge: "bg-rose-100 text-rose-900 dark:bg-rose-950 dark:text-rose-200",
+  },
+  "o-noapte-furtunoasa": {
+    Art: ScenaArt,
+    frame: "bg-linear-to-b from-fuchsia-100 to-rose-50 dark:from-fuchsia-950/70 dark:to-zinc-900",
+    wash: "from-fuchsia-50 via-surface to-surface dark:from-fuchsia-950/30",
+    accent: "text-fuchsia-800 dark:text-fuchsia-300",
+    badge: "bg-fuchsia-100 text-fuchsia-900 dark:bg-fuchsia-950 dark:text-fuchsia-200",
+  },
+  iona: {
+    Art: ScenaArt,
+    frame: "bg-linear-to-b from-cyan-100 to-slate-50 dark:from-cyan-950/70 dark:to-zinc-900",
+    wash: "from-cyan-50 via-surface to-surface dark:from-cyan-950/30",
+    accent: "text-cyan-800 dark:text-cyan-300",
+    badge: "bg-cyan-100 text-cyan-900 dark:bg-cyan-950 dark:text-cyan-200",
+  },
+  luceafarul: {
+    Art: VersArt,
+    frame: "bg-linear-to-b from-sky-100 to-indigo-50 dark:from-sky-950/70 dark:to-zinc-900",
+    wash: "from-sky-50 via-surface to-surface dark:from-sky-950/30",
+    accent: "text-sky-800 dark:text-sky-300",
+    badge: "bg-sky-100 text-sky-900 dark:bg-sky-950 dark:text-sky-200",
+  },
+  plumb: {
+    Art: VersArt,
+    frame: "bg-linear-to-b from-slate-100 to-zinc-50 dark:from-slate-950/70 dark:to-zinc-900",
+    wash: "from-slate-50 via-surface to-surface dark:from-slate-950/30",
+    accent: "text-slate-800 dark:text-slate-300",
+    badge: "bg-slate-100 text-slate-900 dark:bg-slate-950 dark:text-slate-200",
+  },
+  testament: {
+    Art: VersArt,
+    frame: "bg-linear-to-b from-amber-100 to-stone-50 dark:from-amber-950/70 dark:to-zinc-900",
+    wash: "from-amber-50 via-surface to-surface dark:from-amber-950/30",
+    accent: "text-amber-800 dark:text-amber-300",
+    badge: "bg-amber-100 text-amber-900 dark:bg-amber-950 dark:text-amber-200",
+  },
+  "scrisoarea-iii": {
+    Art: VersArt,
+    frame: "bg-linear-to-b from-red-100 to-orange-50 dark:from-red-950/70 dark:to-zinc-900",
+    wash: "from-red-50 via-surface to-surface dark:from-red-950/30",
+    accent: "text-red-800 dark:text-red-300",
+    badge: "bg-red-100 text-red-900 dark:bg-red-950 dark:text-red-200",
+  },
+  "eu-nu-strivesc-corola-de-minuni-a-lumii": {
+    Art: VersArt,
+    frame: "bg-linear-to-b from-violet-100 to-sky-50 dark:from-violet-950/70 dark:to-zinc-900",
+    wash: "from-violet-50 via-surface to-surface dark:from-violet-950/30",
+    accent: "text-violet-800 dark:text-violet-300",
+    badge: "bg-violet-100 text-violet-900 dark:bg-violet-950 dark:text-violet-200",
+  },
+  "leoaica-tanara-iubirea": {
+    Art: VersArt,
+    frame: "bg-linear-to-b from-orange-100 to-amber-50 dark:from-orange-950/70 dark:to-zinc-900",
+    wash: "from-orange-50 via-surface to-surface dark:from-orange-950/30",
+    accent: "text-orange-800 dark:text-orange-300",
+    badge: "bg-orange-100 text-orange-900 dark:bg-orange-950 dark:text-orange-200",
+  },
+  baltagul: {
+    Art: RomanArt,
+    frame: "bg-linear-to-b from-emerald-100 to-lime-50 dark:from-emerald-950/70 dark:to-zinc-900",
+    wash: "from-emerald-50 via-surface to-surface dark:from-emerald-950/30",
+    accent: "text-emerald-800 dark:text-emerald-300",
+    badge: "bg-emerald-100 text-emerald-900 dark:bg-emerald-950 dark:text-emerald-200",
+  },
+  "ultima-noapte-de-dragoste": {
+    Art: RomanArt,
+    frame: "bg-linear-to-b from-stone-100 to-slate-50 dark:from-stone-950/70 dark:to-zinc-900",
+    wash: "from-stone-50 via-surface to-surface dark:from-stone-950/30",
+    accent: "text-stone-800 dark:text-stone-300",
+    badge: "bg-stone-100 text-stone-900 dark:bg-stone-950 dark:text-stone-200",
+  },
+  "morometii-volumul-1": {
+    Art: RomanArt,
+    frame: "bg-linear-to-b from-yellow-100 to-lime-50 dark:from-yellow-950/70 dark:to-zinc-900",
+    wash: "from-yellow-50 via-surface to-surface dark:from-yellow-950/30",
+    accent: "text-yellow-800 dark:text-yellow-300",
+    badge: "bg-yellow-100 text-yellow-900 dark:bg-yellow-950 dark:text-yellow-200",
+  },
+  "in-contra-directiei-de-astazi": {
+    Art: StudiuArt,
+    frame: "bg-linear-to-b from-teal-100 to-slate-50 dark:from-teal-950/70 dark:to-zinc-900",
+    wash: "from-teal-50 via-surface to-surface dark:from-teal-950/30",
+    accent: "text-teal-800 dark:text-teal-300",
+    badge: "bg-teal-100 text-teal-900 dark:bg-teal-950 dark:text-teal-200",
+  },
+  "sincronismul-lovinescu": {
+    Art: StudiuArt,
+    frame: "bg-linear-to-b from-blue-100 to-sky-50 dark:from-blue-950/70 dark:to-zinc-900",
+    wash: "from-blue-50 via-surface to-surface dark:from-blue-950/30",
+    accent: "text-blue-800 dark:text-blue-300",
+    badge: "bg-blue-100 text-blue-900 dark:bg-blue-950 dark:text-blue-200",
   },
 };
