@@ -1,41 +1,12 @@
 export const SITE_NAME = "BAC Simplu";
-
-export type SubjectId = "romana" | "matematica" | "informatica";
-
-export type Subject = {
-  id: SubjectId;
-  title: string;
-  description: string;
-  /** Present only for subjects whose content is published. */
-  link?: { href: string; label: string };
-  note?: string;
-};
-
-export const SUBJECTS: Subject[] = [
-  {
-    id: "romana",
-    title: "Limba și literatura română",
-    description:
-      "Lecții despre operele studiate pentru BAC: încadrare, temă, structură, personaje și redactarea eseului.",
-    link: { href: "/romana/opere", label: "Vezi operele" },
-    note: "Toate lecțiile publicate sunt în curs de verificare: nu au fost încă validate de un profesor.",
-  },
-  {
-    id: "matematica",
-    title: "Matematică",
-    description: "Teorie și exerciții pentru proba de matematică. Materialele sunt în pregătire.",
-  },
-  {
-    id: "informatica",
-    title: "Informatică",
-    description: "Teorie și probleme pentru proba de informatică. Materialele sunt în pregătire.",
-  },
-];
+export const SITE_TAGLINE = "Română, pas cu pas.";
+export const SITE_TITLE = `${SITE_NAME} — Bacalaureatul la Română`;
+export const SITE_DESCRIPTION =
+  "Pregătire gratuită pentru Bacalaureatul la Limba și literatura română: lecții despre operele studiate, exerciții cu explicații și planuri de eseu.";
 
 export type Step = {
   title: string;
   description: string;
-  available: boolean;
 };
 
 export const STEPS: Step[] = [
@@ -43,16 +14,14 @@ export const STEPS: Step[] = [
     title: "Învață teoria",
     description:
       "Citești lecții structurate după cerințele de la examen, cu explicații clare și exemple.",
-    available: true,
   },
   {
     title: "Rezolvă exerciții",
-    description: "Exersezi pe întrebări și sarcini asemănătoare celor de la BAC.",
-    available: false,
+    description:
+      "Exersezi pe întrebări cu alegere multiplă, adevărat/fals și răspuns scurt, pentru fiecare operă.",
   },
   {
     title: "Verifică răspunsurile",
     description: "Primești explicații pentru fiecare răspuns, ca să înțelegi ce ai greșit.",
-    available: false,
   },
 ];

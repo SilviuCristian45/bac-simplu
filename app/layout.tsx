@@ -1,6 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { BRAND_ACCENT } from "@/lib/site/brand";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE } from "@/lib/site/home";
 import { themeBootScript } from "@/lib/site/theme";
+import { FALLBACK_SITE_URL, getSiteUrl } from "@/lib/site/url";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,13 +16,32 @@ const geistMono = Geist_Mono({
   subsets: ["latin", "latin-ext"],
 });
 
+// SITE_URL (see lib/site/url.ts) is the production address; the fallback only resolves
+// relative URLs locally.
 export const metadata: Metadata = {
+  metadataBase: getSiteUrl() ?? new URL(FALLBACK_SITE_URL),
+  applicationName: SITE_NAME,
   title: {
-    default: "Pregătire pentru Bacalaureat",
-    template: "%s – Pregătire pentru Bacalaureat",
+    default: SITE_TITLE,
+    template: `%s — ${SITE_NAME}`,
   },
-  description:
-    "Materiale gratuite pentru pregătirea examenului de Bacalaureat: lecții de limba și literatura română, explicate clar și raportate la cerințele oficiale.",
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    locale: "ro_RO",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: BRAND_ACCENT,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SITE_NAME } from "@/lib/site/home";
+import { BrandMark } from "./brand-mark";
 import { ThemeToggle } from "./theme-toggle";
 
 const navLinkClass =
@@ -15,9 +16,9 @@ export function SiteHeader() {
         >
           <span
             aria-hidden="true"
-            className="grid size-8 place-items-center rounded-lg bg-accent text-sm font-bold text-white"
+            className="grid size-8 place-items-center rounded-lg bg-accent text-white"
           >
-            B
+            <BrandMark className="size-5" />
           </span>
           <span className="text-base sm:text-lg">{SITE_NAME}</span>
         </Link>
@@ -25,11 +26,6 @@ export function SiteHeader() {
         <div className="flex items-center gap-1 sm:gap-3">
         <nav aria-label="Navigare principală">
           <ul className="flex items-center gap-1 text-sm font-medium sm:gap-2">
-            <li>
-              <Link href="/#materii" className={navLinkClass}>
-                Materii
-              </Link>
-            </li>
             <li className="hidden sm:block">
               <Link href="/#cum-functioneaza" className={navLinkClass}>
                 Cum funcționează

@@ -7,7 +7,7 @@ import { isDraft, sectionLabel } from "@/lib/content/lesson";
 import { getAllOperaMeta } from "@/lib/content/romana-opere";
 
 export const metadata: Metadata = {
-  title: "Opere literare – Limba și literatura română",
+  title: "Opere literare",
   description:
     "Lecții despre operele literare studiate pentru Bacalaureat la limba și literatura română.",
 };

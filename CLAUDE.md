@@ -2,14 +2,11 @@
 
 ## 1. Scopul proiectului
 
-Construim o platformă web modernă pentru pregătirea elevilor de clasa a XII-a pentru examenul de Bacalaureat din România.
+Construim „BAC Simplu” („Română, pas cu pas.”), o platformă web modernă dedicată exclusiv pregătirii elevilor de clasa a XII-a pentru Bacalaureatul la Limba și literatura română.
 
-Materii planificate:
-- Limba și literatura română
-- Matematică
-- Informatică
+Proiectul nu include alte materii. Extinderea la alte materii nu este planificată și nu se implementează fără o decizie nouă a proprietarului proiectului.
 
-Prima etapă a proiectului se concentrează exclusiv pe Limba și literatura română, începând cu romanul „Ion” de Liviu Rebreanu.
+Conținutul acoperă operele din `content/romana/opere/`, începând cu romanul „Ion” de Liviu Rebreanu.
 
 Obiectivul este să oferim materiale gratuite, corecte, ușor de înțeles și utile pentru pregătirea examenului.
 
@@ -25,8 +22,6 @@ Tehnologii principale:
 - Zod pentru validarea datelor, dacă este necesar
 
 Pentru funcționalități viitoare:
-- KaTeX pentru formule matematice
-- Mermaid.js pentru diagrame de algoritmi
 - Supabase pentru autentificare și salvarea progresului, numai când este necesar
 
 Nu adăuga biblioteci sau servicii externe fără un motiv concret.
@@ -191,4 +186,4 @@ După implementare:
 
 Dacă lipsește o informație importantă, cere clarificări în loc să faci presupuneri cu impact major.
 
-Prioritatea proiectului în etapa curentă este să realizăm o lecție completă, verificabilă și funcțională pentru „Ion” de Liviu Rebreanu, cu secțiunile Teorie și Exerciții, înainte de extinderea la alte opere sau materii.
+Prioritatea proiectului în etapa curentă este calitatea și verificabilitatea lecțiilor și exercițiilor existente pentru operele din platformă (secțiunile Teorie și Exerciții), înainte de extinderea la alte opere.
