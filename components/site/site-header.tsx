@@ -20,20 +20,25 @@ export function SiteHeader() {
           >
             <BrandMark className="size-5" />
           </span>
-          <span className="text-base sm:text-lg">{SITE_NAME}</span>
+          <span className="font-serif text-lg font-semibold sm:text-xl">{SITE_NAME}</span>
         </Link>
 
         <div className="flex items-center gap-1 sm:gap-3">
         <nav aria-label="Navigare principală">
           <ul className="flex items-center gap-1 text-sm font-medium sm:gap-2">
-            <li className="hidden sm:block">
-              <Link href="/#cum-functioneaza" className={navLinkClass}>
-                Cum funcționează
-              </Link>
-            </li>
             <li>
               <Link href="/romana/opere" className={navLinkClass}>
                 Opere
+              </Link>
+            </li>
+            <li className="hidden sm:block">
+              <Link href="/#lectie" className={navLinkClass}>
+                Cum arată o lecție
+              </Link>
+            </li>
+            <li className="hidden md:block">
+              <Link href="/#stadiu" className={navLinkClass}>
+                Despre conținut
               </Link>
             </li>
           </ul>

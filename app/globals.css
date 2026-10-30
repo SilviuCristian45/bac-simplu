@@ -18,15 +18,15 @@
 /* Semantic colour tokens. Components use bg-canvas, bg-surface, border-line, text-ink… */
 :root {
   color-scheme: light;
-  --canvas: #f4f6fb;
-  --canvas-accent: #e3eafc;
-  --surface: #ffffff;
-  --surface-muted: #eef1f8;
-  --line: #dde2ed;
-  --line-strong: #c3cad9;
-  --ink: #0f172a;
-  --ink-body: #283247;
-  --ink-muted: #4c566b;
+  --canvas: #f8f4ea;
+  --canvas-accent: #efe5cd;
+  --surface: #fffcf5;
+  --surface-muted: #f0eadb;
+  --line: #e3dbc8;
+  --line-strong: #cbbfa6;
+  --ink: #1c1a16;
+  --ink-body: #34302a;
+  --ink-muted: #595346;
   --accent: #2459d6;
   --accent-hover: #1c47b3;
   --accent-ink: #1d4bbd;
@@ -38,15 +38,15 @@
   /* Applies through the dark variant above: data-theme="dark", or the system preference without JS. */
   @variant dark {
     color-scheme: dark;
-    --canvas: #0a0a0b;
-    --canvas-accent: color-mix(in oklab, #1e3a8a 45%, transparent);
-    --surface: #18181b;
-    --surface-muted: #1f1f23;
-    --line: #27272a;
-    --line-strong: #3f3f46;
-    --ink: #ffffff;
-    --ink-body: #e4e4e7;
-    --ink-muted: #a1a1aa;
+    --canvas: #15130f;
+    --canvas-accent: color-mix(in oklab, #6b5524 32%, transparent);
+    --surface: #1e1c17;
+    --surface-muted: #26231d;
+    --line: #35312a;
+    --line-strong: #4b463c;
+    --ink: #f4efe3;
+    --ink-body: #e0d9c9;
+    --ink-muted: #aaa290;
     --accent: #2563eb;
     --accent-hover: #1d4ed8;
     --accent-ink: #93b4fd;
@@ -74,6 +74,7 @@
   --color-background: var(--canvas);
   --color-foreground: var(--ink);
   --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-literata);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -90,6 +91,15 @@
     transition-property: background-color, border-color, color, fill, stroke !important;
     transition-duration: 200ms !important;
     transition-timing-function: ease-out !important;
+  }
+}
+
+/* Literata for headings and editorial text; the sans-serif stays for interface and body copy. */
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif), Georgia, "Times New Roman", serif;
   }
 }
 
@@ -190,4 +200,17 @@ body {
   from {
     opacity: 0.25;
   }
+}
+
+/*
+ * Static thumbnail of a lesson illustration (home page and catalogue): the intro animations are
+ * meant for the lesson header, so here the drawing is simply shown in its final state.
+ */
+.art-static,
+.art-static * {
+  animation: none !important;
+}
+
+.art-static .intro-draw {
+  stroke-dashoffset: 0;
 }

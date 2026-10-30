@@ -5,7 +5,7 @@ import { DraftBadge } from "@/components/lesson/draft-badge";
 import { LABEL_CHIP } from "@/components/lesson/label-styles";
 import type { IntroEssential, IntroKind, LessonIntroContent } from "@/content/romana/opere/introduceri";
 import { slugifyHeading } from "@/lib/content/headings";
-import { isDraft, shortTitle, type LessonMeta } from "@/lib/content/lesson";
+import { isDraft, titleWithoutAuthor, type LessonMeta } from "@/lib/content/lesson";
 import type { IntroIdentity } from "./intro-art";
 
 type LessonIntroProps = {
@@ -91,8 +91,8 @@ export function LessonIntro({ meta, content, identity, exercises }: LessonIntroP
           </div>
 
           <h1 id="lectie-titlu" className="intro-title mt-4 text-balance" style={delay(80)}>
-            <span className="block text-4xl leading-[1.1] font-bold tracking-tight text-ink sm:text-5xl">
-              „{shortTitle(meta)}”
+            <span className="block text-4xl leading-[1.1] font-bold tracking-tight text-ink sm:text-5xl md:text-4xl lg:text-5xl">
+              {titleWithoutAuthor(meta)}
             </span>{" "}
             <span className="mt-2 block text-lg font-medium text-ink-muted sm:text-xl">de {meta.author}</span>
           </h1>

@@ -6,7 +6,7 @@ Platformă gratuită pentru pregătirea Bacalaureatului la **Limba și literatur
 
 ## Tehnologii
 
-Next.js (App Router), React, TypeScript, Tailwind CSS, MDX pentru lecții.
+Next.js (App Router), React, TypeScript, Tailwind CSS, MDX pentru lecții. Fonturi (prin `next/font`, auto-găzduite la build): Literata pentru titluri și zone editoriale, Geist pentru interfață și text.
 
 ## Rulare locală
 
@@ -23,6 +23,7 @@ Verificări:
 npm run lint
 npx tsc --noEmit
 npm run test:exercises
+npm run test:site
 npm run build
 ```
 
@@ -40,7 +41,7 @@ Dacă `SITE_URL` lipsește, `sitemap.xml` este gol, `robots.txt` nu menționeaz�
 - `content/romana/opere/` — lecțiile (MDX) și datele interactive.
 - `content/romana/exercitii/` — seturile de exerciții.
 - `components/` — componente UI (site, lecții, exerciții).
-- `lib/` — logica aplicației: conținut, corectarea exercițiilor, salvarea locală a progresului, constante de brand (`lib/site/`).
+- `lib/` — logica aplicației: conținut, corectarea exercițiilor, salvarea locală a progresului, constante de brand și gruparea operelor pentru navigare (`lib/site/`).
 - `docs/` — planul operelor și rapoartele de audit.
 - `references/bac-romana/` — documente oficiale de referință.
 
@@ -49,3 +50,7 @@ Dacă `SITE_URL` lipsește, `sitemap.xml` este gol, `robots.txt` nu menționeaz�
 Nume: **BAC Simplu**. Slogan: „Română, pas cu pas.”. Titlu implicit: „BAC Simplu — Bacalaureatul la Română”. Monograma (o carte deschisă) este definită în `lib/site/brand.ts`, desenată în `app/icon.svg` și în `components/site/brand-mark.tsx`.
 
 Cheile `localStorage` (`bac-simplu-tema`, `bac-simplu:exercitii:<set>`) sunt stabile și nu trebuie redenumite fără migrare, pentru a nu pierde preferințele și progresul utilizatorilor.
+
+## Gruparea operelor
+
+Operele sunt grupate (Proză, Poezie, Teatru, Critică și teorie literară) **doar pentru navigare**; nu este o clasificare oficială a programei BAC. Harta explicită `slug → grupă` este în `lib/site/opere-grupe.ts`. O operă nouă trebuie adăugată acolo: TypeScript și `npm run test:site` eșuează dacă lipsește.

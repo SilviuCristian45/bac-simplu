@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test:site": "node --experimental-strip-types --no-warnings --test lib/site/opere-grupe.test.mjs lib/site/specimen.test.mjs lib/content/lesson.test.mjs lib/content/introduceri.test.mjs",
     "test:exercises": "node --experimental-strip-types --no-warnings --test lib/exercises/grading.test.mjs lib/exercises/summary.test.mjs lib/exercises/session-storage.test.mjs lib/exercises/harap-alb.test.mjs lib/exercises/alexandru-lapusneanul.test.mjs lib/exercises/enigma-otiliei.test.mjs lib/exercises/opere-noi.test.mjs"
   },
   "dependencies": {

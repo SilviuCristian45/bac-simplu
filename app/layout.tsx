@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Literata } from "next/font/google";
 import { BRAND_ACCENT } from "@/lib/site/brand";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE } from "@/lib/site/home";
 import { themeBootScript } from "@/lib/site/theme";
@@ -9,6 +9,12 @@ import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin", "latin-ext"],
+});
+
+const literata = Literata({
+  variable: "--font-literata",
+  subsets: ["latin", "latin-ext"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
@@ -51,7 +57,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="ro"
       data-scroll-behavior="smooth"
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${literata.variable} h-full antialiased`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />

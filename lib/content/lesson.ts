@@ -76,15 +76,28 @@ export function parseLessonMeta(value: unknown, source: string): LessonMeta {
   };
 }
 
+const CLOSING_QUOTE: Record<string, string> = { "„": "”", "«": "»", '"': '"' };
+
+/** The title without the trailing " de <author>", with its own quotes kept („Ion” de Liviu Rebreanu → „Ion”). */
+export function titleWithoutAuthor(meta: LessonMeta): string {
+  const suffix = ` de ${meta.author}`;
+  return (meta.title.endsWith(suffix) ? meta.title.slice(0, -suffix.length) : meta.title).trim();
+}
+
 /**
- * Short form of the title for breadcrumbs: drops the trailing " de <author>" and the
- * surrounding quotes („Ion” de Liviu Rebreanu → Ion). Falls back to the full title.
+ * Short form of the title for breadcrumbs and lists: drops the trailing " de <author>" and the
+ * quote pair that opens the title („Ion” de Liviu Rebreanu → Ion). Only that first pair goes,
+ * so quotes further on stay balanced („Moromeții” (volumul I) → Moromeții (volumul I)).
+ * Falls back to the full title.
  */
 export function shortTitle(meta: LessonMeta): string {
-  const withoutAuthor = meta.title.endsWith(` de ${meta.author}`)
-    ? meta.title.slice(0, -` de ${meta.author}`.length)
-    : meta.title;
-  return withoutAuthor.replace(/^[„"«]\s*|\s*[”"»]$/g, "").trim() || meta.title;
+  const base = titleWithoutAuthor(meta);
+  const closing = CLOSING_QUOTE[base.charAt(0)];
+  if (closing === undefined) return base || meta.title;
+  const closeAt = base.indexOf(closing, 1);
+  if (closeAt === -1) return base || meta.title;
+  const unquoted = `${base.slice(1, closeAt).trim()}${base.slice(closeAt + 1)}`.trim();
+  return unquoted || meta.title;
 }
 
 export function isDraft(meta: LessonMeta): boolean {
