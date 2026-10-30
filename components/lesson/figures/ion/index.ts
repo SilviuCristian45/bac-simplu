@@ -5,6 +5,7 @@ export { HartaRelatiilorIon } from "./harta-relatiilor";
 export { HoraContextSocial } from "./hora-context-social";
 export { IonSiPamantul } from "./ion-si-pamantul";
 export { PlanEseu } from "./plan-eseu";
+export { PortreteleProtagonistilor } from "./portretele-personajelor";
 export { PunctajSubiectulIII } from "./punctaj-subiectul-3";
 export { RezumatSauComentariu } from "./rezumat-comentariu";
 export { StilIndirectLiber } from "./stil-indirect-liber";
