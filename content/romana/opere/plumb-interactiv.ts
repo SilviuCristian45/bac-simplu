@@ -51,7 +51,7 @@ export const trasaturiSimbolismQuiz: QuizContent = {
     { id: "simbol", label: "Cuvântul „plumb” revine în aproape fiecare vers și acoperă sicriele, florile, amorul, aripile." },
     { id: "muzicalitate", label: "„Plumb” este și rimă, și refren: „sicriele de plumb”, „coroanele de plumb”, „aripile de plumb”." },
     { id: "sugestie", label: "Poezia nu explică ce s-a pierdut; sugerează: „Stam singur în cavou... și era vânt...”." },
-    { id: "atmosfera", label: "Cavou, sicrie, coroane, mormânt, „frig” formează o atmosferă de moarte." },
+    { id: "atmosfera", label: "Cavou, sicrie, coroane, „frig” formează o atmosferă de moarte." },
   ],
   items: [
     {
@@ -83,7 +83,7 @@ export const trasaturiSimbolismQuiz: QuizContent = {
       prompt: "Atmosfera de moarte și de singurătate",
       tag: "interpretare",
       correct: "atmosfera",
-      explanation: "Vocabularul funerar (cavou, sicrie, coroane, mormânt) și „frigul” construiesc atmosfera.",
+      explanation: "Vocabularul funerar (cavou, sicrie, coroane) și „frigul” construiesc atmosfera.",
       source: "Lecția, 3.2 (punctul 4).",
     },
   ],

@@ -122,7 +122,7 @@ export const plumbExercises: ExerciseSet = {
       prompt: "Care dintre aceste enunțuri este o interpretare, nu un fapt verificabil în text?",
       options: [
         { id: "a", text: "Poezia este alcătuită din două strofe, de câte patru versuri fiecare." },
-        { id: "b", text: "Vorbitorul spune că stă singur în cavou, iar afară era vânt." },
+        { id: "b", text: "Vorbitorul spune că stă singur în cavou și că era vânt." },
         { id: "c", text: "Aripile de plumb arată iubirea care nu mai poate zbura." },
         { id: "d", text: "Fiecare strofă are rimă îmbrățișată, de tip abba." },
       ],
@@ -219,14 +219,14 @@ export const plumbExercises: ExerciseSet = {
       grading: {
         mode: "self-assessment",
         criteria: [
-          "Am precizat ce spune versul: vorbitorul este singur în cavou, iar vântul mișcă coroanele.",
+          "Am precizat ce spune versul: vorbitorul este singur în cavou; spune că era vânt și că scârțâiau coroanele.",
           "Am numit un procedeu (de exemplu, sugestia prin puncte de suspensie sau atmosfera funerară).",
           "Am formulat o interpretare legată de tema singurătății și a morții iubirii.",
           "Am folosit un citat scurt și verificat (de exemplu, „și scârțâiau coroanele de plumb”).",
         ],
       },
       modelAnswer:
-        "Vorbitorul stă singur în cavou, iar vântul și coroanele care scârțâie sunt singurele mișcări (fapt). Punctele de suspensie lasă sugestia mai departe, fără să explice. Interpretare: imaginea arată singurătatea și frica într-un spațiu funerar, în sprijinul temei morții iubirii.",
+        "Vorbitorul stă singur în cavou; versul spune că „era vânt” și că „scârțâiau coroanele”, fără să lege explicit cele două (fapt). Punctele de suspensie lasă sugestia mai departe, fără să explice. Interpretare: imaginea arată singurătatea și frica într-un spațiu funerar, în sprijinul temei morții iubirii.",
       maxLength: 1200,
       explanation:
         "Nu există un singur răspuns corect. Un comentariu bun separă textul de interpretare, numește un procedeu, folosește un citat scurt și leagă imaginea de temă. Verificarea automată nu poate evalua această sarcină: compară-ți răspunsul cu criteriile.",
