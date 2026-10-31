@@ -120,10 +120,10 @@ export const faptInterpretareQuiz: QuizContent = {
     },
     {
       id: "fata",
-      prompt: "Cuvântul „față” apare la sfârșitul versurilor 1, 3 și 4 din fragment.",
+      prompt: "Cuvântul „față” apare la sfârșitul versurilor 2, 5 și 6 din poezie (titlul fiind versul 1).",
       tag: "fapt-poezie",
       correct: "fapt",
-      explanation: "Se verifică în cele patru versuri citate.",
+      explanation: "Se verifică în versurile citate.",
       source: "Lecția, 5.1.",
     },
     {
