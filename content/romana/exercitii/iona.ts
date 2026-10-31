@@ -180,11 +180,23 @@ export const ionaExercises: ExerciseSet = {
       difficulty: "mediu",
       prompt: "Stabilește dacă afirmația este adevărată sau falsă.",
       statement: "După sursă, mama lui Iona apare doar într-un cântec care îl cheamă.",
-      correct: true,
+      correct: false,
       explanation:
-        "Adevărat: după sursă, mama apare doar într-un cântec care îl cheamă pe Iona, iar soția este doar amintită, ca cea care îl învinuiește. Nu sunt personaje care apar pe scenă.",
+        "Fals. Mama apare doar în gândurile lui Iona („Mamă – aș scrie –, mi s-a întâmplat o mare nenorocire”, „Mai naște-mă o dată!”), iar singurul cântec din piesă este al lui Iona („Veșnica mistuire”). Soția nu îl învinuiește: spune că privirea lui ucide peștii din acvariu, dar „ea mă iubește”. Nu sunt personaje care apar pe scenă.",
       lessonSection: { id: "7-personajele", label: "7. Personajele" },
       basis: "Lecția, 7; sursa secundară.",
+    },
+    {
+      id: "iona-af-distributie",
+      type: "true-false",
+      difficulty: "usor",
+      prompt: "Stabilește dacă afirmația este adevărată sau falsă.",
+      statement: "În distribuția piesei apar Iona, pescar, și doi pescari, Pescarul I și Pescarul II, figuri mute.",
+      correct: true,
+      explanation:
+        "Adevărat. Distribuția cuprinde: IONA, pescar; PESCARUL I; PESCARUL II. Cei doi pescari sunt figuri mute: în tabloul III, didascalia spune „Nu scot nici un cuvânt”, iar mai târziu sunt numiți „muți”.",
+      lessonSection: { id: "7-personajele", label: "7. Personajele" },
+      basis: "Lecția, 7; Sorescu, Iona, lista de personaje și didascaliile tabloului III.",
     },
     {
       id: "iona-af-final",
