@@ -148,7 +148,7 @@ export const cineVorbesteQuiz: QuizContent = {
     },
     {
       id: "tepes",
-      prompt: "„Cum nu vii tu, Țepeș doamne, ca punînd mîna pe ei”",
+      prompt: "„Cum nu vii tu, Țepeș Doamne, ca punînd mîna pe ei”",
       tag: "citat",
       correct: "poetul",
       explanation: "Poetul însuși, în satira finală, îl cheamă pe Țepeș ca să-i pedepsească pe politicieni.",
