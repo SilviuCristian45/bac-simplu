@@ -112,7 +112,7 @@ export const morometiiExercises: ExerciseSet = {
       ],
       correctOptionId: "a",
       explanation:
-        "Fiii fug cu caii și cu o parte din zestrea fetelor; Moromete vinde apoi din pământ ca să plătească datoriile. Sursele nu pomenesc banii de la seceriș sau un câine.",
+        "După ambele surse consultate, fiii fug cu caii și cu o parte din zestrea fetelor; Moromete vinde apoi din pământ ca să plătească datoriile. Sursele nu pomenesc banii de la seceriș sau un câine. În textul romanului, însă, fug doar Paraschiv și Nilă („Amândoi au fugit”), cu caii, cu „toți banii pe care-i găsiseră” și cu „cele mai bune covoare”; „zestre” nu apare acolo.",
       lessonSection: { id: "6-6-bataia-si-fuga-fiilor", label: "6.6. Bătaia și fuga fiilor" },
       basis: "Lecția, 6.6; surse: ro.wikipedia.org și fișa Liceului Haltrich.",
     },
