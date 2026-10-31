@@ -44,8 +44,8 @@ export const testamentExercises: ExerciseSet = {
       ],
       correctOptionId: "a",
       explanation:
-        "Primele versuri sunt: „Nu-i voi lăsa drept bunuri, după moarte, / Decât un nume adunat pe-o carte”. Poetul nu lasă bunuri materiale, ci o carte.",
-      lessonSection: { id: "6-1-nu-i-voi-lasa-drept-bunuri-dupa-moarte-decat-un-nume-adunat-pe-o-carte", label: "6.1. „Nu-i voi lăsa drept bunuri, după moarte, / Decât un nume adunat pe-o carte”" },
+        "Primele versuri sunt: „Nu-ți voi lăsa drept bunuri, după moarte, / Decât un nume adunat pe-o carte”. Poetul nu lasă bunuri materiale, ci o carte.",
+      lessonSection: { id: "6-1-nu-ti-voi-lasa-drept-bunuri-dupa-moarte-decat-un-nume-adunat-pe-o-carte", label: "6.1. „Nu-ți voi lăsa drept bunuri, după moarte, / Decât un nume adunat pe-o carte”" },
       basis: "Lecția, 6.1; sursa: Funeriu (2020).",
     },
     {
@@ -69,7 +69,7 @@ export const testamentExercises: ExerciseSet = {
       id: "testament-mc-sapa",
       type: "multiple-choice",
       difficulty: "mediu",
-      prompt: "Ce arată imaginea „Sapa-n condei și brazda-n climar”?",
+      prompt: "Ce arată imaginea „Sapa-n condei și brazda-n călimară”?",
       options: [
         { id: "a", text: "O comparație între un țăran și un scriitor, făcută cu ajutorul lui „ca”." },
         { id: "b", text: "Trecerea de la munca pământului la munca cuvântului." },
@@ -78,8 +78,8 @@ export const testamentExercises: ExerciseSet = {
       ],
       correctOptionId: "b",
       explanation:
-        "Obiectele muncii pământului (sapa, brazda) devin obiecte ale scrisului (condeiul, climara): munca pământului devine munca cuvântului. Nu este comparație cu „ca”, peisaj sau invocație.",
-      lessonSection: { id: "6-2-sapa-n-condei-si-brazda-n-climar", label: "6.2. „Sapa-n condei și brazda-n climar”" },
+        "Obiectele muncii pământului (sapa, brazda) devin obiecte ale scrisului (condeiul, călimara): munca pământului devine munca cuvântului. Nu este comparație cu „ca”, peisaj sau invocație.",
+      lessonSection: { id: "6-2-sapa-n-condei-si-brazda-n-calimara", label: "6.2. „Sapa-n condei și brazda-n călimară”" },
       basis: "Lecția, 3.2 și 6.2; sursa: Parpală (2009).",
     },
     {
@@ -125,7 +125,7 @@ export const testamentExercises: ExerciseSet = {
         { id: "a", text: "Poetul se adresează unui „fiu”." },
         { id: "b", text: "Primele opt versuri au rimă împerecheată." },
         { id: "c", text: "Poetul apare ca meșteșugar al cuvântului." },
-        { id: "d", text: "Versul „Sapa-n condei și brazda-n climar” conține cuvântul „condei”." },
+        { id: "d", text: "Versul „Sapa-n condei și brazda-n călimară” conține cuvântul „condei”." },
       ],
       correctOptionId: "c",
       explanation:
@@ -146,7 +146,7 @@ export const testamentExercises: ExerciseSet = {
       ],
       correctOptionId: "d",
       explanation:
-        "În fragmentul citat în articol, „Domnul” citește „fără-a cunoaște c-n adâncul ei / zace mânia bunilor mei”; lecția citește versul ca pe un contrast între cel care scrie și cel care citește. Celelalte lecturi nu au suport în fragment.",
+        "În fragmentul citat în articol, „Domnul” citește „făr-a cunoaște că-n adâncul ei / zace mânia bunilor mei”; lecția citește versul ca pe un contrast între cel care scrie și cel care citește. Celelalte lecturi nu au suport în fragment.",
       lessonSection: { id: "6-3-robul-a-scris-o-domnul-o-citeste", label: "6.3. „Robul a scris-o, Domnul o citește”" },
       basis: "Lecția, 6.3; sursa: Parpală (2009).",
     },
@@ -204,22 +204,22 @@ export const testamentExercises: ExerciseSet = {
       type: "short-answer",
       difficulty: "dificil",
       prompt:
-        "Comentează, în 3–4 enunțuri, imaginea „Sapa-n condei și brazda-n climar”, legând-o de tema poeziei. Separă ce spune textul de ceea ce interpretezi.",
+        "Comentează, în 3–4 enunțuri, imaginea „Sapa-n condei și brazda-n călimară”, legând-o de tema poeziei. Separă ce spune textul de ceea ce interpretezi.",
       grading: {
         mode: "self-assessment",
         criteria: [
-          "Am precizat ce spune versul: sapa devine condei, iar brazda devine climară.",
+          "Am precizat ce spune versul: sapa devine condei, iar brazda devine călimară.",
           "Am numit transformarea (munca pământului → munca cuvântului) sau imaginea poetului ca meșteșugar.",
           "Am formulat o interpretare legată de tema concepției despre artă.",
-          "Am folosit un citat scurt și verificat (de exemplu, „Sapa-n condei și brazda-n climar”).",
+          "Am folosit un citat scurt și verificat (de exemplu, „Sapa-n condei și brazda-n călimară”).",
         ],
       },
       modelAnswer:
-        "Versul spune că sapa devine condei, iar brazda devine climară (fapt). Obiectele muncii pământului devin obiecte ale scrisului: poetul este înfățișat ca meșteșugar care muncește cuvântul, așa cum țăranul muncește pământul. Interpretare: imaginea susține tema artei ca muncă și ca moștenire lăsată urmașilor.",
+        "Versul spune că sapa devine condei, iar brazda devine călimară (fapt). Obiectele muncii pământului devin obiecte ale scrisului: poetul este înfățișat ca meșteșugar care muncește cuvântul, așa cum țăranul muncește pământul. Interpretare: imaginea susține tema artei ca muncă și ca moștenire lăsată urmașilor.",
       maxLength: 1200,
       explanation:
         "Nu există un singur răspuns corect. Un comentariu bun separă textul de interpretare, numește transformarea, folosește un citat scurt și o leagă de temă. Verificarea automată nu poate evalua această sarcină: compară-ți răspunsul cu criteriile.",
-      lessonSection: { id: "6-2-sapa-n-condei-si-brazda-n-climar", label: "6.2. „Sapa-n condei și brazda-n climar”" },
+      lessonSection: { id: "6-2-sapa-n-condei-si-brazda-n-calimara", label: "6.2. „Sapa-n condei și brazda-n călimară”" },
       basis: "Lecția, 3.2 și 6.2; sursa: Parpală (2009).",
     },
   ],

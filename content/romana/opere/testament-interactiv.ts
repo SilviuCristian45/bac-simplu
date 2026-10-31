@@ -22,7 +22,7 @@ export const fragmenteItems: DetailItem[] = [
     id: "inceput",
     label: "Începutul",
     fields: [
-      { label: "Versurile", text: "„Nu-i voi lăsa drept bunuri, după moarte, / Decât un nume adunat pe-o carte.”", tag: "citat" },
+      { label: "Versurile", text: "„Nu-ți voi lăsa drept bunuri, după moarte, / Decât un nume adunat pe-o carte.”", tag: "citat" },
       { label: "Ce spune", text: "Poetul nu lasă bunuri, ci „un nume adunat pe-o carte”.", tag: "fapt-poezie" },
       { label: "În eseu", text: "Pentru idee poetică și titlu: ce lasă un poet după moarte este opera.", tag: "interpretare" },
     ],
@@ -32,8 +32,8 @@ export const fragmenteItems: DetailItem[] = [
     id: "sapa",
     label: "Sapa-n condei",
     fields: [
-      { label: "Versurile", text: "„Ca să schimbăm acum, întâia oară, / Sapa-n condei și brazda-n climar.”", tag: "citat" },
-      { label: "Ce spune", text: "Sapa devine condei, iar brazda climară (vas pentru cerneală).", tag: "fapt-poezie" },
+      { label: "Versurile", text: "„Ca să schimbăm acum, întâia oară, / Sapa-n condei și brazda-n călimară.”", tag: "citat" },
+      { label: "Ce spune", text: "Sapa devine condei, iar brazda călimară (vas pentru cerneală).", tag: "fapt-poezie" },
       { label: "În eseu", text: "Trecerea de la munca pământului la munca cuvântului: poetul ca meșteșugar.", tag: "interpretare" },
     ],
     source: "Lecția, 3.2 și 6.2.",
@@ -42,7 +42,7 @@ export const fragmenteItems: DetailItem[] = [
     id: "robul",
     label: "Robul și Domnul",
     fields: [
-      { label: "Versurile", text: "„Robul a scris-o, Domnul o citește / Fără-a cunoaște c-n adâncul ei / Zace mânia bunilor mei.”", tag: "citat" },
+      { label: "Versurile", text: "„Robul a scris-o, Domnul o citește / Făr-a cunoaște că-n adâncul ei / Zace mânia bunilor mei.”", tag: "citat" },
       { label: "Ce spune", text: "Cartea este scrisă de „rob” și citită de „Domn”, care nu cunoaște ce se ascunde în ea.", tag: "fapt-poezie" },
       { label: "În eseu", text: "Poezia păstrează o suferință a strămoșilor pe care cititorul nu o vede de la început.", tag: "interpretare" },
     ],
@@ -65,7 +65,7 @@ export const trasaturiQuiz: QuizContent = {
   items: [
     {
       id: "bunuri",
-      prompt: "„Nu-i voi lăsa drept bunuri, după moarte, / Decât un nume adunat pe-o carte”",
+      prompt: "„Nu-ți voi lăsa drept bunuri, după moarte, / Decât un nume adunat pe-o carte”",
       tag: "citat",
       correct: "arta",
       explanation: "Poetul spune ce lasă după moarte: nu bunuri, ci o carte. Este o idee despre rolul artei.",
@@ -73,7 +73,7 @@ export const trasaturiQuiz: QuizContent = {
     },
     {
       id: "condei",
-      prompt: "„Sapa-n condei și brazda-n climar”",
+      prompt: "„Sapa-n condei și brazda-n călimară”",
       tag: "citat",
       correct: "munca",
       explanation: "Obiecte ale muncii pământului se transformă în obiecte ale scrisului.",
@@ -173,7 +173,7 @@ export const eseuPlansTestament: EssayPlan[] = [
         title: "Tema și două imagini poetice",
         text: "Formulează tema și comentează două imagini sau idei poetice, legate explicit de ea.",
         reper: "Reperul despre imagini/idei poetice · 6 p",
-        see: ["4.1. Tema", "6.1. „Nu-i voi lăsa drept bunuri, după moarte, / Decât un nume adunat pe-o carte”", "6.2. „Sapa-n condei și brazda-n climar”"],
+        see: ["4.1. Tema", "6.1. „Nu-ți voi lăsa drept bunuri, după moarte, / Decât un nume adunat pe-o carte”", "6.2. „Sapa-n condei și brazda-n călimară”"],
       },
       {
         id: "elemente",
