@@ -22,7 +22,7 @@ export const structuraItems: DetailItem[] = [
     id: "tabloul-1",
     label: "Tabloul I",
     fields: [
-      { label: "Ce se întâmplă", text: "Iona pescuiește de pe țărm; are un mic acvariu, din care aruncă pești în plasă ca să pară că a prins. Se apleacă peste acvariu și este înghițit de monstru, iar peștii din acvariu îi cântă.", tag: "fapt-piesa" },
+      { label: "Ce se întâmplă", text: "Iona stă în gura peștelui și pescuiește, cu năvodul peste cercurile de cretă; are un mic acvariu, din care aruncă pești în plasă ca să pară că a prins. Se apleacă peste acvariu și este înghițit de monstru, iar în final Iona vorbește „cu solemnitatea unui cor” în numele peștilor, și gura peștelui se închide.", tag: "fapt-piesa" },
       { label: "Rol", text: "Arată iluzia (acvariul) și începutul captivității.", tag: "interpretare" },
     ],
     source: "Lecția, 5.1 și 6.1.",
@@ -40,7 +40,7 @@ export const structuraItems: DetailItem[] = [
     id: "tabloul-3",
     label: "Tabloul III",
     fields: [
-      { label: "Ce se întâmplă", text: "Iona descoperă că peștele a fost înghițit de unul mai mare; ajunge într-un al treilea pește. Scrie un SOS pe palmă. Vede puii nenăscuți ai monstrului.", tag: "fapt-piesa" },
+      { label: "Ce se întâmplă", text: "Iona descoperă că peștele a fost înghițit de unul mai mare; ajunge într-un al treilea pește. Își taie o bucată de piele din podul palmei stângi, scrie cu sânge „câteva cuvinte” pe ea și o pune într-o bășică pe care o umflă. Vede puii nenăscuți ai monstrului.", tag: "fapt-piesa" },
       { label: "Rol", text: "Limitele devin succesive; fiecare ieșire duce într-o altă captivitate.", tag: "interpretare" },
     ],
     source: "Lecția, 5.1 și 6.2.",

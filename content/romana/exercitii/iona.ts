@@ -37,14 +37,14 @@ export const ionaExercises: ExerciseSet = {
       difficulty: "usor",
       prompt: "Ce face Iona în tabloul I?",
       options: [
-        { id: "a", text: "Pescuiește de pe țărm și este înghițit de un monstru." },
+        { id: "a", text: "Pescuiește, stând în gura unui pește, și este înghițit de un monstru." },
         { id: "b", text: "Predică într-o cetate mare, ca profetul din Biblie, la porunca lui Dumnezeu." },
         { id: "c", text: "Călătorește pe o corabie, în furtună." },
         { id: "d", text: "Își construiește o casă pe plajă." },
       ],
       correctOptionId: "a",
       explanation:
-        "În tabloul I, Iona pescuiește de pe țărm, cu plasă și undiță, își joacă o captură și este înghițit de monstru. Celelalte variante nu apar în rezumat.",
+        "În tabloul I, Iona stă în gura peștelui și pescuiește, cu năvodul peste cercurile de cretă, își joacă o captură și este înghițit de monstru. Celelalte variante nu apar în rezumat.",
       lessonSection: { id: "6-1-tabloul-i-acvariul-si-inghitirea", label: "6.1. Tabloul I: acvariul și înghițirea" },
       basis: "Lecția, 6.1; sursa secundară.",
     },
@@ -61,7 +61,7 @@ export const ionaExercises: ExerciseSet = {
       ],
       correctOptionId: "c",
       explanation:
-        "Articolul spune că ecoul întoarce doar „Io”, adică jumătate din nume. Peștii cântă în alt moment, iar tăcerea completă nu este ceea ce descrie sursa.",
+        "Articolul spune că ecoul întoarce doar „Io”, adică jumătate din nume. În piesă peștii nu cântă (în finalul tabloului I, Iona vorbește „cu solemnitatea unui cor” în numele lor), iar tăcerea completă nu este ceea ce descrie sursa.",
       lessonSection: { id: "6-3-ecoul-io", label: "6.3. Ecoul „Io”" },
       basis: "Lecția, 6.3; sursa secundară.",
     },
@@ -141,7 +141,7 @@ export const ionaExercises: ExerciseSet = {
       options: [
         { id: "a", text: "Iona își pierde ecoul și se aude doar „Io”." },
         { id: "b", text: "Peștele este un simbol al limitei." },
-        { id: "c", text: "În tabloul III, Iona scrie un SOS pe palmă." },
+        { id: "c", text: "În tabloul III, Iona scrie cu sânge, pe o bucată de piele tăiată din palmă." },
         { id: "d", text: "Piesa are patru tablouri." },
       ],
       correctOptionId: "b",
