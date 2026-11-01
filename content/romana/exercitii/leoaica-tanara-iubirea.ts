@@ -3,8 +3,8 @@ import type { ExerciseSet } from "@/lib/exercises/types";
 /**
  * Exerciții pentru lecția „Leoaică tânără, iubirea” (content/romana/opere/leoaica-tanara-iubirea.mdx).
  * Fiecare exercițiu trimite la o secțiune existentă a lecției (lessonSection.id = ancora titlului);
- * „basis” arată de unde provine conținutul. Cele patru versuri au fost găsite citate într-un articol științific; textul
- * integral nu a fost consultat (vezi docs/rapoarte/documentare-opere-noi-2026-10-26.md). Lecția este în stadiul draft-neverificat.
+ * „basis” arată de unde provine conținutul. Textul poeziei (24 de versuri) este cel furnizat de proprietarul
+ * proiectului, în ediția stabilită de acesta; nu a fost confruntat cu o ediție tipărită. Lecția este în stadiul draft-neverificat.
  * Sistemul de exerciții oferă o singură explicație pentru fiecare exercițiu; ea spune și de ce celelalte variante sunt greșite.
  */
 export const leoaicaExercises: ExerciseSet = {
@@ -26,7 +26,7 @@ export const leoaicaExercises: ExerciseSet = {
       ],
       correctOptionId: "b",
       explanation:
-        "Primul vers spune: „Leoaică tânără, iubirea mi-a sărit în față”. Iubirea este numită leoaică; natura, moartea și poezia nu apar în fragment.",
+        "Primele versuri spun: „Leoaică tânără, iubirea / mi-ai sărit în față”. Iubirea este numită leoaică; moartea și poezia nu sunt numite așa, iar natura apare în strofa a II-a, dar nu ca leoaică.",
       lessonSection: { id: "6-1-leoaica-tanara-iubirea", label: "6.1. „Leoaică tânără, iubirea”" },
       basis: "Lecția, 5.1 și 6.1; sursa: Crișan (2020).",
     },
@@ -34,16 +34,16 @@ export const leoaicaExercises: ExerciseSet = {
       id: "leoaica-mc-persoana",
       type: "multiple-choice",
       difficulty: "usor",
-      prompt: "La ce persoană se exprimă vorbitorul în fragment?",
+      prompt: "La ce persoană se exprimă vorbitorul în poezie?",
       options: [
         { id: "a", text: "La persoana a III-a, ca un narator exterior." },
-        { id: "b", text: "La persoana I: „mi-a sărit”, „m-a mușcat”." },
-        { id: "c", text: "La persoana a II-a, adresându-se iubitei." },
+        { id: "b", text: "La persoana I: „mă pândise”, „mi-am dus mâna”." },
+        { id: "c", text: "Exclusiv la persoana a II-a, adresându-se iubitei." },
         { id: "d", text: "Prin dialog între doi vorbitori." },
       ],
       correctOptionId: "b",
       explanation:
-        "Verbele cu pronumele „mi-”, „m-” arată persoana I: lirism subiectiv. Nu există narator exterior, adresare directă sau dialog în fragmentul citat.",
+        "Formele „mă pândise”, „mi-am dus mâna”, „jurul meu” arată persoana I: lirism subiectiv. Forma „mi-ai sărit” din versul 2 (ediția folosită) este la persoana a II-a, dar nu face din poezie o adresare către iubită, iar narator exterior sau dialog nu există.",
       lessonSection: { id: "5-2-instantele-comunicarii", label: "5.2. Instanțele comunicării" },
       basis: "Lecția, 5.2.",
     },
@@ -60,7 +60,7 @@ export const leoaicaExercises: ExerciseSet = {
       ],
       correctOptionId: "b",
       explanation:
-        "„Față” încheie versurile 2 („mi-a sărit în față”), 5 („înfipt în față”) și 6 („azi de față”); titlul „Leoaică tânără, iubirea” este versul 1. Celelalte cuvinte nu se repetă la sfârșit de vers.",
+        "„Față” încheie versurile 2 („mi-ai sărit în față”), 5 („înfipt în față”) și 6 („azi, de față”); titlul „Leoaică tânără, iubirea” este versul 1. Celelalte cuvinte nu se repetă la sfârșit de vers.",
       lessonSection: { id: "5-1-inceputul", label: "5.1. Începutul" },
       basis: "Lecția, 5.1.",
     },
@@ -68,7 +68,7 @@ export const leoaicaExercises: ExerciseSet = {
       id: "leoaica-mc-pandise",
       type: "multiple-choice",
       difficulty: "mediu",
-      prompt: "Ce sugerează versul „Mă pândise-n încordare mai de mult”, după lecție?",
+      prompt: "Ce sugerează versurile „Mă pândise-n încordare / mai demult”, după lecție?",
       options: [
         { id: "a", text: "Că iubirea este o alegere liberă." },
         { id: "b", text: "Că vorbitorul a pândit-o pe leoaică." },
@@ -77,7 +77,7 @@ export const leoaicaExercises: ExerciseSet = {
       ],
       correctOptionId: "c",
       explanation:
-        "Verbul „pândise” arată că iubirea îl urmărea din timp pe vorbitor; lecția citește asta ca fatalitate (interpretare). Nu vorbitorul pândește, iar leoaica nu este blândă.",
+        "Verbul „pândise”, împreună cu „mai demult”, arată că iubirea îl urmărea din timp pe vorbitor; lecția citește asta ca fatalitate (interpretare). Nu vorbitorul pândește, iar leoaica nu este blândă.",
       lessonSection: { id: "6-3-ma-pandise-n-incordare", label: "6.3. „Mă pândise-n încordare”" },
       basis: "Lecția, 6.3; sursa: Crișan (2020).",
     },
@@ -96,7 +96,7 @@ export const leoaicaExercises: ExerciseSet = {
       explanation:
         "Iubirea este numită direct „leoaică”, fără cuvânt de legătură: metaforă. Nu este comparație (lipsește „ca”), hiperbolă sau oximoron.",
       lessonSection: { id: "7-limbaj-artistic", label: "7. Limbaj artistic" },
-      basis: "Lecția, 7; fragmentul citat.",
+      basis: "Lecția, 7; poezia.",
     },
     {
       id: "leoaica-mc-programa",
@@ -119,7 +119,7 @@ export const leoaicaExercises: ExerciseSet = {
       id: "leoaica-mc-interpretare",
       type: "multiple-choice",
       difficulty: "dificil",
-      prompt: "Care dintre aceste enunțuri este o interpretare, nu un fapt verificabil în fragment?",
+      prompt: "Care dintre aceste enunțuri este o interpretare, nu un fapt verificabil în poezie?",
       options: [
         { id: "a", text: "Iubirea este numită „leoaică tânără”." },
         { id: "b", text: "Cuvântul „față” se repetă la sfârșitul unor versuri." },
@@ -136,7 +136,7 @@ export const leoaicaExercises: ExerciseSet = {
       id: "leoaica-mc-tema",
       type: "multiple-choice",
       difficulty: "dificil",
-      prompt: "Care formulare a temei este susținută de fragmentul verificat, după lecție?",
+      prompt: "Care formulare a temei este susținută de poezie, după lecție?",
       options: [
         { id: "a", text: "Iubirea ca forță care atacă și schimbă ființa." },
         { id: "b", text: "Frumusețea unui peisaj de iarnă, cu zăpadă și liniște." },
@@ -145,7 +145,7 @@ export const leoaicaExercises: ExerciseSet = {
       ],
       correctOptionId: "a",
       explanation:
-        "Imaginea leoaicei care „a sărit” și „a mușcat” susține tema iubirii ca forță care atacă (interpretare). Celelalte teme nu au suport în fragment.",
+        "Imaginea leoaicei care „mi-ai sărit” și „m-a mușcat” susține tema iubirii ca forță care atacă (interpretare). Celelalte teme nu au suport în poezie.",
       lessonSection: { id: "4-1-tema", label: "4.1. Tema" },
       basis: "Lecția, 4.1.",
     },
@@ -154,10 +154,10 @@ export const leoaicaExercises: ExerciseSet = {
       type: "true-false",
       difficulty: "usor",
       prompt: "Stabilește dacă afirmația este adevărată sau falsă.",
-      statement: "Lecția a verificat textul integral al poeziei într-o ediție.",
+      statement: "Textul poeziei din lecție a fost confruntat cu o ediție tipărită.",
       correct: false,
       explanation:
-        "Fals. Lecția spune că textul integral nu a fost consultat; se bazează pe primele patru versuri, citate într-un articol științific. Poezia trebuie citită integral în manual.",
+        "Fals. Lecția reproduce poezia întreagă (24 de versuri) după ediția stabilită de proprietarul proiectului, dar nu a confruntat-o cu o ediție tipărită. Variantele de text („mi-ai sărit” / „mi-a sărit”, „mai demult” / „mai de mult”) trebuie verificate în manualul tău.",
       lessonSection: { id: "11-surse-si-limite", label: "11. Surse și limite" },
       basis: "Lecția, începutul și 11.",
     },
@@ -169,7 +169,7 @@ export const leoaicaExercises: ExerciseSet = {
       statement: "Titlul poeziei este chiar primul vers al poeziei.",
       correct: true,
       explanation:
-        "Adevărat: titlul „Leoaică tânără, iubirea” este versul 1; fraza continuă în versul 2: „mi-a sărit în față”.",
+        "Adevărat: titlul „Leoaică tânără, iubirea” este versul 1; fraza continuă în versul 2: „mi-ai sărit în față”.",
       lessonSection: { id: "4-2-titlul", label: "4.2. Titlul" },
       basis: "Lecția, 4.2.",
     },
@@ -209,11 +209,11 @@ export const leoaicaExercises: ExerciseSet = {
           "Am precizat ce spune textul: iubirea este leoaică; ea a sărit în față, a înfipt colții și a mușcat.",
           "Am numit procedeul (metafora, personificarea) și am arătat cum apare.",
           "Am formulat o interpretare legată de tema iubirii ca forță care atacă și marchează.",
-          "Am folosit un citat scurt și verificat (de exemplu, „m-a mușcat leoaica azi de față”).",
+          "Am folosit un citat scurt și verificat (de exemplu, „m-a mușcat leoaica, azi, de față”).",
         ],
       },
       modelAnswer:
-        "Iubirea este numită „leoaică tânără”, care „mi-a sărit în față”, și-a înfipt colții și „m-a mușcat” (fapt). Metafora face din iubire o ființă feroce, iar mușcătura arată un sentiment care marchează. Interpretare: imaginea susține tema iubirii ca forță care atacă brusc și schimbă ființa.",
+        "Iubirea este numită „leoaică tânără”, care „mi-ai sărit în față”, și-a înfipt colții și „m-a mușcat” (fapt). Metafora face din iubire o ființă feroce, iar mușcătura arată un sentiment care marchează. Interpretare: imaginea susține tema iubirii ca forță care atacă brusc și schimbă ființa.",
       maxLength: 1200,
       explanation:
         "Nu există un singur răspuns corect. Un comentariu bun separă textul de interpretare, numește un procedeu, folosește un citat scurt și îl leagă de temă. Verificarea automată nu poate evalua această sarcină: compară-ți răspunsul cu criteriile.",
