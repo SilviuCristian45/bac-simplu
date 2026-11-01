@@ -153,7 +153,7 @@ export const alexandruLapusneanulExercises: ExerciseSet = {
       statement: "Naratorul nu își exprimă niciodată părerea despre personaje sau despre faptele lor.",
       correct: false,
       explanation:
-        "Fals. Naratorul relatează în general obiectiv, dar intervine uneori cu judecăți: discursul domnului din biserică este „această deșănțată cuvântare”, Moțoc este „mârșavul curtezan”, iar ultima frază spune că Lăpușneanul „lăsă o pată de sânge în istoria Moldaviei”.",
+        "Fals. Naratorul relatează în general obiectiv, dar intervine uneori cu judecăți: discursul domnului din biserică este „această deșănțată cuvântare”, Moțoc este „mârșavul curtezan”, iar penultima frază spune că Lăpușneanul „lăsă o pată de sânge în istoria Moldaviei”.",
       lessonSection: { id: "6-4-perspectiva-narativa", label: "6.4. Perspectiva narativă" },
       basis: "Lecția, 6.3 și 6.4; nuvela, cap. III și IV.",
     },

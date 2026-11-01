@@ -66,7 +66,7 @@ export const momenteItems: DetailItem[] = [
     id: "razboiul",
     label: "5. Războiul",
     fields: [
-      { label: "Ce se întâmplă", text: "Batalionul este mobilizat; la Măgura, Ștefan este luat drept dușman de ai lui; trece Oltul; la Cohalm este rănit.", tag: "fapt" },
+      { label: "Ce se întâmplă", text: "Batalionul este mobilizat; la Măgura, Ștefan este luat drept dușman de ai lui; se pregătește trecerea Oltului; Ștefan este rănit în marșul spre Sibiu.", tag: "fapt" },
       { label: "Rol", text: "Desfășurarea și culminarea părții a doua: experiența războiului.", tag: "interpretare" },
     ],
     source: "Lecția, 6.5.",
@@ -328,7 +328,7 @@ export const eseuPlansUltimaNoapte: EssayPlan[] = [
         title: "Tema și două secvențe",
         text: "Formulează tema și comentează două episoade, legate explicit de ea.",
         reper: "Reperul despre episoade/secvențe · 6 p",
-        see: ["4.1. Tema", "6.3. Gelozia", "6.5. Războiul: Măgura, Olt, Cohalm"],
+        see: ["4.1. Tema", "6.3. Gelozia", "6.5. Războiul: Măgura, Olt"],
       },
       {
         id: "elemente",

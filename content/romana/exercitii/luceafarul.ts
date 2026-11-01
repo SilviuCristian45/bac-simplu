@@ -17,7 +17,7 @@ export const luceafarulExercises: ExerciseSet = {
       id: "luceafar-mc-refuz",
       type: "multiple-choice",
       difficulty: "usor",
-      prompt: "Cum răspunde fata de împărat când Luceafărul îi cere să-i fie mireasă?",
+      prompt: "Cum răspunde fata de împărat când, la prima lui apariție, Luceafărul îi cere să-i fie mireasă?",
       options: [
         { id: "a", text: "Acceptă și pleacă cu el în ocean." },
         { id: "b", text: "Îl refuză, spunând că el este mort, iar ea vie." },

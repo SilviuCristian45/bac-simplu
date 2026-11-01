@@ -156,7 +156,7 @@ export const rolQuiz: QuizContent = {
       prompt: "Nechifor Lipan",
       tag: "fapt",
       correct: "victima",
-      explanation: "Nechifor dispare în drum spre Dorna; oasele lui sunt găsite la Sabasa.",
+      explanation: "Nechifor dispare în drum spre Dorna; oasele lui sunt găsite într-o râpă, pe drumul dintre Sabasa și Suha.",
       source: "Lecția, 7.4.",
     },
     {
@@ -271,7 +271,7 @@ export const baltagulPeople: Record<BaltagulPerson, RelationPersonData> = {
     position: { x: 80, y: 18 },
     tone: "slate",
     details: [
-      { tag: "fapt", text: "Dispare în drum spre Dorna; oasele sunt găsite la Sabasa.", source: "Lecția, 7.4." },
+      { tag: "fapt", text: "Dispare în drum spre Dorna; oasele sunt găsite într-o râpă, pe drumul dintre Sabasa și Suha.", source: "Lecția, 7.4." },
       { tag: "interpretare", text: "Prezent mai ales prin absență.", source: "Lecția, 7.4." },
     ],
   },

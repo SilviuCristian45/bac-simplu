@@ -37,14 +37,14 @@ export const ionaExercises: ExerciseSet = {
       difficulty: "usor",
       prompt: "Ce face Iona în tabloul I?",
       options: [
-        { id: "a", text: "Pescuiește de pe țărm și este înghițit de un monstru." },
+        { id: "a", text: "Pescuiește, stând în gura unui pește, și este înghițit de un monstru." },
         { id: "b", text: "Predică într-o cetate mare, ca profetul din Biblie, la porunca lui Dumnezeu." },
         { id: "c", text: "Călătorește pe o corabie, în furtună." },
         { id: "d", text: "Își construiește o casă pe plajă." },
       ],
       correctOptionId: "a",
       explanation:
-        "În tabloul I, Iona pescuiește de pe țărm, cu plasă și undiță, își joacă o captură și este înghițit de monstru. Celelalte variante nu apar în rezumat.",
+        "În tabloul I, Iona stă în gura peștelui și pescuiește, cu năvodul peste cercurile de cretă, își joacă o captură și este înghițit de monstru. Celelalte variante nu apar în rezumat.",
       lessonSection: { id: "6-1-tabloul-i-acvariul-si-inghitirea", label: "6.1. Tabloul I: acvariul și înghițirea" },
       basis: "Lecția, 6.1; sursa secundară.",
     },
@@ -52,7 +52,7 @@ export const ionaExercises: ExerciseSet = {
       id: "iona-mc-ecou",
       type: "multiple-choice",
       difficulty: "usor",
-      prompt: "Ce se aude când Iona își strigă numele, după ce și-a pierdut ecoul?",
+      prompt: "După prefața autorului, ce se aude când Iona își strigă numele, după ce și-a pierdut ecoul?",
       options: [
         { id: "a", text: "Numele întreg, repetat de trei ori." },
         { id: "b", text: "Un cântec al peștilor." },
@@ -61,7 +61,7 @@ export const ionaExercises: ExerciseSet = {
       ],
       correctOptionId: "c",
       explanation:
-        "Articolul spune că ecoul întoarce doar „Io”, adică jumătate din nume. Peștii cântă în alt moment, iar tăcerea completă nu este ceea ce descrie sursa.",
+        "Fraza din prefață, citată în articol, spune că se auzea doar „Io”, adică jumătate din nume; aceasta este formularea autorului din prefață, nu o replică verificată din piesă. În piesă peștii nu cântă (în finalul tabloului I, Iona vorbește „cu solemnitatea unui cor” în numele lor), iar tăcerea completă nu este ceea ce spune prefața.",
       lessonSection: { id: "6-3-ecoul-io", label: "6.3. Ecoul „Io”" },
       basis: "Lecția, 6.3; sursa secundară.",
     },
@@ -141,7 +141,7 @@ export const ionaExercises: ExerciseSet = {
       options: [
         { id: "a", text: "Iona își pierde ecoul și se aude doar „Io”." },
         { id: "b", text: "Peștele este un simbol al limitei." },
-        { id: "c", text: "În tabloul III, Iona scrie un SOS pe palmă." },
+        { id: "c", text: "În tabloul III, Iona scrie cu sânge, pe o bucată de piele tăiată din palmă." },
         { id: "d", text: "Piesa are patru tablouri." },
       ],
       correctOptionId: "b",
@@ -180,11 +180,23 @@ export const ionaExercises: ExerciseSet = {
       difficulty: "mediu",
       prompt: "Stabilește dacă afirmația este adevărată sau falsă.",
       statement: "După sursă, mama lui Iona apare doar într-un cântec care îl cheamă.",
-      correct: true,
+      correct: false,
       explanation:
-        "Adevărat: după sursă, mama apare doar într-un cântec care îl cheamă pe Iona, iar soția este doar amintită, ca cea care îl învinuiește. Nu sunt personaje care apar pe scenă.",
+        "Fals. Mama apare doar în gândurile lui Iona („Mamă – aș scrie –, mi s-a întâmplat o mare nenorocire”, „Mai naște-mă o dată!”), iar singurul cântec din piesă este al lui Iona („Veșnica mistuire”). Soția nu îl învinuiește: spune că privirea lui ucide peștii din acvariu, dar „ea mă iubește”. Nu sunt personaje care apar pe scenă.",
       lessonSection: { id: "7-personajele", label: "7. Personajele" },
       basis: "Lecția, 7; sursa secundară.",
+    },
+    {
+      id: "iona-af-distributie",
+      type: "true-false",
+      difficulty: "usor",
+      prompt: "Stabilește dacă afirmația este adevărată sau falsă.",
+      statement: "Pescarul I și Pescarul II sunt figuri mute: nu rostesc replici.",
+      correct: true,
+      explanation:
+        "Adevărat. Mutismul pescarilor nu apare în lista de personaje, ci în didascalii: în tabloul III, didascalia spune „Nu scot nici un cuvânt”, iar mai târziu sunt numiți „muți”.",
+      lessonSection: { id: "7-personajele", label: "7. Personajele" },
+      basis: "Lecția, 7; Sorescu, Iona, lista de personaje și didascaliile tabloului III.",
     },
     {
       id: "iona-af-final",

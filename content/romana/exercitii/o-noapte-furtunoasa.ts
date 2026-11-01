@@ -102,7 +102,7 @@ export const oNoapteFurtunoasaExercises: ExerciseSet = {
       id: "noapte-mc-gazeta",
       type: "multiple-choice",
       difficulty: "mediu",
-      prompt: "Ce arată scena în care Ipingescu citește gazeta „Vocea Patriotului Naționale”?",
+      prompt: "Ce arată scena în care Ipingescu citește gazeta „Vocea Patriotului Național”?",
       options: [
         { id: "a", text: "Că cei doi înțeleg bine articolul și îl discută." },
         { id: "b", text: "Că politica este redusă la cuvinte pe care nimeni nu le pricepe, dar toți le aplaudă." },
@@ -112,7 +112,7 @@ export const oNoapteFurtunoasaExercises: ExerciseSet = {
       correctOptionId: "b",
       explanation:
         "Ipingescu citește cu greu un articol despre „sufragiu universal” și îl explică greșit; Dumitrache aprobă entuziasmat, fără să înțeleagă. Este comic de limbaj și de moravuri. Articolul este al lui Rică, nu al lui Dumitrache.",
-      lessonSection: { id: "6-2-secventa-2-gazeta-vocea-patriotului-nationale-i-4", label: "6.2. Secvența 2: gazeta „Vocea Patriotului Naționale” (I, 4)" },
+      lessonSection: { id: "6-2-secventa-2-gazeta-vocea-patriotului-national-i-4", label: "6.2. Secvența 2: gazeta „Vocea Patriotului Național” (I, 4)" },
       basis: "Lecția, 6.2; piesa, I, 4.",
     },
     {
@@ -186,7 +186,7 @@ export const oNoapteFurtunoasaExercises: ExerciseSet = {
       statement: "Ipingescu îl arestează pe Rică, pentru că îl crede „bagabont”.",
       correct: false,
       explanation:
-        "Fals. Ipingescu îl recunoaște pe Rică: „Pe dumnealui îl cunosc eu!” și spune că este „d-ai noștri, e patriot”, autorul articolelor din „Vocea Patriotului Naționale”.",
+        "Fals. Ipingescu îl recunoaște pe Rică: „Pe dumnealui îl cunosc eu!” și spune că este „d-ai noștri, e patriot”, autorul articolelor din „Vocea Patriotului Național”.",
       lessonSection: { id: "6-5-secventa-5-finalul-ii-9", label: "6.5. Secvența 5: finalul (II, 9)" },
       basis: "Lecția, 6.5; piesa, II, 9.",
     },
@@ -218,7 +218,7 @@ export const oNoapteFurtunoasaExercises: ExerciseSet = {
       id: "noapte-ra-ziar",
       type: "short-answer",
       difficulty: "usor",
-      prompt: "Cum se numește personajul care scrie articole în gazeta „Vocea Patriotului Naționale”?",
+      prompt: "Cum se numește personajul care scrie articole în gazeta „Vocea Patriotului Național”?",
       grading: { mode: "keywords", requiredGroups: [["rica", "venturiano"]] },
       modelAnswer: "Rică Venturiano.",
       maxLength: 100,

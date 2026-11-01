@@ -60,7 +60,7 @@ export const scrisoareaIIIExercises: ExerciseSet = {
       ],
       correctOptionId: "a",
       explanation:
-        "Poetul spune: „Cum nu vii tu, Țepeș doamne, ca punînd mîna pe ei”. Mircea și Baiazid apar în partea epică; Apollo este invocat mai devreme, în alt context.",
+        "Poetul spune: „Cum nu vii tu, Țepeș Doamne, ca punînd mîna pe ei”. Mircea și Baiazid apar în partea epică; Apollo este invocat mai devreme, în alt context.",
       lessonSection: { id: "6-4-satira", label: "6.4. Satira" },
       basis: "Lecția, 6.4; poemul, finalul.",
     },
@@ -136,7 +136,7 @@ export const scrisoareaIIIExercises: ExerciseSet = {
       id: "scrisoarea3-mc-apostrofa",
       type: "multiple-choice",
       difficulty: "dificil",
-      prompt: "Ce figură de stil ilustrează versul „Cum nu vii tu, Țepeș doamne”?",
+      prompt: "Ce figură de stil ilustrează versul „Cum nu vii tu, Țepeș Doamne”?",
       options: [
         { id: "a", text: "Comparație." },
         { id: "b", text: "Hiperbolă." },
@@ -157,7 +157,7 @@ export const scrisoareaIIIExercises: ExerciseSet = {
       statement: "Mircea îi răspunde sultanului că acceptă să i se supună.",
       correct: false,
       explanation:
-        "Fals. Mircea îi spune sultanului: „Despre parte închinării însă, doamne, să ne ierți”; refuză închinarea și apără „sărăcia și nevoile și neamul”.",
+        "Fals. Mircea îi spune sultanului: „Despre partea închinării însă, Doamne, să ne ierți”; refuză închinarea și apără „sărăcia și nevoile și neamul”.",
       lessonSection: { id: "6-2-dialogul-mircea-baiazid", label: "6.2. Dialogul Mircea–Baiazid" },
       basis: "Lecția, 6.2; poemul, partea a II-a.",
     },
@@ -169,7 +169,7 @@ export const scrisoareaIIIExercises: ExerciseSet = {
       statement: "Biletul din poem este scris în versuri scurte, rimate două câte două.",
       correct: true,
       explanation:
-        "Adevărat: „De din vale de Rovine / Grăim, Doamnă, către Tine” este în versuri scurte, cu rimă împerecheată. Ritmul diferă de cel al părții epice.",
+        "Adevărat: „De din vale de Rovine / Grăim, Doamnă, cătră Tine” este în versuri scurte, cu rimă împerecheată. Ritmul diferă de cel al părții epice.",
       lessonSection: { id: "5-2-versul-si-rima", label: "5.2. Versul și rima" },
       basis: "Lecția, 5.2; poemul, biletul.",
     },
@@ -189,7 +189,7 @@ export const scrisoareaIIIExercises: ExerciseSet = {
       id: "scrisoarea3-ra-apar",
       type: "short-answer",
       difficulty: "usor",
-      prompt: "Cum se numește sultanul care apare în poem?",
+      prompt: "Cum se numește sultanul care îl înfruntă pe Mircea?",
       grading: { mode: "keywords", requiredGroups: [["baiazid", "bayezid"]] },
       modelAnswer: "Baiazid.",
       maxLength: 100,

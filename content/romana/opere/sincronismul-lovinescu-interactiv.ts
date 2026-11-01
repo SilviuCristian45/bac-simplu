@@ -23,7 +23,7 @@ export const structuraItems: DetailItem[] = [
     id: "reviste",
     label: "1. Revistele",
     fields: [
-      { label: "Ce spune", text: "Prezintă Sburătorul (19 aprilie 1919) ca revistă a esteticului pur și Contimporanul (1923) ca revistă de avangardă.", tag: "fapt" },
+      { label: "Ce spune", text: "Prezintă Sburătorul (19 aprilie 1919) ca revistă a esteticului pur și Contimporanul ca revistă de avangardă.", tag: "fapt" },
       { label: "Rol", text: "Pune în context cele două feluri de modernism.", tag: "interpretare" },
     ],
     source: "Lecția, 3.1 și 5.1.",

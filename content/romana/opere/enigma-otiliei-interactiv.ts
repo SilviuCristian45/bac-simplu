@@ -56,7 +56,7 @@ const CHAPTER_FACTS: Partial<Record<string, { text: string; source: string }[]>>
   ],
   XI: [
     {
-      text: "Georgeta îl întreabă pe Felix despre Otilia. El răspunde: „E o fată admirabilă, pe care n-o înțeleg.”",
+      text: "Georgeta îl întreabă pe Felix despre Otilia. El răspunde: „E o fată admirabilă, dar n-o înțeleg.”",
       source: "Romanul, cap. XI (vol. I, p. 299).",
     },
   ],
@@ -284,7 +284,7 @@ export const otiliaVazutaItems: DetailItem[] = [
     label: "Felix",
     fields: [
       { label: "Replica", text: "„Otilia e o fată admirabilă, o fată superioară” (vol. I, p. 299)", tag: "citat" },
-      { label: "Contextul", text: "Vorbește cu Georgeta, care îl întreabă despre Otilia. Adaugă: „E o fată admirabilă, pe care n-o înțeleg.”", tag: "fapt" },
+      { label: "Contextul", text: "Vorbește cu Georgeta, care îl întreabă despre Otilia. Adaugă: „E o fată admirabilă, dar n-o înțeleg.”", tag: "fapt" },
       { label: "Ce arată", text: "Admirația și neputința de a o înțelege: de aici vine „enigma”.", tag: "interpretare" },
     ],
     source: "Lecția, 4.2 și 7.8; romanul, cap. XI.",

@@ -37,13 +37,13 @@ export const sincronismulExercises: ExerciseSet = {
       prompt: "Când a apărut revista Sburătorul, după fragment?",
       options: [
         { id: "a", text: "La 19 aprilie 1919." },
-        { id: "b", text: "În 1923, în același an cu Contimporanul." },
+        { id: "b", text: "În 1923." },
         { id: "c", text: "În 1906, odată cu volumul Pași pe nisip." },
         { id: "d", text: "În 1929, odată cu Mutația valorilor estetice." },
       ],
       correctOptionId: "a",
       explanation:
-        "Fragmentul spune: „apărut la 19 aprilie 1919”. 1923 este anul Contimporanului, 1906 anul lucrării Pași pe nisip, iar 1929 anul lucrării Mutația valorilor estetice, după fragment.",
+        "Fragmentul spune: „apărut la 19 aprilie 1919”. Celelalte date nu sunt data din fragment; 1906 și 1929 sunt anii unor lucrări ale lui Lovinescu, după fragment.",
       lessonSection: { id: "3-1-ce-spune-programa", label: "3.1. Ce spune programa" },
       basis: "Lecția, 3.1; fragmentul, „Modernismul”.",
     },
@@ -77,7 +77,7 @@ export const sincronismulExercises: ExerciseSet = {
       ],
       correctOptionId: "c",
       explanation:
-        "Fragmentul numește Contimporanul (1923), al poetului I. Vinea, ca reprezentant al avangardismului. Convorbiri literare și Sămănătorul apar în alte contexte, iar Viața românească nu este pomenită în secțiune.",
+        "Fragmentul numește Contimporanul, al poetului I. Vinea, ca reprezentant al avangardismului. Convorbiri literare și Sămănătorul apar în alte contexte, iar Viața românească nu este pomenită în secțiune.",
       lessonSection: { id: "4-3-modernismul-teoretic-si-modernismul-de-avangarda", label: "4.3. Modernismul teoretic și modernismul de avangardă" },
       basis: "Lecția, 4.3; fragmentul.",
     },

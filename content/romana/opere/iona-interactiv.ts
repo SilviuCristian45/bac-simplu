@@ -22,7 +22,7 @@ export const structuraItems: DetailItem[] = [
     id: "tabloul-1",
     label: "Tabloul I",
     fields: [
-      { label: "Ce se întâmplă", text: "Iona pescuiește de pe țărm; are un mic acvariu, din care aruncă pești în plasă ca să pară că a prins. Se apleacă peste acvariu și este înghițit de monstru, iar peștii din acvariu îi cântă.", tag: "fapt-piesa" },
+      { label: "Ce se întâmplă", text: "Iona stă în gura peștelui și pescuiește, cu năvodul peste cercurile de cretă; are un mic acvariu, din care aruncă pești în plasă ca să pară că a prins. Se apleacă peste acvariu și este înghițit de monstru, iar în final Iona vorbește „cu solemnitatea unui cor” în numele peștilor, și gura peștelui se închide.", tag: "fapt-piesa" },
       { label: "Rol", text: "Arată iluzia (acvariul) și începutul captivității.", tag: "interpretare" },
     ],
     source: "Lecția, 5.1 și 6.1.",
@@ -40,7 +40,7 @@ export const structuraItems: DetailItem[] = [
     id: "tabloul-3",
     label: "Tabloul III",
     fields: [
-      { label: "Ce se întâmplă", text: "Iona descoperă că peștele a fost înghițit de unul mai mare; ajunge într-un al treilea pește. Scrie un SOS pe palmă. Vede puii nenăscuți ai monstrului.", tag: "fapt-piesa" },
+      { label: "Ce se întâmplă", text: "Iona descoperă că peștele a fost înghițit de unul mai mare; ajunge într-un al treilea pește. Își taie o bucată de piele din podul palmei stângi, scrie cu sânge „câteva cuvinte” pe ea și o pune într-o bășică pe care o umflă. Vede puii nenăscuți ai monstrului.", tag: "fapt-piesa" },
       { label: "Rol", text: "Limitele devin succesive; fiecare ieșire duce într-o altă captivitate.", tag: "interpretare" },
     ],
     source: "Lecția, 5.1 și 6.2.",
@@ -49,7 +49,7 @@ export const structuraItems: DetailItem[] = [
     id: "tabloul-4",
     label: "Tabloul IV",
     fields: [
-      { label: "Ce se întâmplă", text: "Ani mai târziu, Iona este rătăcit, dar liniștit. Își amintește propriul nume, hotărăște să se întoarcă și își taie burta.", tag: "fapt-piesa" },
+      { label: "Ce se întâmplă", text: "În tabloul IV, Iona este rătăcit, dar liniștit. Își amintește propriul nume, hotărăște să se întoarcă și își taie burta.", tag: "fapt-piesa" },
       { label: "Rol", text: "Finalul: hotărârea de a ieși, ambiguă ca sens.", tag: "interpretare" },
     ],
     source: "Lecția, 5.1 și 6.4.",
@@ -95,7 +95,7 @@ export const simboluriQuiz: QuizContent = {
     },
     {
       id: "ecoul",
-      prompt: "Ecoul care se pierde: când Iona strigă, se aude doar „Io”",
+      prompt: "Ecoul care se pierde: după prefața autorului, când Iona strigă se aude doar „Io”",
       tag: "interpretare",
       correct: "comunicare",
       explanation: "Pierderea ecoului poate fi citită ca pierdere a comunicării și a identității.",
@@ -147,14 +147,6 @@ export const faptInterpretareQuiz: QuizContent = {
       explanation: "Faptul este că Iona își taie burta; sursa lasă deschisă întrebarea dacă este un eveniment real sau un gest simbolic, iar sinuciderea este o lectură printre altele.",
       source: "Lecția, 6.4.",
     },
-    {
-      id: "data",
-      prompt: "Piesa a fost publicată în 1968, în revista Luceafărul.",
-      tag: "fapt-piesa",
-      correct: "fapt",
-      explanation: "Data apare în sursa consultată; confirmă-o într-o ediție.",
-      source: "Lecția, 2.",
-    },
   ],
 };
 
@@ -166,7 +158,7 @@ export const eseuPlansIona: EssayPlan[] = [
     label: "Particularitățile unui text dramatic postbelic",
     section: "10",
     blocks: [
-      { id: "intro", title: "Introducere", text: "Autorul, titlul, anul apariției (1968) și încadrarea (de exemplu, dramă postbelică, parabolă).", see: [] },
+      { id: "intro", title: "Introducere", text: "Autorul, titlul și încadrarea (de exemplu, dramă postbelică, parabolă).", see: [] },
       {
         id: "incadrare",
         title: "Încadrarea",

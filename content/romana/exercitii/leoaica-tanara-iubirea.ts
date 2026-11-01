@@ -51,7 +51,7 @@ export const leoaicaExercises: ExerciseSet = {
       id: "leoaica-mc-repetitie",
       type: "multiple-choice",
       difficulty: "usor",
-      prompt: "Ce cuvânt se repetă la sfârșitul versurilor 1, 3 și 4 din fragment?",
+      prompt: "Ce cuvânt se repetă la sfârșitul versurilor 2, 5 și 6 din poezie (titlul fiind versul 1)?",
       options: [
         { id: "a", text: "Iubirea." },
         { id: "b", text: "Față." },
@@ -60,7 +60,7 @@ export const leoaicaExercises: ExerciseSet = {
       ],
       correctOptionId: "b",
       explanation:
-        "„Față” încheie versurile 1 („mi-a sărit în față”), 3 („înfipt în față”) și 4 („azi de față”). Celelalte cuvinte nu se repetă la sfârșit de vers.",
+        "„Față” încheie versurile 2 („mi-a sărit în față”), 5 („înfipt în față”) și 6 („azi de față”); titlul „Leoaică tânără, iubirea” este versul 1. Celelalte cuvinte nu se repetă la sfârșit de vers.",
       lessonSection: { id: "5-1-inceputul", label: "5.1. Începutul" },
       basis: "Lecția, 5.1.",
     },
@@ -166,10 +166,10 @@ export const leoaicaExercises: ExerciseSet = {
       type: "true-false",
       difficulty: "mediu",
       prompt: "Stabilește dacă afirmația este adevărată sau falsă.",
-      statement: "Titlul poeziei reia primele cuvinte ale primului vers.",
+      statement: "Titlul poeziei este chiar primul vers al poeziei.",
       correct: true,
       explanation:
-        "Adevărat: titlul „Leoaică tânără, iubirea” reia începutul versului „Leoaică tânără, iubirea mi-a sărit în față”.",
+        "Adevărat: titlul „Leoaică tânără, iubirea” este versul 1; fraza continuă în versul 2: „mi-a sărit în față”.",
       lessonSection: { id: "4-2-titlul", label: "4.2. Titlul" },
       basis: "Lecția, 4.2.",
     },

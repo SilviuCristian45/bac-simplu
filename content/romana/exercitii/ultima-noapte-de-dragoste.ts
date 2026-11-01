@@ -86,17 +86,17 @@ export const ultimaNoapteExercises: ExerciseSet = {
       id: "ultima-mc-razboi",
       type: "multiple-choice",
       difficulty: "mediu",
-      prompt: "Ce i se întâmplă lui Ștefan la Măgura, din cauza comenzii incompetente?",
+      prompt: "Ce i se întâmplă lui Ștefan la Măgura?",
       options: [
         { id: "a", text: "Este promovat pentru curaj în luptă." },
         { id: "b", text: "Este luat drept dușman de ai lui." },
         { id: "c", text: "Este rănit de o schijă." },
-        { id: "d", text: "Își pierde batalionul într-o ceață deasă." },
+        { id: "d", text: "Este luat prizonier de armata inamică și dus dincolo de linia frontului." },
       ],
       correctOptionId: "b",
       explanation:
-        "Sursa spune că, din cauza comenzii incompetente, Ștefan este luat drept soldat inamic și făcut prizonier de ai lui. Rănirea are loc mai târziu, la Cohalm.",
-      lessonSection: { id: "6-5-razboiul-magura-olt-cohalm", label: "6.5. Războiul: Măgura, Olt, Cohalm" },
+        "Ștefan este luat drept dușman de ai lui: un ofițer din propria trupă îl apucă de guler strigând „Prizonier!”, iar când lucrurile se lămuresc, toți izbucnesc în râs. Rănirea are loc mai târziu, în marșul spre Sibiu.",
+      lessonSection: { id: "6-5-razboiul-magura-olt", label: "6.5. Războiul: Măgura, Olt" },
       basis: "Lecția, 6.5; sursa secundară.",
     },
     {
@@ -142,7 +142,7 @@ export const ultimaNoapteExercises: ExerciseSet = {
         { id: "a", text: "Romanul are două părți." },
         { id: "b", text: "Ștefan se desparte de Ela la final." },
         { id: "c", text: "Ela l-a înșelat pe Ștefan." },
-        { id: "d", text: "Ștefan este rănit la Cohalm." },
+        { id: "d", text: "Ștefan este rănit în marșul spre Sibiu." },
       ],
       correctOptionId: "c",
       explanation:
@@ -219,18 +219,18 @@ export const ultimaNoapteExercises: ExerciseSet = {
       grading: {
         mode: "self-assessment",
         criteria: [
-          "Am precizat faptele: din cauza comenzii incompetente, Ștefan este luat drept dușman și făcut prizonier de ai lui.",
+          "Am precizat faptele: un ofițer din propria trupă îl apucă de guler pe Ștefan, strigând „Prizonier!”, și îl ia drept dușman.",
           "Am legat secvența de tema războiului ca experiență absurdă.",
           "Am formulat o interpretare (de exemplu, contrastul dintre experiența reală și imaginea oficială a războiului).",
           "Dacă am folosit un citat, l-am verificat în ediția mea.",
         ],
       },
       modelAnswer:
-        "La Măgura, din cauza comenzii incompetente, Ștefan este luat drept soldat inamic și făcut prizonier de ai lui (fapt). Episodul arată războiul ca experiență absurdă: ordinele și confuzia contează mai mult decât curajul. Interpretare: scena susține tema contrastului dintre ce se spune despre război și ce se trăiește.",
+        "La Măgura, un ofițer din propria trupă îl apucă de guler pe Ștefan, strigând „Prizonier!”, iar când lucrurile se lămuresc toți izbucnesc în râs (fapt). Episodul arată războiul ca experiență absurdă: ordinele și confuzia contează mai mult decât curajul. Interpretare: scena susține tema contrastului dintre ce se spune despre război și ce se trăiește.",
       maxLength: 1200,
       explanation:
         "Nu există un singur răspuns corect. Un comentariu bun separă faptele de interpretare, leagă secvența de temă și folosește doar citate verificate. Verificarea automată nu poate evalua această sarcină: compară-ți răspunsul cu criteriile.",
-      lessonSection: { id: "6-5-razboiul-magura-olt-cohalm", label: "6.5. Războiul: Măgura, Olt, Cohalm" },
+      lessonSection: { id: "6-5-razboiul-magura-olt", label: "6.5. Războiul: Măgura, Olt" },
       basis: "Lecția, 6.5 și 4.1; sursa secundară.",
     },
   ],

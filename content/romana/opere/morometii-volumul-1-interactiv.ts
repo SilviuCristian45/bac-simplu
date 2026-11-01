@@ -58,7 +58,7 @@ export const sceneItems: DetailItem[] = [
     id: "bataia",
     label: "Bătaia și fuga",
     fields: [
-      { label: "Ce se întâmplă", text: "Moromete îi bate pe fiii cei mari; aceștia fug cu caii și cu o parte din zestrea fetelor; el vinde din pământ.", tag: "fapt" },
+      { label: "Ce se întâmplă", text: "Moromete îi bate pe fiii cei mari; Paraschiv și Nilă fug cu caii, cu banii găsiți și cu cele mai bune covoare; el vinde din pământ.", tag: "fapt" },
       { label: "În eseu", text: "Punctul culminant și deznodământul conflictului dintre generații.", tag: "interpretare" },
     ],
     source: "Lecția, 6.6.",
@@ -147,7 +147,7 @@ export const rolQuiz: QuizContent = {
       prompt: "Paraschiv și Nilă (și, după o sursă, Achim)",
       tag: "fapt",
       correct: "fii",
-      explanation: "Fiii cei mari fug cu caii și cu o parte din zestrea fetelor, după bătaie.",
+      explanation: "Paraschiv și Nilă fug cu caii, cu banii găsiți și cu cele mai bune covoare, după bătaie.",
       source: "Lecția, 6.6.",
     },
     {
@@ -198,10 +198,10 @@ export const faptInterpretareQuiz: QuizContent = {
     },
     {
       id: "fuga",
-      prompt: "Fiii cei mari fug cu caii și cu o parte din zestrea fetelor.",
+      prompt: "Paraschiv și Nilă fug cu caii și cu banii pe care i-au găsit.",
       tag: "fapt",
       correct: "fapt",
-      explanation: "Este o secvență a acțiunii, după ambele surse consultate.",
+      explanation: "Este o secvență a acțiunii, confirmată în roman: „Amândoi au fugit”, cu caii și cu „toți banii pe care-i găsiseră”.",
       source: "Lecția, 6.6.",
     },
     {
