@@ -52,7 +52,7 @@ export const ionaExercises: ExerciseSet = {
       id: "iona-mc-ecou",
       type: "multiple-choice",
       difficulty: "usor",
-      prompt: "Ce se aude când Iona își strigă numele, după ce și-a pierdut ecoul?",
+      prompt: "După prefața autorului, ce se aude când Iona își strigă numele, după ce și-a pierdut ecoul?",
       options: [
         { id: "a", text: "Numele întreg, repetat de trei ori." },
         { id: "b", text: "Un cântec al peștilor." },
@@ -61,7 +61,7 @@ export const ionaExercises: ExerciseSet = {
       ],
       correctOptionId: "c",
       explanation:
-        "Articolul spune că ecoul întoarce doar „Io”, adică jumătate din nume. În piesă peștii nu cântă (în finalul tabloului I, Iona vorbește „cu solemnitatea unui cor” în numele lor), iar tăcerea completă nu este ceea ce descrie sursa.",
+        "Fraza din prefață, citată în articol, spune că se auzea doar „Io”, adică jumătate din nume; aceasta este formularea autorului din prefață, nu o replică verificată din piesă. În piesă peștii nu cântă (în finalul tabloului I, Iona vorbește „cu solemnitatea unui cor” în numele lor), iar tăcerea completă nu este ceea ce spune prefața.",
       lessonSection: { id: "6-3-ecoul-io", label: "6.3. Ecoul „Io”" },
       basis: "Lecția, 6.3; sursa secundară.",
     },
@@ -191,10 +191,10 @@ export const ionaExercises: ExerciseSet = {
       type: "true-false",
       difficulty: "usor",
       prompt: "Stabilește dacă afirmația este adevărată sau falsă.",
-      statement: "În distribuția piesei apar Iona, pescar, și doi pescari, Pescarul I și Pescarul II, figuri mute.",
+      statement: "Pescarul I și Pescarul II sunt figuri mute: nu rostesc replici.",
       correct: true,
       explanation:
-        "Adevărat. Distribuția cuprinde: IONA, pescar; PESCARUL I; PESCARUL II. Cei doi pescari sunt figuri mute: în tabloul III, didascalia spune „Nu scot nici un cuvânt”, iar mai târziu sunt numiți „muți”.",
+        "Adevărat. Mutismul pescarilor nu apare în lista de personaje, ci în didascalii: în tabloul III, didascalia spune „Nu scot nici un cuvânt”, iar mai târziu sunt numiți „muți”.",
       lessonSection: { id: "7-personajele", label: "7. Personajele" },
       basis: "Lecția, 7; Sorescu, Iona, lista de personaje și didascaliile tabloului III.",
     },

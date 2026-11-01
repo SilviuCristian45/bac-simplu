@@ -177,10 +177,10 @@ export const moaraCuNorocExercises: ExerciseSet = {
       type: "true-false",
       difficulty: "dificil",
       prompt: "Stabilește dacă afirmația este adevărată sau falsă.",
-      statement: "Afirmația „Structura nuvelei este circulară” este un fapt din text, nu o interpretare.",
+      statement: "Afirmația „Finalul nuvelei confirmă avertismentul de la început al bătrânei” este un fapt din text, nu o interpretare.",
       correct: false,
       explanation:
-        "Fals. Faptele din text sunt că bătrâna rostește prima și ultima replică și că aceleași cinci cruci apar la început (cap. II) și la sfârșit (cap. XVII). „Circulară” este numele pe care îl dăm acestei oglindiri: o interpretare bine susținută, pe care trebuie să o argumentezi cu faptele.",
+        "Fals. Faptele din text sunt că bătrâna rostește prima și ultima replică și că aceleași cinci cruci apar la început (cap. II) și la sfârșit (cap. XVII). „Confirmă avertismentul” este sensul pe care îl dăm acestei oglindiri: o interpretare bine susținută, pe care trebuie să o argumentezi cu faptele.",
       lessonSection: { id: "6-3-incipitul-si-finalul", label: "6.3. Incipitul și finalul" },
       basis: "Lecția, 6.3 și legenda din „Cum să folosești această lecție”; nuvela, cap. I, II, XVII.",
     },
@@ -197,7 +197,7 @@ export const moaraCuNorocExercises: ExerciseSet = {
       modelAnswer: "Bătrâna, mama Anei (soacra lui Ghiță).",
       maxLength: 200,
       explanation:
-        "Nuvela începe cu sfatul bătrânei despre „liniștea colibei” (cap. I) și se încheie cu vorbele ei lângă cele cinci cruci: „Simțeam eu că nu are să iasă bine; dar așa le-a fost dat!...” (cap. XVII). Această simetrie susține lectura structurii ca circulară.",
+        "Nuvela începe cu sfatul bătrânei despre „liniștea colibei” (cap. I) și se încheie cu vorbele ei lângă cele cinci cruci: „Simțeam eu că nu are să iasă bine; dar așa le-a fost dat!...” (cap. XVII). Această simetrie între început și final susține lectura moralizatoare a nuvelei.",
       lessonSection: { id: "6-3-incipitul-si-finalul", label: "6.3. Incipitul și finalul" },
       basis: "Lecția, 4.4 și 6.3; nuvela, cap. I și XVII.",
     },

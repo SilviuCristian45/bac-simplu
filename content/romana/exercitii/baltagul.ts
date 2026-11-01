@@ -129,7 +129,7 @@ export const baltagulExercises: ExerciseSet = {
       ],
       correctOptionId: "b",
       explanation:
-        "Sursa spune că Sadoveanu respinge resemnarea baladei: în balada „Miorița” ciobanul acceptă moartea, în roman Vitoria caută dreptatea. Celelalte variante contrazic rezumatul.",
+        "Sursa spune că Sadoveanu respinge resemnarea baladei: în balada „Miorița” ciobanul acceptă moartea, în roman Vitoria caută dreptatea. Varianta c nu răspunde întrebării: lecția o arată pe Vitoria cerând sfatul babei Maranda, dar acesta nu este un element prin care se deosebește de ciobanul din baladă. Variantele a și d contrazic lecția.",
       lessonSection: { id: "8-legatura-cu-balada-miorita", label: "8. Legătura cu balada „Miorița”" },
       basis: "Lecția, 8; sursa secundară.",
     },

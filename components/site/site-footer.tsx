@@ -15,6 +15,10 @@ export function SiteFooter() {
             Materiale gratuite pentru pregătirea examenului de Bacalaureat la Limba și literatura
             română. Platforma este în dezvoltare, iar conținutul este verificat treptat.
           </p>
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink-muted">
+            Lecțiile nu înlocuiesc textul operei. Citește opera și consultă un profesor de limba
+            română înainte de examen.
+          </p>
         </div>
         <div className="text-sm">
           <nav aria-label="Subsol">

@@ -189,7 +189,7 @@ export const scrisoareaIIIExercises: ExerciseSet = {
       id: "scrisoarea3-ra-apar",
       type: "short-answer",
       difficulty: "usor",
-      prompt: "Cum se numește sultanul care apare în poem?",
+      prompt: "Cum se numește sultanul care îl înfruntă pe Mircea?",
       grading: { mode: "keywords", requiredGroups: [["baiazid", "bayezid"]] },
       modelAnswer: "Baiazid.",
       maxLength: 100,

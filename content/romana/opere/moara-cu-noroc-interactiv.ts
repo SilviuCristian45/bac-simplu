@@ -326,7 +326,7 @@ export const incipitFinalFigure: FigureContent = {
   title: "Incipitul și finalul se oglindesc",
   summary:
     "Nuvela începe și se încheie cu bătrâna și cu cele cinci cruci. Parcurge perechile ca să vezi cum avertismentul de la început se adeverește la sfârșit.",
-  note: "Citatele sunt verificate în două ediții (vezi Surse). Lectura „circulară” a structurii este o interpretare.",
+  note: "Citatele sunt verificate în două ediții (vezi Surse). Sensul dat oglindirii dintre început și final este o interpretare.",
   steps: [
     {
       id: "batrana",
@@ -351,8 +351,8 @@ export const incipitFinalFigure: FigureContent = {
     },
     {
       id: "sens",
-      title: "O structură circulară",
-      text: "Pentru că incipitul și finalul se oglindesc, structura poate fi numită circulară sau simetrică: avertismentul bătrânei se adeverește, iar povestea lui Ghiță devine o pildă.",
+      title: "O simetrie între început și final",
+      text: "Pentru că incipitul și finalul se oglindesc, se poate vorbi despre o simetrie: avertismentul bătrânei se adeverește, iar povestea lui Ghiță devine o pildă.",
       tag: "interpretare",
       source: "Lecția, 6.3.",
     },
