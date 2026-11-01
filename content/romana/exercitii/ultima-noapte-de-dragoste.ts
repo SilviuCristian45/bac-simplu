@@ -52,7 +52,7 @@ export const ultimaNoapteExercises: ExerciseSet = {
       id: "ultima-mc-fabrica",
       type: "multiple-choice",
       difficulty: "usor",
-      prompt: "Cine îl convinge pe Ștefan să cumpere o fabrică metalurgică?",
+      prompt: "Cine conduce în familie achiziția unei fabrici de metalurgie, în care intră și Ștefan?",
       options: [
         { id: "a", text: "Unchiul Nae Gheorghidiu." },
         { id: "b", text: "Ela, soția lui Ștefan." },
@@ -61,7 +61,7 @@ export const ultimaNoapteExercises: ExerciseSet = {
       ],
       correctOptionId: "a",
       explanation:
-        "Unchiul Nae îl convinge pe Ștefan să cumpere fabrica, împreună cu Tănase Vasilescu Lumânăraru, și o salvează cumpărând un depozit de fier la Galați. Ceilalți nu au legătură cu fabrica.",
+        "Unchiul Nae conduce achiziția fabricii de metalurgie la licitație și devine asociat cu Tănase Vasilescu Lumânăraru, concurentul scos din licitație. Ceilalți nu au legătură cu fabrica.",
       lessonSection: { id: "6-2-afacerea-cu-fabrica", label: "6.2. Afacerea cu fabrica" },
       basis: "Lecția, 6.2; sursa secundară.",
     },

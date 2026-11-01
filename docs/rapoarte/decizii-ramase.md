@@ -37,11 +37,11 @@ Starea: branch-ul `fix/audit-literar` conține toate cele 30 de corecturi din `a
 - [ ] **Scrisoarea III:** „285 de versuri" marcat „fapt"; ediția Creția are 287.
 - [x] **Enigma Otiliei — rezolvat 2026-11-01 pe PDF-ul din `references/bac-romana/`** (divorțul și al doilea bărbat sunt acum în lecție). Textul inițial: căsătoria cu Pascalopol dată ca fapt final, dar în epilog Otilia divorțează și se mărită cu un conte; lecțiile omit divorțul. Lecția 5.4 spune „soția altcuiva".
 - [ ] **Harap-Alb:** lecția 5.4 spune „la prima probă", iar 5.1 și 7.5 spun „primele două probe" (incomplet, nu fals).
-- [ ] **Camil Petrescu:** planul cu fabrica/depozitul de fier la Galați nu s-a putut confirma (OCR fără diacritice); afirmația biografică despre „prima parte ficțiune" vine din Wikipedia.
+- [x] **Camil Petrescu (rezolvat 2026-11-01 pe EPUB-ul din `references/bac-romana/`; „depozitul de fier la Galați” nu e în text și a fost scos; afirmația biografică din Wikipedia rămâne neverificată):** planul cu fabrica/depozitul de fier la Galați nu s-a putut confirma (OCR fără diacritice); afirmația biografică despre „prima parte ficțiune" vine din Wikipedia.
 - [ ] **Iona:** datele 1965/1968/1969/1970, „porumbel", „Ecoul" ca naiadă/proiecție/figură divină și „în tabloul IV au trecut ani" nu se pot verifica pe text (audit (b) #24). Recomandarea auditului: lecția să nu mai atribuie piesei aceste detalii.
 - [ ] **Plumb:** lecția 4.3 („vântul scârțâie coroanele") dă vântului o acțiune pe care textul n-o spune (audit (b) #11).
 - [ ] **Lăpușneanul:** `alexandru-lapusneanul.mdx` 175, „Nuvela se încheie tot cu numele lui", ușor imprecis (propoziția cu numele e penultima).
-- [ ] **Ultima noapte de dragoste:** „la Cohalm batalionul este atacat de unguri" (`ultima-noapte-de-dragoste.mdx` 188) nu e acoperit de audit. Distractorul nou din ex. `ultima-mc-razboi` (opt. d: „luat prizonier de armata inamică…") e formulat de Claude și trebuie verificat pe carte.
+- [x] **Ultima noapte de dragoste (rezolvat 2026-11-01 pe text: Cohalm reformulat, distractorul `ultima-mc-razboi` e fals pe text; fabrica corectată):** „la Cohalm batalionul este atacat de unguri" (`ultima-noapte-de-dragoste.mdx` 188) nu e acoperit de audit. Distractorul nou din ex. `ultima-mc-razboi` (opt. d: „luat prizonier de armata inamică…") e formulat de Claude și trebuie verificat pe carte.
 
 ## 5. Exerciții discutabile, (c) – de decis cu un profesor
 

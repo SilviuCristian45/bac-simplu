@@ -39,7 +39,7 @@ export const momenteItems: DetailItem[] = [
     id: "fabrica",
     label: "2. Fabrica",
     fields: [
-      { label: "Ce se întâmplă", text: "Unchiul Nae îl convinge să cumpere o fabrică metalurgică; afacerea aproape eșuează, dar Nae o salvează.", tag: "fapt" },
+      { label: "Ce se întâmplă", text: "Familia cumpără, cu Nae în frunte, o fabrică de metalurgie la licitație; afacerea este dezastruoasă, iar Ștefan iese din asociație.", tag: "fapt" },
       { label: "Rol", text: "Arată lumea pragmatică, opusă lui Ștefan.", tag: "interpretare" },
     ],
     source: "Lecția, 6.2.",
@@ -138,7 +138,7 @@ export const rolQuiz: QuizContent = {
   note: "Rolurile sunt cele din secțiunea 7, după sursa secundară.",
   choices: [
     { id: "narator", label: "Naratorul; student, apoi ofițer." },
-    { id: "practic", label: "Unchiul practic, care salvează afacerea cu fabrica." },
+    { id: "practic", label: "Unchiul practic, care obține fabrica la licitație." },
     { id: "sotia", label: "Soția, văzută prin ochii naratorului." },
     { id: "amant", label: "Bănuitul amant al soției." },
   ],
@@ -156,7 +156,7 @@ export const rolQuiz: QuizContent = {
       prompt: "Nae Gheorghidiu",
       tag: "fapt",
       correct: "practic",
-      explanation: "Nae îl convinge pe Ștefan să cumpere fabrica și o salvează cumpărând un depozit de fier.",
+      explanation: "Nae conduce achiziția fabricii; afacerea nu reușește, iar Ștefan iese din asociație.",
       source: "Lecția, 6.2 și 7.4.",
     },
     {
@@ -263,7 +263,7 @@ export const ultimaNoaptePeople: Record<UltimaNoaptePerson, RelationPersonData> 
     position: { x: 22, y: 18 },
     tone: "amber",
     details: [
-      { tag: "fapt", text: "Salvează afacerea cu fabrica.", source: "Lecția, 6.2 și 7.4." },
+      { tag: "fapt", text: "Obține fabrica la licitație, blocându-l pe concurent.", source: "Lecția, 6.2 și 7.4." },
       { tag: "interpretare", text: "Omul pragmatic, opus lui Ștefan.", source: "Lecția, 7.4." },
     ],
   },
@@ -273,7 +273,7 @@ export const ultimaNoaptePeople: Record<UltimaNoaptePerson, RelationPersonData> 
     position: { x: 22, y: 82 },
     tone: "slate",
     details: [
-      { tag: "fapt", text: "Asociat cu Ștefan la fabrică; nici el nu poate conduce afacerea.", source: "Lecția, 6.2 și 7.4." },
+      { tag: "fapt", text: "Concurent la licitație, apoi asociatul lui Nae; director tehnic al fabricii, care merge prost.", source: "Lecția, 6.2 și 7.4." },
       { tag: "interpretare", text: "Reprezintă lumea afacerilor.", source: "Lecția, 7.4." },
     ],
   },

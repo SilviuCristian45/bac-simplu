@@ -45,3 +45,4 @@ next-env.d.ts
 
 # Cărți protejate de drepturi de autor, doar local
 references/bac-romana/Enigma-Otiliei.pdf
+references/bac-romana/*.epub
