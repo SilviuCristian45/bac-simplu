@@ -42,3 +42,6 @@ next-env.d.ts
 
 # materiale de referință locale (nu se sincronizează prin Git)
 /references/bac-romana/local/
+
+# Cărți protejate de drepturi de autor, doar local
+references/bac-romana/Enigma-Otiliei.pdf

@@ -35,7 +35,7 @@ Starea: branch-ul `fix/audit-literar` conține toate cele 30 de corecturi din `a
 - [ ] **Sincronismul:** „Contimporanul (1923)" vs. iunie 1922 (monoskop). Textul lui Lovinescu nu a fost accesibil.
 - [ ] **Moara cu noroc ex. 10:** „structura nuvelei este circulară" marcat FALS la fapt/interpretare. Manualele o dau ca trăsătură standard.
 - [ ] **Scrisoarea III:** „285 de versuri" marcat „fapt"; ediția Creția are 287.
-- [ ] **Enigma Otiliei:** căsătoria cu Pascalopol dată ca fapt final, dar în epilog Otilia divorțează și se mărită cu un conte; lecțiile omit divorțul. Lecția 5.4 spune „soția altcuiva".
+- [x] **Enigma Otiliei — rezolvat 2026-11-01 pe PDF-ul din `references/bac-romana/`** (divorțul și al doilea bărbat sunt acum în lecție). Textul inițial: căsătoria cu Pascalopol dată ca fapt final, dar în epilog Otilia divorțează și se mărită cu un conte; lecțiile omit divorțul. Lecția 5.4 spune „soția altcuiva".
 - [ ] **Harap-Alb:** lecția 5.4 spune „la prima probă", iar 5.1 și 7.5 spun „primele două probe" (incomplet, nu fals).
 - [ ] **Camil Petrescu:** planul cu fabrica/depozitul de fier la Galați nu s-a putut confirma (OCR fără diacritice); afirmația biografică despre „prima parte ficțiune" vine din Wikipedia.
 - [ ] **Iona:** datele 1965/1968/1969/1970, „porumbel", „Ecoul" ca naiadă/proiecție/figură divină și „în tabloul IV au trecut ani" nu se pot verifica pe text (audit (b) #24). Recomandarea auditului: lecția să nu mai atribuie piesei aceste detalii.

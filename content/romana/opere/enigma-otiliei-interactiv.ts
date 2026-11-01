@@ -82,7 +82,7 @@ const CHAPTER_FACTS: Partial<Record<string, { text: string; source: string }[]>>
       source: "Romanul, cap. XX (vol. II, p. 311).",
     },
     {
-      text: "Otilia pleacă la Paris cu Pascalopol și se căsătorește cu el. În epilog, după război, Felix este profesor universitar și revede casa pustie din strada Antim.",
+      text: "Otilia pleacă la Paris cu Pascalopol și se căsătorește cu el; în epilog se află că a divorțat de el. În epilog, după război, Felix este profesor universitar și revede casa pustie din strada Antim.",
       source: "Romanul, cap. XX (vol. II, p. 344–349).",
     },
   ],
@@ -410,7 +410,7 @@ export const otiliaPeople: Record<OtiliaPerson, RelationPersonData> = {
     position: { x: 50, y: 54 },
     tone: "rose",
     details: [
-      { tag: "fapt", text: "Orfană, crescută de moș Costache; îl iubește pe Felix, dar pleacă la Paris cu Pascalopol și se căsătorește cu el.", source: "Lecția, 7.2." },
+      { tag: "fapt", text: "Orfană, crescută de moș Costache; îl iubește pe Felix, dar pleacă la Paris cu Pascalopol și se căsătorește cu el; în epilog aflăm că a divorțat de el.", source: "Lecția, 7.2." },
       { tag: "interpretare", text: "Spontană în aparență, lucidă în fond; „enigma” ei vine din felul în care o văd ceilalți.", source: "Lecția, 4.2 și 7.2." },
     ],
   },
@@ -430,7 +430,7 @@ export const otiliaPeople: Record<OtiliaPerson, RelationPersonData> = {
     position: { x: 83, y: 32 },
     tone: "violet",
     details: [
-      { tag: "fapt", text: "„Cam de vreo cincizeci de ani”, prieten al casei; o duce pe Otilia la Paris și se căsătorește cu ea.", source: "Lecția, 7.5." },
+      { tag: "fapt", text: "„Cam de vreo cincizeci de ani”, prieten al casei; o duce pe Otilia la Paris și se căsătorește cu ea; în epilog Otilia a divorțat de el.", source: "Lecția, 7.5." },
       { tag: "citat", text: "„n-am prea stat ca să disting ce e patern și ce e viril în dragostea mea”", source: "Lecția, 7.5." },
     ],
   },
@@ -504,7 +504,7 @@ export const relatiiOtiliaFigure: FigureContent = {
     {
       id: "plecarea",
       title: "Plecarea Otiliei",
-      text: "Rămasă fără sprijin, Otilia pleacă cu Pascalopol și se căsătorește cu el. Relația cu Felix se încheie printr-o carte poștală.",
+      text: "Rămasă fără sprijin, Otilia pleacă cu Pascalopol și se căsătorește cu el (în epilog a divorțat). Relația cu Felix se încheie printr-o carte poștală.",
       tag: "interpretare",
       source: "Lecția, 5.4 și 7.5.",
     },
