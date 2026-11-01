@@ -457,7 +457,7 @@ export const LESSON_INTROS: Record<OperaSlug, LessonIntroContent> = {
   "leoaica-tanara-iubirea": {
     textLabel: "Despre poezie",
     lead:
-      "Poezie neomodernistă de Nichita Stănescu în care iubirea este o leoaică tânără care atacă. Lecția se bazează pe primele patru versuri, citate într-un articol.",
+      "Poezie neomodernistă de Nichita Stănescu în care iubirea este o leoaică tânără care atacă. Lecția folosește textul integral al poeziei (24 de versuri), în ediția stabilită de proprietarul proiectului.",
     facts: [
       { label: "Specie", value: "poezie", kind: "text", section: "2. Fișă rapidă" },
       { label: "Încadrare", value: "neomodernism", note: "o încadrare posibilă", kind: "recomandare", section: "3.1. Ce spune programa" },

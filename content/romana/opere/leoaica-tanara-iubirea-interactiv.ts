@@ -4,26 +4,26 @@ import type { ChecklistGroup, EssayPlan, EssayPlanIntro, QuizContent } from "@/c
 /**
  * Textele experiențelor interactive din lecția „Leoaică tânără, iubirea”
  * (content/romana/opere/leoaica-tanara-iubirea.mdx).
- * Reguli: fiecare enunț provine din lecție (secțiunea e indicată în „source”). Versurile (patru) au fost găsite citate
- * într-un articol științific (vezi docs/rapoarte/documentare-opere-noi-2026-10-26.md); textul integral nu a fost consultat.
+ * Reguli: fiecare enunț provine din lecție (secțiunea e indicată în „source”). Textul poeziei (24 de versuri) este cel
+ * furnizat de proprietarul proiectului, în ediția stabilită de acesta.
  * Faptele sunt marcate „fapt-poezie”, interpretările „interpretare”. Lecția este draft-neverificat.
  */
 
-// ── 2. Fișă rapidă: fragmentul verificat ────────────────────────────────────────────────────
+// ── 2. Fișă rapidă: versurile poeziei ────────────────────────────────────────────────────
 
 export const fragmenteContent: DetailExplorerContent = {
-  title: "Fragmentul verificat",
+  title: "Versurile poeziei",
   summary: "Alege un vers ca să vezi ce spune și ce poți susține cu el în eseu.",
-  note: "Lecția nu acoperă întreaga poezie, ci doar primele patru versuri, citate într-un articol științific. Ce înseamnă fragmentul este o interpretare.",
+  note: "Versurile sunt numerotate de la 1, fără titlu. Ce înseamnă un vers sau o strofă este o interpretare.",
   prompt: "Alege un vers",
 };
 
 export const fragmenteItems: DetailItem[] = [
   {
     id: "vers-1",
-    label: "Versul 1",
+    label: "Versurile 1–2",
     fields: [
-      { label: "Versul", text: "„Leoaică tânără, iubirea mi-a sărit în față.”", tag: "citat" },
+      { label: "Versurile", text: "„Leoaică tânără, iubirea / mi-ai sărit în față.”", tag: "citat" },
       { label: "Ce spune", text: "Iubirea este numită „leoaică tânără” și „a sărit în față”.", tag: "fapt-poezie" },
       { label: "În eseu", text: "Metafora face din iubire o ființă vie, care atacă brusc.", tag: "interpretare" },
     ],
@@ -31,23 +31,43 @@ export const fragmenteItems: DetailItem[] = [
   },
   {
     id: "vers-2",
-    label: "Versul 2",
+    label: "Versurile 3–4",
     fields: [
-      { label: "Versul", text: "„Mă pândise-n încordare mai de mult.”", tag: "citat" },
+      { label: "Versurile", text: "„Mă pândise-n încordare / mai demult.”", tag: "citat" },
       { label: "Ce spune", text: "Iubirea îl pândise pe vorbitor din timp.", tag: "fapt-poezie" },
       { label: "În eseu", text: "Sentimentul vine ca o fatalitate, nu din alegere.", tag: "interpretare" },
     ],
     source: "Lecția, 6.3.",
   },
   {
-    id: "vers-3-4",
-    label: "Versurile 3–4",
+    id: "vers-5-6",
+    label: "Versurile 5–6",
     fields: [
-      { label: "Versurile", text: "„Colții albi mi i-a înfipt în față, / m-a mușcat leoaica azi de față.”", tag: "citat" },
+      { label: "Versurile", text: "„Colții albi mi i-a înfipt în față, / m-a mușcat leoaica, azi, de față.”", tag: "citat" },
       { label: "Ce spune", text: "Leoaica înfige colții și mușcă.", tag: "fapt-poezie" },
       { label: "În eseu", text: "Mușcătura arată o iubire care marchează; repetiția lui „față” întărește ritmul atacului.", tag: "interpretare" },
     ],
     source: "Lecția, 5.1 și 6.2.",
+  },
+  {
+    id: "strofa-2",
+    label: "Strofa a II-a (7–14)",
+    fields: [
+      { label: "Versurile", text: "„când mai larg, când mai aproape, / ca o strângere de ape.” · „Și privirea-n sus țișni, / curcubeu tăiat în două”", tag: "citat" },
+      { label: "Ce spune", text: "Natura „se făcu un cerc”; privirea țâșnește în sus ca un „curcubeu tăiat în două”.", tag: "fapt-poezie" },
+      { label: "În eseu", text: "Lumea se transformă sub efectul iubirii; imaginea poate sugera amețeală sau revelație.", tag: "interpretare" },
+    ],
+    source: "Lecția, 6.4.",
+  },
+  {
+    id: "strofa-3",
+    label: "Strofa a III-a (15–24)",
+    fields: [
+      { label: "Versurile", text: "„pe-un deșert în strălucire, / peste care trece-alene / o leoaică arămie”", tag: "citat" },
+      { label: "Ce spune", text: "Mâna „nu le mai știe”; peste un deșert trece o leoaică arămie, „încă-o vreme, / și-ncă-o vreme...”.", tag: "fapt-poezie" },
+      { label: "În eseu", text: "Atacul din prima strofă devine o prezență care continuă; finalul rămâne deschis.", tag: "interpretare" },
+    ],
+    source: "Lecția, 6.5.",
   },
 ];
 
@@ -74,7 +94,7 @@ export const trasaturiQuiz: QuizContent = {
     },
     {
       id: "sarit",
-      prompt: "„mi-a sărit în față”, „m-a mușcat”",
+      prompt: "„mi-ai sărit în față”, „m-a mușcat”",
       tag: "citat",
       correct: "violenta",
       explanation: "Verbele arată un atac brusc, cu violență.",
@@ -90,7 +110,7 @@ export const trasaturiQuiz: QuizContent = {
     },
     {
       id: "pandise",
-      prompt: "„Mă pândise-n încordare mai de mult.”",
+      prompt: "„Mă pândise-n încordare / mai demult.”",
       tag: "citat",
       correct: "inversare",
       explanation: "Vorbitorul este cel pândit; leoaica este cea care atacă (lectură găsită în surse).",
@@ -103,7 +123,7 @@ export const trasaturiQuiz: QuizContent = {
 
 export const faptInterpretareQuiz: QuizContent = {
   title: "Fapt din poezie sau interpretare?",
-  summary: "Pentru fiecare enunț, alege dacă este un fapt verificabil în fragmentul citat sau o interpretare.",
+  summary: "Pentru fiecare enunț, alege dacă este un fapt verificabil în poezie sau o interpretare.",
   note: "Aceeași distincție contează în eseu: faptele se arată în text, interpretările se argumentează.",
   choices: [
     { id: "fapt", label: "Fapt din poezie" },
@@ -123,7 +143,7 @@ export const faptInterpretareQuiz: QuizContent = {
       prompt: "Cuvântul „față” apare la sfârșitul versurilor 2, 5 și 6 din poezie (titlul fiind versul 1).",
       tag: "fapt-poezie",
       correct: "fapt",
-      explanation: "Se verifică în versurile citate.",
+      explanation: "Se verifică în versuri: 2 („în față”), 5 („în față”) și 6 („de față”).",
       source: "Lecția, 5.1.",
     },
     {
@@ -144,10 +164,10 @@ export const faptInterpretareQuiz: QuizContent = {
     },
     {
       id: "persoana-i",
-      prompt: "Vorbitorul se exprimă la persoana întâi („mi-a sărit”, „m-a mușcat”).",
+      prompt: "Vorbitorul se exprimă la persoana întâi („mă pândise”, „mi-am dus mâna”).",
       tag: "fapt-poezie",
       correct: "fapt",
-      explanation: "Verbele cu pronume la persoana I se citesc în fragment.",
+      explanation: "Formele cu pronume la persoana I se citesc în versuri.",
       source: "Lecția, 5.2.",
     },
   ],
